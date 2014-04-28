@@ -1,4 +1,4 @@
 running
-setup
-	super setup.
+setUp
+	super setUp.
 	self demoInstance: SHCDemoClass new.
