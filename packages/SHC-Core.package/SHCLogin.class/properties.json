@@ -12,5 +12,5 @@
 	"name" : "SHCLogin",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SystemWindow",
 	"type" : "normal" }
