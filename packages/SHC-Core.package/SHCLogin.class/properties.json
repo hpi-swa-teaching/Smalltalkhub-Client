@@ -1,0 +1,16 @@
+{
+	"category" : "SHC-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"cookie1",
+		"cookie2",
+		"username" ],
+	"name" : "SHCLogin",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
