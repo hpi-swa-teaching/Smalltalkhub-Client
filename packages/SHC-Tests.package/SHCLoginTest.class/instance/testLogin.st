@@ -1,3 +1,3 @@
 running
 testLogin
-	self assert: false.
+	self assert: (self loginInstance login: 'ShcTestUser' password: 'HurfDurf')
