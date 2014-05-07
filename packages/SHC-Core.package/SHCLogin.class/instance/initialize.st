@@ -15,7 +15,7 @@ initialize
 	
 	passwordField := TextFieldMorph new.
 	passwordField
-		position: self position + (20@60);
+		position: self position + (20@70);
 		width: 200;
 		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
 		contents: 'password'.
