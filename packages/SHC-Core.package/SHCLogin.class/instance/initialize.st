@@ -1,7 +1,7 @@
 accessing
 initialize
 
-	| usernameField passwordField loginButton logoutButton |
+	| usernameField passwordField loginButton logoutButton projectList "listOfProjects" |
 
 	super initialize.
 	
@@ -37,6 +37,17 @@ initialize
 		target: self;
 		actionSelector: #logout.
 	self addMorph: logoutButton.
+	"
+	listOfProjects := PluggableListMorph new.
+	listOfProjects
+		on: self;
+		list: #('test' 'foo' 'bar').
+	"
+	projectList := LazyListMorph new.
+	projectList
+		"listSource: #listOfProjects;"
+		position: self position + (20@110).
+	self addMorph: projectList.
 	
 	self openInHand.
 	
