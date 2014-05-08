@@ -8,6 +8,10 @@
 	"instvars" : [
 		"webclient",
 		"username",
+		"usernameField",
+		"passwordField",
+		"loginButton",
+		"logoutButton",
 		"projectList" ],
 	"name" : "SHCLogin",
 	"pools" : [

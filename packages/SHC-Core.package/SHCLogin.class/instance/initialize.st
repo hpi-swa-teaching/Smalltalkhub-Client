@@ -1,8 +1,6 @@
 accessing
 initialize
 
-	| usernameField passwordField loginButton logoutButton |
-
 	super initialize.
 	self width: 300.
 	self height: 300.
@@ -30,8 +28,7 @@ initialize
 		position: usernameField position + (usernameField width + 20@0);
 		label: 'Login';
 		target: self;
-		actionSelector: (#login:password:);
-		arguments: #('username' 'password').
+		actionSelector: (#loginAndShowProjects).
 	self addMorph: loginButton.
 	
 	logoutButton := SimpleButtonMorph new.
