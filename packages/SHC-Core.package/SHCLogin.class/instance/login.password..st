@@ -14,5 +14,5 @@ login: aUserName password: aPassword
 	
 	request content: content.
 	result := client sendRequest: request.	
-	^ result
+	result isSuccess ifFalse:[^self error: result status] ifTrue:[^ true].
  
