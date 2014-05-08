@@ -7,6 +7,8 @@ initialize
 	self width: 300.
 	self height: 300.
 	
+	self webclient: WebClient new.
+		
 	usernameField := TextFieldMorph new.
 	usernameField
 		position: self position + (20@30);

@@ -2,12 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "AH 5/8/2014 15:57",
+		"initialize" : "AS 5/8/2014 16:10",
 		"listProjects" : "AS 5/8/2014 15:18",
-		"listProjects:" : "AS 5/8/2014 15:33",
-		"login:password:" : "AS 5/8/2014 14:59",
+		"listProjects:" : "AS 5/8/2014 15:41",
+		"login:password:" : "AS 5/8/2014 16:10",
 		"logout" : "AS 5/8/2014 14:54",
-		"projectNamesAsString:" : "AS 5/8/2014 15:31",
+		"projectNamesAsString:" : "AS 5/8/2014 15:42",
 		"showProjects" : "AH 5/8/2014 15:55",
 		"showProjects:" : "AH 5/8/2014 15:58",
 		"username" : "AS 5/6/2014 14:01",

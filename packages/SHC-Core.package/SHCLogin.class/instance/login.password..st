@@ -3,8 +3,6 @@ login: aUserName password: aPassword
 	| url content result |
 	self username: aUserName.
 	
-	self webclient ifNil: [self webclient: WebClient new].
-	
 	content := '{"username":"', aUserName, '","password":"', aPassword, '"}'.
 	url := 'http://smalltalkhub.com/hub/login'.
 

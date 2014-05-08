@@ -5,6 +5,7 @@
 		"loginInstance" : "AS 5/6/2014 14:04",
 		"loginInstance:" : "AS 5/6/2014 14:04",
 		"setUp" : "AS 5/6/2014 14:05",
-		"testListProjects" : "AS 5/6/2014 14:07",
+		"testListProjects" : "AS 5/8/2014 15:54",
 		"testLogin" : "AS 5/6/2014 14:27",
-		"testLogout" : "AS 5/8/2014 14:54" } }
+		"testLogout" : "AS 5/8/2014 14:54",
+		"testProjectNamesAsString" : "AS 5/8/2014 16:02" } }
