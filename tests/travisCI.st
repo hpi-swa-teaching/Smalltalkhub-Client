@@ -16,6 +16,9 @@ Metacello new
   repository: 'filetree://', gitPath, '/SWTI2014-Project-04/packages';
   load: 'TravisCI'.
 
+"Install WebClient"
+(Installer ss project: 'WebClient') install: 'WebClient-Core'; install: 'WebClient-Tests'.
+
 "Run the tests"
 TravisCIHarness
   value: #( 'BaselineOfProject04' )
