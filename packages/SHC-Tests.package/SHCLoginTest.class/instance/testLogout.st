@@ -1,3 +1,3 @@
 running
 testLogout
-	self assert: false.
+	self assert: (self loginInstance logout)
