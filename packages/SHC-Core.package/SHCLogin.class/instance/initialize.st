@@ -1,9 +1,11 @@
 accessing
 initialize
 
-	| usernameField passwordField loginButton logoutButton projectList "listOfProjects" |
+	| usernameField passwordField loginButton logoutButton |
 
 	super initialize.
+	self width: 300.
+	self height: 300.
 	
 	usernameField := TextFieldMorph new.
 	usernameField
@@ -37,15 +39,10 @@ initialize
 		target: self;
 		actionSelector: #logout.
 	self addMorph: logoutButton.
-	"
-	listOfProjects := PluggableListMorph new.
-	listOfProjects
-		on: self;
-		list: #('test' 'foo' 'bar').
-	"
-	projectList := LazyListMorph new.
+
+	projectList := TextMorph new.
 	projectList
-		"listSource: #listOfProjects;"
+		contents: 'My projects:', Character cr asString;
 		position: self position + (20@110).
 	self addMorph: projectList.
 	
