@@ -1,3 +1,3 @@
 as yet unclassified
 listProjects
-	^ nil
+	^ self listProjects: (self username)
