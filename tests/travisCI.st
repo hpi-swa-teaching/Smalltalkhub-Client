@@ -17,7 +17,9 @@ Metacello new
   load: 'TravisCI'.
 
 "Install WebClient"
-(Installer ss project: 'WebClient') install: 'WebClient-Core'; install: 'WebClient-Tests'.
+Metacello new
+  configuration: 'WebClient';
+  load.
 
 "Run the tests"
 TravisCIHarness
