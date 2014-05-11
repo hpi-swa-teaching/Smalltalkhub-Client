@@ -8,5 +8,5 @@ login: aUserName password: aPassword
 
 	result := self webclient httpPost: url content: content  type: 'text/json'.
 		
-	^ (result isSuccess)
+	^ result isSuccess
  

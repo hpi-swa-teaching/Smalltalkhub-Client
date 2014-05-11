@@ -5,10 +5,10 @@ showProjects: username
 	jsonResponse := self listProjects: username.
 	projectCollection := self projectNamesAsString: jsonResponse.
 	
-	projectList contents: 'My projects:', Character cr asString.
+	self clearProjectList.
 	
 	projectCollection do:
-		[:project | projectList contents:
-			projectList contents,
+		[:project | self projectList contents:
+			self projectList contents,
 			Character cr asString,
 			project]
