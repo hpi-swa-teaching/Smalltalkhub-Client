@@ -1,0 +1,3 @@
+configuration
+requestDataType
+	^ 'text/json'

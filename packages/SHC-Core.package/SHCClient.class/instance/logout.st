@@ -1,4 +1,4 @@
-as yet unclassified
+api-calls
 logout
 	| response |
 	self clearProjectList.

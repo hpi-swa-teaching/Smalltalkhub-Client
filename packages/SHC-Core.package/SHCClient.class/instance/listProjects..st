@@ -1,5 +1,8 @@
-as yet unclassified
+api-calls
 listProjects: aUserName
-	| result array |
-	result := self webclient httpGet: 'http://smalltalkhub.com/hub/projects/', aUserName.
-	result isSuccess ifTrue: [array := WebUtils jsonDecode: (ReadStream on: result content). ^ array] ifFalse: [^ nil]
+	| result array request |
+	request := SHCListProjectsRequest withWebClient: self webclient.
+	request username: aUserName.
+	result := request execute.
+	
+	result ifTrue: [array := WebUtils jsonDecode: (ReadStream on: request responseContent). 	^ array] ifFalse: [^ nil]
