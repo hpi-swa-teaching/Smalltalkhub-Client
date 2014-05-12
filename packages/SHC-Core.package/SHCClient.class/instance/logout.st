@@ -1,6 +1,6 @@
 api-calls
 logout
-	| response |
-	self clearProjectList.
-	response := WebClient httpGet: 'http://smalltalkhub.com/hub/logout'. 
+	| request response |
+	request := SHCLogoutRequest withWebClient: self webclient.	
+	response := request execute.
    ^ response isSuccess
