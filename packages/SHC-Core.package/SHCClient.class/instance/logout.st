@@ -1,6 +1,5 @@
 api-calls
 logout
-	| request response |
+	| request |
 	request := SHCLogoutRequest withWebClient: self webclient.	
-	response := request execute.
-   ^ response isSuccess
+	^ request execute.
