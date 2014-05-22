@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"mcinstance" : "AS 5/22/2014 14:14",
+		"mcinstance:" : "AS 5/22/2014 14:14",
+		"setUp" : "AS 5/22/2014 14:15",
+		"testAddProjectfromUser" : "AS 5/22/2014 15:35",
+		"testCreateHttpRepository" : "AS 5/22/2014 15:27",
+		"testLocalPackageExists" : "AS 5/22/2014 14:32",
+		"testbuildHttpString" : "AS 5/22/2014 15:20" } }
