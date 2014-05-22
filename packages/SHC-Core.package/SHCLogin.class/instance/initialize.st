@@ -23,6 +23,22 @@ initialize
 		contents: 'password'.
 	self addMorph: passwordField.
 	
+	createProjectField := TextFieldMorph new.
+	createProjectField
+		position: self position + (20@200);
+		width: 200;
+		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		contents: 'SampleProjectName'.
+	self addMorph: createProjectField.
+	
+	createProjectButton := SimpleButtonMorph new.
+	createProjectButton
+		position: createProjectField position + (createProjectField width + 20@0);
+		label: 'create';
+		target: self;
+		actionSelector: (#createProject).
+	self addMorph: createProjectButton.
+	
 	loginButton := SimpleButtonMorph new.
 	loginButton
 		position: usernameField position + (usernameField width + 20@0);

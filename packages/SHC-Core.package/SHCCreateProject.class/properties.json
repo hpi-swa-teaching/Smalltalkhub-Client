@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SHCDemoClass",
+		"username",
+		"projectName" ],
+	"name" : "SHCCreateProject",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "SHCRequest",
 	"type" : "normal" }

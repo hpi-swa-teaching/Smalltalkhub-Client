@@ -12,7 +12,9 @@
 		"passwordField",
 		"loginButton",
 		"logoutButton",
-		"projectList" ],
+		"projectList",
+		"createProjectField",
+		"createProjectButton" ],
 	"name" : "SHCLogin",
 	"pools" : [
 		 ],
