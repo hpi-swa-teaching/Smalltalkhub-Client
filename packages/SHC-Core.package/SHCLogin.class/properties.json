@@ -8,6 +8,7 @@
 	"instvars" : [
 		"webclient",
 		"username",
+		"password",
 		"usernameField",
 		"passwordField",
 		"loginButton",
