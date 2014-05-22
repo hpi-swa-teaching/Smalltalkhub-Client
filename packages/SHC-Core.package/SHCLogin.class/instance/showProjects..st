@@ -5,10 +5,7 @@ showProjects: username
 	jsonResponse := self listProjects: username.
 	projectCollection := self projectNamesAsString: jsonResponse.
 	
-	self clearProjectList.
-	
-	projectCollection do:
-		[:project | self projectList contents:
-			self projectList contents,
-			Character cr asString,
-			project]
+	self projects: projectCollection.
+	self projectListMorphIndex: 0.
+	self changed: #projectListMorphIndex.
+	self changed: #projects.

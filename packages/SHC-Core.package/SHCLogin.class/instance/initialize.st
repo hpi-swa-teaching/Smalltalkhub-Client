@@ -45,6 +45,19 @@ initialize
 		position: self position + (20@110).
 	self addMorph: projectList.
 	
+	self projects: #().
+	self projectListMorphIndex: 0.
+	
+	projectListMorph := PluggableListMorph
+		on: self
+		list: #projects
+		selected: #projectListMorphIndex
+		changeSelected: #projectListMorphIndex:.
+	projectListMorph position: self position + (20@160).
+	self addMorph: projectListMorph.
+	
+	
+	
 	self openInHand.
 	
 	

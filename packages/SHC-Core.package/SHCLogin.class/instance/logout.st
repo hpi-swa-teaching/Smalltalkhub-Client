@@ -1,6 +1,7 @@
 as yet unclassified
 logout
 	| response |
-	self clearProjectList.
+	self projects: #().
+	self changed: #projects.
 	response := WebClient httpGet: 'http://smalltalkhub.com/hub/logout'. 
    ^ response isSuccess
