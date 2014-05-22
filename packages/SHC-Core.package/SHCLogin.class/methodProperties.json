@@ -3,6 +3,7 @@
 		 },
 	"instance" : {
 		"ProjectName:username:" : "JP 5/22/2014 15:48",
+		"clearProjectList" : "AH 5/11/2014 13:40",
 		"createProject" : "JP 5/22/2014 16:00",
 		"initialize" : "AH 5/22/2014 16:36",
 		"listProjects" : "AS 5/8/2014 15:18",
@@ -10,6 +11,8 @@
 		"login:password:" : "AH 5/11/2014 13:42",
 		"loginAndShowProjects" : "AH 5/11/2014 13:46",
 		"logout" : "AH 5/22/2014 16:19",
+		"projectList" : "AH 5/11/2014 13:40",
+		"projectList:" : "AH 5/11/2014 13:40",
 		"projectListMorphIndex" : "AH 5/22/2014 15:35",
 		"projectListMorphIndex:" : "AH 5/22/2014 16:15",
 		"projectNamesAsString:" : "AS 5/8/2014 15:42",
