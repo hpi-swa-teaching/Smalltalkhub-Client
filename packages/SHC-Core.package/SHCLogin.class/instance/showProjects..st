@@ -1,5 +1,6 @@
 as yet unclassified
 showProjects: username
+	"saves the projects locally and displays them"
 	| jsonResponse projectCollection |
 
 	jsonResponse := self listProjects: username.
