@@ -53,7 +53,9 @@ initialize
 		list: #projects
 		selected: #projectListMorphIndex
 		changeSelected: #projectListMorphIndex:.
-	projectListMorph position: self position + (20@160).
+	projectListMorph
+		position: self position + (20@140);
+		width: 200.
 	self addMorph: projectListMorph.
 	
 	
