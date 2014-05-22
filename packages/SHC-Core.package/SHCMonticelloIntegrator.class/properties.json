@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SHCDemoClass",
+		"mcbrowser" ],
+	"name" : "SHCMonticelloIntegrator",
 	"pools" : [
 		 ],
 	"super" : "Object",

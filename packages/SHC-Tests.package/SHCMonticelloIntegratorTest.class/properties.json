@@ -1,0 +1,14 @@
+{
+	"category" : "SHC-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mcinstance" ],
+	"name" : "SHCMonticelloIntegratorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

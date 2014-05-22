@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self width: 300.
-	self height: 300.
+	self height: 340.
 	
 	self webclient: WebClient new.
 		
@@ -22,6 +22,22 @@ initialize
 		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
 		contents: 'password'.
 	self addMorph: passwordField.
+	
+	createProjectField := TextFieldMorph new.
+	createProjectField
+		position: self position + (20@280);
+		width: 200;
+		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		contents: 'SampleProjectName'.
+	self addMorph: createProjectField.
+	
+	createProjectButton := SimpleButtonMorph new.
+	createProjectButton
+		position: createProjectField position + (createProjectField width + 20@0);
+		label: 'create';
+		target: self;
+		actionSelector: (#createProject).
+	self addMorph: createProjectButton.
 	
 	loginButton := SimpleButtonMorph new.
 	loginButton
@@ -57,9 +73,7 @@ initialize
 		position: self position + (20@140);
 		width: 200.
 	self addMorph: projectListMorph.
-	
-	
-	
+
 	self openInHand.
 	
 	

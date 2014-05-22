@@ -15,7 +15,9 @@
 		"projectList",
 		"projects",
 		"projectListMorph",
-		"projectListMorphIndex" ],
+		"projectListMorphIndex",
+		"createProjectField",
+		"createProjectButton" ],
 	"name" : "SHCLogin",
 	"pools" : [
 		 ],

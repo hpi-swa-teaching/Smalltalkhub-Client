@@ -1,3 +1,0 @@
-accessing
-leValue
-	^42.
