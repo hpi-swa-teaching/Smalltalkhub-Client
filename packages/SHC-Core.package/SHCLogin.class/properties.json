@@ -17,6 +17,7 @@
 		"projects",
 		"projectListMorph",
 		"projectListMorphIndex",
+		"registerProjectButton",
 		"createProjectField",
 		"createProjectButton" ],
 	"name" : "SHCLogin",
