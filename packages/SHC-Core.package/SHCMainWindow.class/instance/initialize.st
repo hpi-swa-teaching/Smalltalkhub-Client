@@ -1,4 +1,4 @@
-accessing
+as yet unclassified
 initialize
 
 	super initialize.
@@ -65,6 +65,14 @@ initialize
 		target: self;
 		actionSelector: #addSelectedProjectToMonticello.
 	self addMorph: registerProjectButton.
+	
+	openProjectButton := SimpleButtonMorph new.
+	openProjectButton
+		position: projectListMorph position + (projectListMorph width + 20@30);
+		label: 'Open Project';
+		target: self;
+		actionSelector: #openProjectWindow.
+	self addMorph: openProjectButton.
 	
 	"
 	createProjectField := TextFieldMorph new.

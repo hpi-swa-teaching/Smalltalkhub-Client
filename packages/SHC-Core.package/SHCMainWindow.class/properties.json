@@ -19,7 +19,8 @@
 		"projectListMorphIndex",
 		"registerProjectButton",
 		"createProjectField",
-		"createProjectButton" ],
+		"createProjectButton",
+		"openProjectButton" ],
 	"name" : "SHCMainWindow",
 	"pools" : [
 		 ],

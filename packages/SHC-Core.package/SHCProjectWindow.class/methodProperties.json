@@ -1,5 +1,9 @@
 {
 	"class" : {
-		"newWithClient:" : "AS 6/3/2014 13:29" },
+		"newWith:and:" : "FR 6/3/2014 14:59" },
 	"instance" : {
-		"initialize" : "AS 6/3/2014 13:34" } }
+		"activeProject" : "FR 6/3/2014 14:18",
+		"activeProject:" : "FR 6/3/2014 14:00",
+		"initialize" : "FR 6/3/2014 15:14",
+		"projectNameLabel" : "FR 6/3/2014 15:07",
+		"update" : "FR 6/3/2014 15:06" } }
