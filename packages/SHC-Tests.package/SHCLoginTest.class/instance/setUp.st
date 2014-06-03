@@ -1,3 +1,3 @@
 running
 setUp
-	self loginInstance: SHCLogin new
+	self loginInstance: SHCMainWindow new

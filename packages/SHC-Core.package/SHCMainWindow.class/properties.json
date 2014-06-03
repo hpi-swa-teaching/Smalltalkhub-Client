@@ -20,7 +20,7 @@
 		"registerProjectButton",
 		"createProjectField",
 		"createProjectButton" ],
-	"name" : "SHCLogin",
+	"name" : "SHCMainWindow",
 	"pools" : [
 		 ],
 	"super" : "SystemWindow",
