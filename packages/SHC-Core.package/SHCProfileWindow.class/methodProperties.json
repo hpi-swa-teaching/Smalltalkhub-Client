@@ -1,5 +1,21 @@
 {
 	"class" : {
-		"newWithClient:" : "AS 6/3/2014 13:28" },
+		"newWithClient:" : "AH 6/3/2014 13:55",
+		"newWithClient:user:" : "AH 6/3/2014 13:53" },
 	"instance" : {
-		"initialize" : "AS 6/3/2014 13:34" } }
+		"initialize" : "AH 6/3/2014 14:37",
+		"projects" : "AH 6/3/2014 14:32",
+		"projectsIndex" : "AH 6/3/2014 14:35",
+		"projectsIndex:" : "AH 6/3/2014 14:35",
+		"teams" : "AH 6/3/2014 14:33",
+		"teamsIndex" : "AH 6/3/2014 14:34",
+		"teamsIndex:" : "AH 6/3/2014 14:35",
+		"timeline" : "AH 6/3/2014 14:13",
+		"timelineIndex" : "AH 6/3/2014 14:14",
+		"timelineIndex:" : "AH 6/3/2014 14:16",
+		"update" : "AH 6/3/2014 13:56",
+		"user" : "AH 6/3/2014 13:53",
+		"user:" : "AH 6/3/2014 13:53",
+		"watching" : "AH 6/3/2014 14:32",
+		"watchingIndex" : "AH 6/3/2014 14:36",
+		"watchingIndex:" : "AH 6/3/2014 14:36" } }

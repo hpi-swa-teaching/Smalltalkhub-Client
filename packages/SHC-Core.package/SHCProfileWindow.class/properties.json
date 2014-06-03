@@ -1,12 +1,27 @@
 {
 	"category" : "SHC-Core",
 	"classinstvars" : [
-		 ],
+		"timelineLabel" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"user",
+		"displayNameLabel",
+		"usernameLabel",
+		"profilePictureMorph",
+		"timelineLabel",
+		"timelineList",
+		"timelineIndex",
+		"teamsLabel",
+		"watchingLabel",
+		"teamsList",
+		"projectsLabel",
+		"projectsList",
+		"watchingList",
+		"teamsIndex",
+		"projectsIndex",
+		"watchingIndex" ],
 	"name" : "SHCProfileWindow",
 	"pools" : [
 		 ],
