@@ -22,12 +22,36 @@ initialize
 		position: self position + (100@20).
 	self addMorph: displayNameLabel.
 	
-	"Username"
+	"user details"
 	usernameLabel := TextMorph new.
 	usernameLabel
 		contents: '~username';
 		position: self position + (100@45).
 	self addMorph: usernameLabel.
+	
+	locationLabel := TextMorph new.
+	locationLabel
+		contents: 'Location';
+		position: self position + (100@65).
+	self addMorph: locationLabel.
+	
+	memberSinceLabel := TextMorph new.
+	memberSinceLabel
+		contents: 'Member Since';
+		position: self position + (170@65).
+	self addMorph: memberSinceLabel.
+	
+	websiteLabel := TextMorph new.
+	websiteLabel
+		contents: 'Website';
+		position: self position + (280@65).
+	self addMorph: websiteLabel.
+	
+	emailLabel := TextMorph new.
+	emailLabel
+		contents: 'eMail';
+		position: self position + (360@65).
+	self addMorph: emailLabel.
 	
 	"Timeline"
 	timelineLabel := TextMorph new.

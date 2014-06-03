@@ -21,7 +21,11 @@
 		"watchingList",
 		"teamsIndex",
 		"projectsIndex",
-		"watchingIndex" ],
+		"watchingIndex",
+		"locationLabel",
+		"memberSinceLabel",
+		"websiteLabel",
+		"emailLabel" ],
 	"name" : "SHCProfileWindow",
 	"pools" : [
 		 ],
