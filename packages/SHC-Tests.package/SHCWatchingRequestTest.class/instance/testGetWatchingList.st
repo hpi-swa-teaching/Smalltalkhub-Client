@@ -1,5 +1,5 @@
 as yet unclassified
-testGetTeamsList
+testGetWatchingList
 	| jsondecoded |
 	self requestInstance username: 'ShcTestUser'.
 	self requestInstance execute.

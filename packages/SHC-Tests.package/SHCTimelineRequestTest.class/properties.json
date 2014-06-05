@@ -1,0 +1,14 @@
+{
+	"category" : "SHC-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"requestInstance" ],
+	"name" : "SHCTimelineRequestTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
