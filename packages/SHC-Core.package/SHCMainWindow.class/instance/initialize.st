@@ -31,6 +31,23 @@ initialize
 		contents: 'password'.
 	self addMorph: passwordField.
 	
+	showProjectsButton := SimpleButtonMorph new.
+	showProjectsButton
+		position: self position + (263@150);
+		label: 'My Projects';
+		target: self;
+		actionSelector: #showMyProjects.
+	self addMorph: showProjectsButton.
+	
+	showTeamsButton := SimpleButtonMorph new.
+	showTeamsButton 
+		position: self position + (263@180);
+		label: 'My Teams';
+		target: self;
+		actionSelector: #showMyTeams.
+	self addMorph: showTeamsButton.
+		
+	
 	loginButton := SimpleButtonMorph new.
 	loginButton
 		position: self position + (419@112);
@@ -46,28 +63,37 @@ initialize
 		target: self;
 		actionSelector: #logout.
 	self addMorph: logoutButton.
+	
+	showProfileButton := SimpleButtonMorph new.
+	showProfileButton
+		position: self position + (340@71);
+		label: 'My Profile';
+		target: self;
+		actionSelector: #showOwnProfile.
+	self addMorph: showProfileButton.
 
 	self projects: #().
-	self projectListMorphIndex: 0.
+	self mainListMorphIndex: 0.
 	
-	projectListMorph := PluggableListMorph
+	self mainListMorph: (PluggableListMorph
 		on: self
 		list: #projects
-		selected: #projectListMorphIndex
-		changeSelected: #projectListMorphIndex:.
-	projectListMorph
+		selected: #mainListMorphIndex
+		changeSelected: #mainListMorphIndex:).
+	self mainListMorph
 		position: self position + (20@71);
 		width: 200;
-		height: 300.
-	self addMorph: projectListMorph.
+		height: 300;
+		doubleClickSelector: #mainListClick.
+	self addMorph: self mainListMorph.
 	
-	registerProjectButton := SimpleButtonMorph new.
+	"registerProjectButton := SimpleButtonMorph new.
 	registerProjectButton
 		position: self position + (363@140);
 		label: '-> Metacello';
 		target: self;
 		actionSelector: #addSelectedProjectToMonticello.
-	self addMorph: registerProjectButton.
+	self addMorph: registerProjectButton."
 	
 	"
 	createProjectField := TextFieldMorph new.

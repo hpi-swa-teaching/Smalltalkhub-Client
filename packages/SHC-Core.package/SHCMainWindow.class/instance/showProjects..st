@@ -7,6 +7,6 @@ showProjects: username
 	projectCollection := self webclient projectNamesAsString: jsonResponse.
 	
 	self projects: projectCollection.
-	self projectListMorphIndex: 0.
+	self mainListMorphIndex: 0.
 	self changed: #projectListMorphIndex.
 	self changed: #projects.

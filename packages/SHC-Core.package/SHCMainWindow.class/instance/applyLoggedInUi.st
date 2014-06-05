@@ -4,3 +4,7 @@ applyLoggedInUi
 	passwordField hide.
 	loginButton hide.
 	logoutButton show.
+	showProfileButton show.
+	showTeamsButton show.
+	showProjectsButton show.
+	
