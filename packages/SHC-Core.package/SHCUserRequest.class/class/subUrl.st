@@ -1,3 +1,3 @@
 as yet unclassified
 subUrl
-	^ '/hub/projects'
+	^ '/hub/users'
