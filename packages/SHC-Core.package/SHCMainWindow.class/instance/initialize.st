@@ -87,14 +87,6 @@ initialize
 		doubleClickSelector: #mainListClick.
 	self addMorph: self mainListMorph.
 	
-	"registerProjectButton := SimpleButtonMorph new.
-	registerProjectButton
-		position: self position + (363@140);
-		label: '-> Metacello';
-		target: self;
-		actionSelector: #addSelectedProjectToMonticello.
-	self addMorph: registerProjectButton."
-	
 	"
 	createProjectField := TextFieldMorph new.
 	createProjectField
