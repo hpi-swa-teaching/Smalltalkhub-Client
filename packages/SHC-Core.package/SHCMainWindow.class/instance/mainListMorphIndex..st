@@ -1,4 +1,4 @@
 accessing
 mainListMorphIndex: anInteger
-	mainListMorphIndex := anInteger min: projects size.
+	mainListMorphIndex := anInteger min: (self projectNames size).
    self changed: #mainListMorphIndex.

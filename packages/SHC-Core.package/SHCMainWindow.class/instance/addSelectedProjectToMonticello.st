@@ -1,3 +1,3 @@
 as yet unclassified
 addSelectedProjectToMonticello
-	self addProjectToMonticello: (self projects at: self mainListMorphIndex).
+	self addProjectToMonticello: (self projectNames at: self mainListMorphIndex).

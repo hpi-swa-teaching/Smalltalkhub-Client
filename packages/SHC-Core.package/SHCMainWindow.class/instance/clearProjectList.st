@@ -1,4 +1,5 @@
 as yet unclassified
 clearProjectList
-	self projects: Array new.
-	self changed: #projects.
+	self projectNames: Array new.
+	self projectDetails: OrderedCollection new.
+	self changed: #projectNames.

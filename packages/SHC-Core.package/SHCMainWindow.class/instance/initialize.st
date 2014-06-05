@@ -72,12 +72,12 @@ initialize
 		actionSelector: #showOwnProfile.
 	self addMorph: showProfileButton.
 
-	self projects: #().
+	self projectNames: #().
 	self mainListMorphIndex: 0.
 	
 	self mainListMorph: (PluggableListMorph
 		on: self
-		list: #projects
+		list: #projectNames
 		selected: #mainListMorphIndex
 		changeSelected: #mainListMorphIndex:).
 	self mainListMorph

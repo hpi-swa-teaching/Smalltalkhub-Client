@@ -6,5 +6,5 @@ mainListClick
 	index := self mainListMorphIndex.
 	(index = 0) ifTrue: [^ nil].
 	
-	project := self projects at: (index).
+	project := self projectDetails at: (index).
 	SHCProjectWindow newWith: (self webclient) and: project.
