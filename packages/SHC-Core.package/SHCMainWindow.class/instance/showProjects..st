@@ -3,8 +3,8 @@ showProjects: username
 	"saves the projects locally and displays them"
 	| jsonResponse projectCollection |
 
-	jsonResponse := self listProjects: username.
-	projectCollection := self projectNamesAsString: jsonResponse.
+	jsonResponse := self webclient listProjects: username.
+	projectCollection := self webclient projectNamesAsString: jsonResponse.
 	
 	self projects: projectCollection.
 	self projectListMorphIndex: 0.

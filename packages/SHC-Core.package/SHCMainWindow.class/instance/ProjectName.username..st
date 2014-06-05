@@ -1,4 +1,4 @@
-as yet unclassified
+depreceated
 ProjectName: aProjectName username: aUserName
 	| url content result |
 	self username: aUserName.

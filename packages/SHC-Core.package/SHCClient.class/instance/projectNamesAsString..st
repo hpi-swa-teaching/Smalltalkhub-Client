@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 projectNamesAsString: aDecodedJsonArray
 	| namesList |
 	namesList := OrderedCollection new.

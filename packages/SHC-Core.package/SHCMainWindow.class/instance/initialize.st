@@ -1,23 +1,31 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
-	self width: 340.
-	self height: 280.
+	self width: 480.
+	self height: 400.
 	
-	self webclient: WebClient new.
+	self webclient: SHCClient new.
 		
 	usernameField := TextFieldMorph new.
 	usernameField
-		position: self position + (20@30);
+		position: self position + (263@31);
 		width: 200;
 		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
  		contents: 'username'.
 	self addMorph: usernameField.
 	
+	searchField := TextFieldMorph new.
+	searchField 
+		position: self position + (20 @ 31);
+		width: 200;
+		height: 35;
+		contents: 'Search...'.
+	self addMorph: searchField.
+		
 	passwordField := TextFieldMorph new.
 	passwordField
-		position: self position + (20@70);
+		position: self position + (263@71);
 		width: 200;
 		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
 		contents: 'password'.
@@ -25,7 +33,7 @@ initialize
 	
 	loginButton := SimpleButtonMorph new.
 	loginButton
-		position: usernameField position + (usernameField width + 20@0);
+		position: self position + (419@112);
 		label: 'Login';
 		target: self;
 		actionSelector: (#loginAndShowProjects).
@@ -33,18 +41,12 @@ initialize
 	
 	logoutButton := SimpleButtonMorph new.
 	logoutButton
-		position: passwordField position + (passwordField width + 20@0);
+		position: self position + (410@71);
 		label: 'Logout';
 		target: self;
 		actionSelector: #logout.
 	self addMorph: logoutButton.
 
-	projectList := TextMorph new.
-	projectList
-		contents: 'My projects:', Character cr asString;
-		position: self position + (20@110).
-	self addMorph: projectList.
-	
 	self projects: #().
 	self projectListMorphIndex: 0.
 	
@@ -54,25 +56,18 @@ initialize
 		selected: #projectListMorphIndex
 		changeSelected: #projectListMorphIndex:.
 	projectListMorph
-		position: self position + (20@140);
-		width: 200.
+		position: self position + (20@71);
+		width: 200;
+		height: 300.
 	self addMorph: projectListMorph.
 	
 	registerProjectButton := SimpleButtonMorph new.
 	registerProjectButton
-		position: projectListMorph position + (projectListMorph width + 20@0);
+		position: self position + (363@140);
 		label: '-> Metacello';
 		target: self;
 		actionSelector: #addSelectedProjectToMonticello.
 	self addMorph: registerProjectButton.
-	
-	openProjectButton := SimpleButtonMorph new.
-	openProjectButton
-		position: projectListMorph position + (projectListMorph width + 20@30);
-		label: 'Open Project';
-		target: self;
-		actionSelector: #openProjectWindow.
-	self addMorph: openProjectButton.
 	
 	"
 	createProjectField := TextFieldMorph new.
@@ -93,5 +88,6 @@ initialize
 	"	
 
 	self openInHand.
+	self applyLoggedOutUi.
 	
 	

@@ -1,9 +1,12 @@
 as yet unclassified
 loginAndShowProjects
-	(self login: usernameField contents password: passwordField contents)
+	self username: (usernameField contents asString).
+	self password: (passwordField contents asString).
+
+	(self webclient login: (self username) password: (self password))
 	ifTrue:  [
 		self showProjects.
-		Transcript show: self webclient cookies.
-		loginButton color: Color green
+		self applyLoggedInUi.
+		"loginButton color: Color green"
 	]
 	ifFalse: [loginButton color: Color red]
