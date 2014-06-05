@@ -6,8 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"username",
-		"projectName" ],
+		"username" ],
 	"name" : "SHCProjectRequest",
 	"pools" : [
 		 ],
