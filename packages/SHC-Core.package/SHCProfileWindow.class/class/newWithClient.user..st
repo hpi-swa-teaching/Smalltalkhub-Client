@@ -2,7 +2,7 @@ initialization
 newWithClient: aShcClient user: aUserName
 	| w |
 	w := SHCProfileWindow new.
-	w webclient: aShcClient.
+	w client: aShcClient.
 	w user: aUserName.
 	w update.
 	^ w

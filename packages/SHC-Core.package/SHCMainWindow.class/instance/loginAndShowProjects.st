@@ -3,7 +3,7 @@ loginAndShowProjects
 	self username: (usernameField contents asString).
 	self password: (passwordField contents asString).
 
-	(self webclient login: (self username) password: (self password))
+	(self client login: (self username) password: (self password))
 	ifTrue:  [
 		self showProjects.
 		self applyLoggedInUi.

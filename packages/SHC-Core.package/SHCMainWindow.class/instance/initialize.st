@@ -5,7 +5,7 @@ initialize
 	self width: 480.
 	self height: 400.
 	
-	self webclient: SHCClient new.
+	self client: SHCClient new.
 		
 	usernameField := TextFieldMorph new.
 	usernameField

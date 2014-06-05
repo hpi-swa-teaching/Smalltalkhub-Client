@@ -7,4 +7,4 @@ mainListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	project := self projectDetails at: (index).
-	SHCProjectWindow newWith: (self webclient) project: project user: (self username) password: (self password).
+	SHCProjectWindow newWith: (self client) project: project user: (self username) password: (self password).

@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"newWithClient:" : "AH 6/3/2014 13:55",
-		"newWithClient:user:" : "AH 6/5/2014 16:38" },
+		"newWithClient:" : "AS 6/5/2014 19:20",
+		"newWithClient:user:" : "AS 6/5/2014 19:20" },
 	"instance" : {
 		"initialize" : "AH 6/5/2014 16:43",
 		"projects" : "AH 6/3/2014 14:32",
@@ -14,7 +14,7 @@
 		"timeline" : "AH 6/3/2014 14:13",
 		"timelineIndex" : "AH 6/3/2014 14:14",
 		"timelineIndex:" : "AH 6/3/2014 14:16",
-		"update" : "AS 6/5/2014 19:13",
+		"update" : "AS 6/5/2014 19:19",
 		"user" : "AH 6/3/2014 13:53",
 		"user:" : "AH 6/3/2014 13:53",
 		"watching" : "AH 6/3/2014 14:32",

@@ -1,3 +1,3 @@
 as yet unclassified
 openProjectWindow 
-	SHCProjectWindow newWith: self webclient and: (self projectNames at: self mainListMorphIndex).
+	SHCProjectWindow newWith: self client and: (self projectNames at: self mainListMorphIndex).

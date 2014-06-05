@@ -3,8 +3,8 @@ showProjects: username
 	"saves the projects locally and displays them"
 	| projectCollection |
 
-	self projectDetails: (self webclient parseProjects: (self webclient listProjects: username)).
-	projectCollection := self webclient projectNamesAsString: self projectDetails.
+	self projectDetails: (self client parseProjects: (self client listProjects: username)).
+	projectCollection := self client projectNamesAsString: self projectDetails.
 	
 	self projectNames: projectCollection.
 	self mainListMorphIndex: 0.

@@ -1,7 +1,7 @@
 {
 	"class" : {
-		"newWith:and:" : "FR 6/3/2014 14:59",
-		"newWith:project:user:password:" : "AS 6/5/2014 16:56" },
+		"newWith:and:" : "AS 6/5/2014 19:21",
+		"newWith:project:user:password:" : "AS 6/5/2014 19:21" },
 	"instance" : {
 		"activeProject" : "FR 6/3/2014 14:18",
 		"activeProject:" : "FR 6/3/2014 14:00",
@@ -13,7 +13,7 @@
 		"password:" : "AS 6/5/2014 16:54",
 		"projectNameLabel" : "FR 6/3/2014 15:07",
 		"tagsLabel" : "MB 6/5/2014 17:06",
-		"update" : "MB 6/5/2014 18:11",
+		"update" : "AS 6/5/2014 19:23",
 		"username" : "AS 6/5/2014 16:54",
 		"username:" : "AS 6/5/2014 16:54",
 		"websiteLabel" : "MB 6/5/2014 17:06" } }

@@ -6,7 +6,7 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"webclient" ],
+		"client" ],
 	"name" : "SHCWindow",
 	"pools" : [
 		 ],
