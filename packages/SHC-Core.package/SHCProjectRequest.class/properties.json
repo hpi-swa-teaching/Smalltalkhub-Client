@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"username" ],
+		"projectname" ],
 	"name" : "SHCProjectRequest",
 	"pools" : [
 		 ],
-	"super" : "SHCRequest",
+	"super" : "SHCListProjectsRequest",
 	"type" : "normal" }

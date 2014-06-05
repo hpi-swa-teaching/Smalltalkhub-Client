@@ -2,5 +2,5 @@ as yet unclassified
 composeUrl 
 	| url |
 	url := super composeUrl.
-	url := url,'/',(self username).
+	url := url,'/',(self projectname).
 	^ url

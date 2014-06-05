@@ -1,6 +1,6 @@
 as yet unclassified
 withWebClient: aWebClient
 	| request |
-	request := SHCListProjectsRequest new.
+	request := SHCProjectRequest new.
 	request webclient: aWebClient.
 	^ request 

@@ -9,7 +9,11 @@
 		"name",
 		"ownerUid",
 		"owner",
-		"path" ],
+		"path",
+		"license",
+		"website",
+		"description",
+		"tags" ],
 	"name" : "SHCProject",
 	"pools" : [
 		 ],
