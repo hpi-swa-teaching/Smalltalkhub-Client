@@ -1,10 +1,10 @@
 as yet unclassified
 showProjects: username
 	"saves the projects locally and displays them"
-	| jsonResponse projectCollection |
+	| projectCollection |
 
-	jsonResponse := self webclient listProjects: username.
-	projectCollection := self webclient projectNamesAsString: jsonResponse.
+	self projectInformation: (self webclient listProjects: username).
+	projectCollection := self webclient projectNamesAsString: self projectInformation.
 	
 	self projects: projectCollection.
 	self mainListMorphIndex: 0.

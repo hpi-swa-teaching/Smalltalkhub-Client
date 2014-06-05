@@ -14,6 +14,7 @@
 		"loginButton",
 		"logoutButton",
 		"projects",
+		"projectInformation",
 		"mainListMorph",
 		"mainListMorphIndex",
 		"registerProjectButton",

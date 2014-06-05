@@ -1,0 +1,3 @@
+accessing
+projectInformation: aProjectJsonResponse
+	projectInformation := aProjectJsonResponse
