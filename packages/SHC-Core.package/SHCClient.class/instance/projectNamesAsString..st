@@ -1,6 +1,6 @@
 utilities
-projectNamesAsString: aDecodedJsonArray
+projectNamesAsString: aProjectList
 	| namesList |
 	namesList := OrderedCollection new.
-	aDecodedJsonArray do: [:element | namesList add: (element at: 'name') ].
+	aProjectList do: [:element | namesList add: (element name) ].
 	^ namesList.

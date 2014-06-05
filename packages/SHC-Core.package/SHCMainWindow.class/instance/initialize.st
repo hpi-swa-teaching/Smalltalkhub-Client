@@ -72,12 +72,12 @@ initialize
 		actionSelector: #showOwnProfile.
 	self addMorph: showProfileButton.
 
-	self projects: #().
+	self projectNames: #().
 	self mainListMorphIndex: 0.
 	
 	self mainListMorph: (PluggableListMorph
 		on: self
-		list: #projects
+		list: #projectNames
 		selected: #mainListMorphIndex
 		changeSelected: #mainListMorphIndex:).
 	self mainListMorph
@@ -86,14 +86,6 @@ initialize
 		height: 300;
 		doubleClickSelector: #mainListClick.
 	self addMorph: self mainListMorph.
-	
-	"registerProjectButton := SimpleButtonMorph new.
-	registerProjectButton
-		position: self position + (363@140);
-		label: '-> Metacello';
-		target: self;
-		actionSelector: #addSelectedProjectToMonticello.
-	self addMorph: registerProjectButton."
 	
 	"
 	createProjectField := TextFieldMorph new.
