@@ -16,7 +16,9 @@
 		"editLicenseButton",
 		"editTagsButton",
 		"editWebsiteButton",
-		"editDescriptionButton" ],
+		"editDescriptionButton",
+		"username",
+		"password" ],
 	"name" : "SHCProjectWindow",
 	"pools" : [
 		 ],

@@ -1,10 +1,14 @@
 {
 	"class" : {
-		"newWith:and:" : "FR 6/3/2014 14:59" },
+		"newWith:project:user:password:" : "AS 6/5/2014 16:56" },
 	"instance" : {
 		"activeProject" : "FR 6/3/2014 14:18",
 		"activeProject:" : "FR 6/3/2014 14:00",
-		"addProjectToMonticello" : "FR 6/5/2014 15:59",
+		"addProjectToMonticello" : "AS 6/5/2014 16:53",
 		"initialize" : "FR 6/5/2014 16:19",
+		"password" : "AS 6/5/2014 16:54",
+		"password:" : "AS 6/5/2014 16:54",
 		"projectNameLabel" : "FR 6/3/2014 15:07",
-		"update" : "FR 6/5/2014 16:35" } }
+		"update" : "FR 6/5/2014 16:35",
+		"username" : "AS 6/5/2014 16:54",
+		"username:" : "AS 6/5/2014 16:54" } }
