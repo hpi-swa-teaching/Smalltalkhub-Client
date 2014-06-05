@@ -1,3 +1,3 @@
-api-calls
+depreceated
 createProjects
 	^ self createProjects: (self projectName)

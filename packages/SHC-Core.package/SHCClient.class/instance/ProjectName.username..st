@@ -1,4 +1,4 @@
-api-calls
+depreceated
 ProjectName: aProjectName username: aUserName
 	| result array request |
 	request := SHCListProjectsRequest withWebClient: self webclient.
