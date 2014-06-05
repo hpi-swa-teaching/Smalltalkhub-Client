@@ -25,7 +25,11 @@
 		"locationLabel",
 		"memberSinceLabel",
 		"websiteLabel",
-		"emailLabel" ],
+		"emailLabel",
+		"teams",
+		"timeline",
+		"projects",
+		"watching" ],
 	"name" : "SHCProfileWindow",
 	"pools" : [
 		 ],

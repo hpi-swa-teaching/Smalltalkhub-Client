@@ -1,6 +1,11 @@
 as yet unclassified
 initialize 
 	super initialize.
+	
+	teams := #().
+	timeline := #().
+	projects := #().
+	watching := #().
 
 	self
 		width: 570;

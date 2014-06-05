@@ -4,4 +4,5 @@ newWithClient: aShcClient user: aUserName
 	w := SHCProfileWindow new.
 	w webclient: aShcClient.
 	w user: aUserName.
+	w update.
 	^ w
