@@ -11,7 +11,8 @@ update
 	self changed: #watching.
 	self changed: #watchingIndex.
 	
-	timelineJSON := self client listWatching: self user.
-	self watching: (timelineJSON collect: [:dict | dict at: 'title']).
-	self changed: #watching.
-	self changed: #watchingIndex.
+	timelineJSON := self client listTimeline: self user.
+	self timeline: (timelineJSON collect: [:dict | dict at: 'title']).
+	self changed: #timeline.
+	self changed: #timelineIndex.
+	
