@@ -1,6 +1,6 @@
 as yet unclassified
 update
-	|teamsJSON watchingJSON timelineJSON|
+	|teamsJSON watchingJSON timelineJSON projectsJSON|
 	teamsJSON := self client listTeams: self user.
 	self teams: (teamsJSON collect: [:dict | dict at: 'name']).
 	self changed: #teams.
@@ -15,4 +15,9 @@ update
 	self timeline: (timelineJSON collect: [:dict | dict at: 'title']).
 	self changed: #timeline.
 	self changed: #timelineIndex.
+	
+	projectsJSON := self client listProjects: self user.
+	self projects: (projectsJSON collect: [:dict | dict at: 'name']).
+	self changed: #projects.
+	self changed: #projectsIndex.
 	
