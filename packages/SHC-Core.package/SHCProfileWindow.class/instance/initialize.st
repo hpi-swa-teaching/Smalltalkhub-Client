@@ -16,38 +16,39 @@ initialize
 	displayNameLabel := TextMorph new.
 	displayNameLabel
 		contents: 'fullName';
-		position: self position + (100@20).
+		fontName: #ComicBold size:24;
+		position: self position + (10@25).
 	self addMorph: displayNameLabel.
 	
 	"user details"
 	usernameLabel := TextMorph new.
 	usernameLabel
 		contents: '~username';
-		position: self position + (100@45).
+		position: self position + (10@45).
 	self addMorph: usernameLabel.
 	
 	locationLabel := TextMorph new.
 	locationLabel
 		contents: 'Location';
-		position: self position + (100@65).
+		position: self position + (10@65).
 	self addMorph: locationLabel.
 	
-	memberSinceLabel := TextMorph new.
+	"memberSinceLabel := TextMorph new.
 	memberSinceLabel
 		contents: 'Member Since';
 		position: self position + (170@65).
-	self addMorph: memberSinceLabel.
+	self addMorph: memberSinceLabel"
 	
 	websiteLabel := TextMorph new.
 	websiteLabel
 		contents: 'Website';
-		position: self position + (280@65).
+		position: self position + (110@65).
 	self addMorph: websiteLabel.
 	
 	emailLabel := TextMorph new.
 	emailLabel
 		contents: 'eMail';
-		position: self position + (360@65).
+		position: self position + (300@65).
 	self addMorph: emailLabel.
 	
 	"Teams"
