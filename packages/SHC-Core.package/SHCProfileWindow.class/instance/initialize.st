@@ -50,25 +50,6 @@ initialize
 		position: self position + (360@65).
 	self addMorph: emailLabel.
 	
-	"Timeline"
-	timelineLabel := TextMorph new.
-	timelineLabel
-		contents: 'Timeline';
-		position: self position + (10@100).
-	self addMorph: timelineLabel.
-	
-	self timelineIndex: 0.
-	timelineList := PluggableListMorph
-		on: self
-		list: #timeline
-		selected: #timelineIndex
-		changeSelected: #timelineIndex:.
-	timelineList
-		position: self position + (10@120);
-		width: 250;
-		height: 200.
-	self addMorph: timelineList.
-	
 	"Teams"
 	teamsLabel := TextMorph new.
 	teamsLabel
@@ -92,7 +73,7 @@ initialize
 	projectsLabel := TextMorph new.
 	projectsLabel
 		contents: 'Projects';
-		position: self position + (10@350).
+		position: self position + (10@100).
 	self addMorph: projectsLabel.
 	
 	self projectsIndex: 0.
@@ -102,10 +83,29 @@ initialize
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	projectsList
-		position: self position + (10@370);
+		position: self position + (10@120);
 		width: 250;
 		height: 200.
 	self addMorph: projectsList.
+	
+	"Timeline"
+	timelineLabel := TextMorph new.
+	timelineLabel
+		contents: 'Timeline';
+		position: self position + (10@350).
+	self addMorph: timelineLabel.
+	
+	self timelineIndex: 0.
+	timelineList := PluggableListMorph
+		on: self
+		list: #timeline
+		selected: #timelineIndex
+		changeSelected: #timelineIndex:.
+	timelineList
+		position: self position + (10@370);
+		width: 250;
+		height: 200.
+	self addMorph: timelineList.
 	
 	"Watching"
 	watchingLabel := TextMorph new.
