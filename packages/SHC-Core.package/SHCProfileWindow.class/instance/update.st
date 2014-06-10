@@ -2,6 +2,9 @@ as yet unclassified
 update
 	|teamsJSON watchingJSON timelineJSON projectsJSON errorNotification|
 	
+	self setLabel: 'Profile: ~', self user.
+	self usernameLabel contents: '~', self user.
+	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
 	errorNotification at: 'missionInternetConnection' put: 'no internet connection'.
