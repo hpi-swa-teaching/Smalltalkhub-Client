@@ -8,6 +8,8 @@ update
 	userJSON := self client listUser: self user.
 	self displayNameLabel contents: (userJSON collect: [:dict | dict at: 'fullName']).
 	self locationLabel contents: (userJSON collect: [:dict | dict at: 'location']).
+	self websiteLabel contents: (userJSON collect: [:dict | dict at: 'website']).
+	self memberSinceLabel contents: (userJSON collect: [:dict | dict at: 'memberSince']).
 	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
