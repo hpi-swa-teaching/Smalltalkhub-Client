@@ -1,4 +1,4 @@
-depreceated
+deprecated
 ProjectName: aProjectName username: aUserName
 	| result array request |
 	request := SHCListProjectsRequest withWebClient: self webclient.
