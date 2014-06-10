@@ -1,10 +1,13 @@
 as yet unclassified
 update
-	|teamsJSON watchingJSON timelineJSON projectsJSON errorNotification|
+	|teamsJSON watchingJSON timelineJSON projectsJSON errorNotification userJSON|
 	
 	self setLabel: 'Profile: ~', self user.
 	self usernameLabel contents: '~', self user.
-	self displayNameLabel contents: self displayNameLabel.
+		
+	userJSON := self client listUser: self user.
+	self displayNameLabel contents: (userJSON collect: [:dict | dict at: 'fullName']).
+	self locationLabel contents: (userJSON collect: [:dict | dict at: 'location']).
 	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
