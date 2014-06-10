@@ -6,10 +6,11 @@ update
 	self usernameLabel contents: '~', self user.
 		
 	userJSON := self client listUser: self user.
-	self displayNameLabel contents: (userJSON collect: [:dict | dict at: 'fullName']).
-	self locationLabel contents: (userJSON collect: [:dict | dict at: 'location']).
-	self websiteLabel contents: (userJSON collect: [:dict | dict at: 'website']).
-	self memberSinceLabel contents: (userJSON collect: [:dict | dict at: 'memberSince']).
+	self displayNameLabel contents: (userJSON at: 'fullName').
+	self locationLabel contents: (userJSON at: 'location').
+	self websiteLabel contents: (userJSON at: 'website').
+	"self memberSinceLabel contents: (userJSON  at: 'created')"
+	self emailLabel contents: (userJSON at: 'email').
 	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
