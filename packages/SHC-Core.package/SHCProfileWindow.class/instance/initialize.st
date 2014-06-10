@@ -12,14 +12,6 @@ initialize
 		height: 600;
 		setLabel: 'Profile'.
 	
-	"Profile picture"
-	profilePictureMorph := ImageMorph new.
-	profilePictureMorph
-		position: self position + (10@20);
-		width: 75;
-		height: 100.
-	self addMorph: profilePictureMorph.
-	
 	"Display name"
 	displayNameLabel := TextMorph new.
 	displayNameLabel
