@@ -6,7 +6,7 @@ initialize
 	timeline := #().
 	projects := #().
 	watching := #().
-
+	
 	self
 		width: 570;
 		height: 600;
@@ -23,7 +23,7 @@ initialize
 	"Display name"
 	displayNameLabel := TextMorph new.
 	displayNameLabel
-		contents: 'Display Name';
+		contents: 'fullName';
 		position: self position + (100@20).
 	self addMorph: displayNameLabel.
 	

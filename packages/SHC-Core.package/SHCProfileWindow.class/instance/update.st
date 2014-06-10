@@ -4,6 +4,7 @@ update
 	
 	self setLabel: 'Profile: ~', self user.
 	self usernameLabel contents: '~', self user.
+	self displayNameLabel contents: self displayNameLabel.
 	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
