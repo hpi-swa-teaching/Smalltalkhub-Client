@@ -1,29 +1,19 @@
 as yet unclassified
 update
-	|teamsJSON watchingJSON timelineJSON projectsJSON errorNotification userJSON|
+	|shcUser teamsJSON watchingJSON timelineJSON projectsJSON errorNotification|
 	
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
-	errorNotification at: 'missionInternetConnection' put: 'no internet connection'.
-	errorNotification at: 'noWebsite' put: 'http://smalltalkhub.com/#!/~', self user.
-	errorNotification at: 'noLocation' put: 'Anonymous Proxy Land'.
+	
+	shcUser := self client parseUser: (self client listUser: self user).
 	
 	self setLabel: 'Profile: ~', self user.
 	self usernameLabel contents: '~', self user.
-		
-	userJSON := self client listUser: self user.
-	self displayNameLabel contents: (userJSON at: 'fullName').
-	
-	self emailLabel contents: 'E-Mail: ', (userJSON at: 'email').
-		
-	((userJSON at: 'location') isEmpty not)
-	ifTrue: [self locationLabel contents: 'Location: ', (userJSON at: 'location')]
-	ifFalse: [self locationLabel contents: 'Location: ', (errorNotification at: 'noLocation')].
+	self displayNameLabel contents: shcUser fullName.
+	self emailLabel contents: 'E-Mail: ', shcUser email.
+	self locationLabel contents: 'Location: ', shcUser location.
+	self websiteLabel contents: 'Website: ', shcUser website.
 
-	((userJSON at: 'website') isEmpty not)
-	ifTrue: [self websiteLabel contents: 'Website: ', (userJSON at: 'website')]
-	ifFalse: [self websiteLabel contents: 'Website: ', (errorNotification at: 'noWebsite')].
-		
 	teamsJSON := self client listTeams: self user.
 	(teamsJSON isEmpty) 
 	ifFalse: [self teams: (teamsJSON collect: [:dict | dict at: 'name'])]
