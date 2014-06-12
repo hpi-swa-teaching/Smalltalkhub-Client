@@ -20,4 +20,6 @@ update
 	self websiteLabel contents: ((self websiteLabel contents) , ((self client parseProject: projectdetails) website)).
 	self tagsLabel contents: ((self tagsLabel contents) , ((self client parseProject: projectdetails) tags)).
 	self descriptionLabel contents: ((self descriptionLabel contents) , ((self client parseProject: projectdetails) description)).
+	
+	self setLabel: self activeProject name.
 	self projectNameLabel contents: self activeProject name.
