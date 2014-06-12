@@ -1,0 +1,14 @@
+{
+	"category" : "SHC-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"searchinstance" ],
+	"name" : "SHCSearchControllerTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
