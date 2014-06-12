@@ -42,7 +42,7 @@ initialize
 	emailLabel := TextMorph new.
 	emailLabel
 		contents: 'eMail';
-		position: self position + (300@65).
+		position: self position + (350@65).
 	self addMorph: emailLabel.
 	
 	"Teams"

@@ -5,7 +5,7 @@ update
 	errorNotification := Dictionary new.
 	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
 	errorNotification at: 'missionInternetConnection' put: 'no internet connection'.
-	errorNotification at: 'noWebsite' put: 'no website'.
+	errorNotification at: 'noWebsite' put: 'http://smalltalkhub.com/#!/~', self user.
 	errorNotification at: 'noLocation' put: 'Anonymous Proxy Land'.
 	
 	self setLabel: 'Profile: ~', self user.
@@ -39,8 +39,7 @@ update
 	
 	timelineJSON := self client listTimeline: self user.
 	(timelineJSON isEmpty)
-	ifFalse: [self timeline: 
-		(Array streamContents: [:stream|
+	ifFalse: [self timeline: (Array streamContents: [:stream|
                (timelineJSON collect: [:dict | dict at: 'title']) with: (timelineJSON collect: [:dict | dict at: 'project']) do: [:x :y | stream nextPut: x; nextPut: y]] )]
 	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
 	self changed: #timeline;
