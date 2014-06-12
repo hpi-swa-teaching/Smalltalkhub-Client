@@ -3,7 +3,7 @@ initialize
 	super initialize.
 	
 	self width: 400.
-	self height: 700.
+	self height: 500.
 	
 	projectNameLabel := TextMorph new.
 	projectNameLabel 
@@ -87,7 +87,7 @@ initialize
 	self contributorListMorph 
 		position: self position + (20@210);
 		width: 200;
-		height: 200;
+		height: 100;
 		doubleClickSelector: #contributorListClick.
 	self addMorph: self contributorListMorph.
 	
@@ -97,9 +97,9 @@ initialize
 		selected: #watcherListMorphIndex
 		changeSelected: #watcherListMorphIndex:).
 	self watcherListMorph 
-		position: self position + (20@420);
+		position: self position + (20@320);
 		width: 200;
-		height: 200;
+		height: 100;
 		doubleClickSelector: #watcherListClick.
 	self addMorph: self watcherListMorph.
 
