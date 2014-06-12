@@ -39,7 +39,6 @@ update
 	
 	timelineJSON := self client listTimeline: self user.
 	(timelineJSON isEmpty)
-	"ifFalse: [self timeline: (timelineJSON collect: [:dict | dict at: 'title'])]"
 	ifFalse: [self timeline: 
 		(Array streamContents: [:stream|
                (timelineJSON collect: [:dict | dict at: 'title']) with: (timelineJSON collect: [:dict | dict at: 'project']) do: [:x :y | stream nextPut: x; nextPut: y]] )]
