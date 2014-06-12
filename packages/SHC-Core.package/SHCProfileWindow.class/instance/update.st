@@ -13,15 +13,16 @@ update
 		
 	userJSON := self client listUser: self user.
 	self displayNameLabel contents: (userJSON at: 'fullName').
-	self emailLabel contents: (userJSON at: 'email').
+	
+	self emailLabel contents: 'E-Mail: ', (userJSON at: 'email').
 		
 	((userJSON at: 'location') isEmpty not)
-	ifTrue: [self locationLabel contents: (userJSON at: 'location')]
-	ifFalse: [self locationLabel contents: (errorNotification at: 'noLocation')].
+	ifTrue: [self locationLabel contents: 'Location: ', (userJSON at: 'location')]
+	ifFalse: [self locationLabel contents: 'Location: ', (errorNotification at: 'noLocation')].
 
 	((userJSON at: 'website') isEmpty not)
-	ifTrue: [self websiteLabel contents: (userJSON at: 'website')]
-	ifFalse: [self websiteLabel contents: (errorNotification at: 'noWebsite')].
+	ifTrue: [self websiteLabel contents: 'Website: ', (userJSON at: 'website')]
+	ifFalse: [self websiteLabel contents: 'Website: ', (errorNotification at: 'noWebsite')].
 		
 	teamsJSON := self client listTeams: self user.
 	(teamsJSON isEmpty) 

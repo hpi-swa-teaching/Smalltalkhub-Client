@@ -36,20 +36,20 @@ initialize
 	websiteLabel := TextMorph new.
 	websiteLabel
 		contents: 'Website';
-		position: self position + (110@65).
+		position: self position + (10@85).
 	self addMorph: websiteLabel.
 	
 	emailLabel := TextMorph new.
 	emailLabel
 		contents: 'eMail';
-		position: self position + (350@65).
+		position: self position + (10@105).
 	self addMorph: emailLabel.
 	
 	"Teams"
 	teamsLabel := TextMorph new.
 	teamsLabel
 		contents: 'Teams';
-		position: self position + (275@100).
+		position: self position + (275@120).
 	self addMorph: teamsLabel.
 	
 	self teamsIndex: 0.
@@ -59,7 +59,7 @@ initialize
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	teamsList
-		position: self position + (275@120);
+		position: self position + (275@140);
 		width: 250;
 		height: 200.
 	self addMorph: teamsList.
@@ -68,7 +68,7 @@ initialize
 	projectsLabel := TextMorph new.
 	projectsLabel
 		contents: 'Projects';
-		position: self position + (10@100).
+		position: self position + (10@120).
 	self addMorph: projectsLabel.
 	
 	self projectsIndex: 0.
@@ -78,7 +78,7 @@ initialize
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	projectsList
-		position: self position + (10@120);
+		position: self position + (10@140);
 		width: 250;
 		height: 200.
 	self addMorph: projectsList.
@@ -87,7 +87,7 @@ initialize
 	timelineLabel := TextMorph new.
 	timelineLabel
 		contents: 'Timeline';
-		position: self position + (10@350).
+		position: self position + (10@370).
 	self addMorph: timelineLabel.
 	
 	self timelineIndex: 0.
@@ -97,7 +97,7 @@ initialize
 		selected: #timelineIndex
 		changeSelected: #timelineIndex:.
 	timelineList
-		position: self position + (10@370);
+		position: self position + (10@390);
 		width: 250;
 		height: 200.
 	self addMorph: timelineList.
@@ -106,7 +106,7 @@ initialize
 	watchingLabel := TextMorph new.
 	watchingLabel
 		contents: 'Watching these projects';
-		position: self position + (275@350).
+		position: self position + (275@370).
 	self addMorph: watchingLabel.
 	
 	self watchingIndex: 0.
@@ -116,7 +116,7 @@ initialize
 		selected: #watchingIndex
 		changeSelected: #watchingIndex:.
 	watchingList
-		position: self position + (275@370);
+		position: self position + (275@390);
 		width: 250;
 		height: 200.
 	self addMorph: watchingList.
