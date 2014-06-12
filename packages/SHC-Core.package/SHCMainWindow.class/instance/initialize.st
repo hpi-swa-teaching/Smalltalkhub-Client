@@ -7,6 +7,9 @@ initialize
 	
 	self client: SHCClient new.
 		
+	self searchController: SHCSearchController new.
+	self searchController client: (self client).
+	
 	usernameField := TextFieldMorph new.
 	usernameField
 		position: self position + (263@31);
@@ -18,7 +21,7 @@ initialize
 	searchField := TextFieldMorph new.
 	searchField 
 		position: self position + (20 @ 31);
-		width: 200;
+		width: 150;
 		height: 35;
 		contents: 'Search...'.
 	self addMorph: searchField.
@@ -87,6 +90,14 @@ initialize
 		height: 300;
 		doubleClickSelector: #mainListClick.
 	self addMorph: self mainListMorph.
+	
+	self searchButton: SimpleButtonMorph new.
+	self searchButton
+		position: self position + (180@40);
+		label: 'Go!';
+		target: self;
+		actionSelector: #searchButtonClick.
+	self addMorph: self searchButton.
 	
 	self myProjectsListMorph: (PluggableListMorph 
 		on: self

@@ -1,3 +1,6 @@
 as yet unclassified
 mainListClick
-	"to be implemented: react to search results"
+	(self searchController isProject: self mainListMorphIndex) 
+		ifTrue: ["Open Project"].
+	(self searchController isUser: self mainListMorphIndex)
+		ifTrue: ["Open Profile Window"]

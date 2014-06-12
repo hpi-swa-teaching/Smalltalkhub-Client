@@ -22,7 +22,9 @@
 		"registerProjectButton",
 		"showProfileButton",
 		"showProjectsButton",
-		"showTeamsButton" ],
+		"showTeamsButton",
+		"searchController",
+		"searchButton" ],
 	"name" : "SHCMainWindow",
 	"pools" : [
 		 ],
