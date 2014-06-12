@@ -3,7 +3,7 @@ initialize
 	super initialize.
 	
 	self width: 400.
-	self height: 700.
+	self height: 500.
 	
 	projectNameLabel := TextMorph new.
 	projectNameLabel 
@@ -23,56 +23,44 @@ initialize
 		position: self position + (20@90);
 		contents: 'License: '.
 	self addMorph: licenseLabel.
-
-	editLicenseButton := SimpleButtonMorph new.
-	editLicenseButton
-		position: licenseLabel position + (320@0);
-		label: 'edit';
-		target: self;
-		actionSelector: #editLicense.
-	self addMorph: editLicenseButton.
 	
 	tagsLabel := TextMorph new.
 	tagsLabel 
 		position: self position + (20@120);
 		contents: 'Tags: '.
 	self addMorph: tagsLabel.
-	
-	editTagsButton := SimpleButtonMorph new.
-	editTagsButton
-		position: tagsLabel position + (320@0);
-		label: 'edit';
-		target: self;
-		actionSelector: #editTags.
-	self addMorph: editTagsButton.
 		
 	websiteLabel := TextMorph new.
 	websiteLabel 
 		position: self position + (20@150);
 		contents: 'Website: '.
 	self addMorph: websiteLabel.
-
-	editWebsiteButton := SimpleButtonMorph new.
-	editWebsiteButton
-		position: websiteLabel position + (320@0);
-		label: 'edit';
-		target: self;
-		actionSelector: #editWebsite.
-	self addMorph: editWebsiteButton.
-
+	
 	descriptionLabel := TextMorph new.
 	descriptionLabel 
 		position: self position + (20@180);
 		contents: 'Description: '.
 	self addMorph: descriptionLabel.
 	
-	editDescriptionButton := SimpleButtonMorph new.
-	editDescriptionButton
-		position: descriptionLabel position + (320@0);
-		label: 'edit';
+	contributorLabel := TextMorph new.
+	contributorLabel
+		position: self position + (20@210);
+		contents: 'Contributors: '.
+	self addMorph: contributorLabel.
+	
+	watcherLabel := TextMorph new.
+	watcherLabel
+		position: self position + (20@350);
+		contents: 'Watchers: '.
+	self addMorph: watcherLabel.
+	
+	saveButton := SimpleButtonMorph new.
+	saveButton
+		position: self position + (350@460);
+		label: 'save';
 		target: self;
-		actionSelector: #editDescription.
-	self addMorph: editDescriptionButton.
+		actionSelector: #().
+	self addMorph: saveButton.
 	
 	self contributor: #().
 	self watcher: #().
@@ -85,9 +73,9 @@ initialize
 		selected: #contributorListMorphIndex
 		changeSelected: #contributorListMorphIndex:).
 	self contributorListMorph 
-		position: self position + (20@210);
+		position: self position + (20@240);
 		width: 200;
-		height: 200;
+		height: 100;
 		doubleClickSelector: #contributorListClick.
 	self addMorph: self contributorListMorph.
 	
@@ -97,9 +85,9 @@ initialize
 		selected: #watcherListMorphIndex
 		changeSelected: #watcherListMorphIndex:).
 	self watcherListMorph 
-		position: self position + (20@420);
+		position: self position + (20@380);
 		width: 200;
-		height: 200;
+		height: 100;
 		doubleClickSelector: #watcherListClick.
 	self addMorph: self watcherListMorph.
 

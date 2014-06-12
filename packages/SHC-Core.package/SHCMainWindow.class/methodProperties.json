@@ -2,11 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"ProjectName:username:" : "JP 5/22/2014 15:48",
 		"applyLoggedInUi" : "AS 6/12/2014 12:09",
 		"applyLoggedOutUi" : "AS 6/12/2014 12:09",
 		"clearProjectList" : "AS 6/5/2014 16:05",
-		"createProject" : "JP 5/22/2014 16:00",
 		"initialize" : "AS 6/12/2014 13:28",
 		"loginAndShowProjects" : "AS 6/5/2014 19:18",
 		"loginButton" : "AS 6/12/2014 11:53",
