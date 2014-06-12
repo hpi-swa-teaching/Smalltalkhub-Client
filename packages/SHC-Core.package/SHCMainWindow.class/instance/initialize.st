@@ -78,7 +78,7 @@ initialize
 	
 	self mainListMorph: (PluggableListMorph
 		on: self
-		list: #projectNames
+		list: #searchResults
 		selected: #mainListMorphIndex
 		changeSelected: #mainListMorphIndex:).
 	self mainListMorph
