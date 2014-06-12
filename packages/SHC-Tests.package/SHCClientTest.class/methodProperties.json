@@ -9,5 +9,9 @@
 		"testListProjects02" : "AS 6/5/2014 18:52",
 		"testLogin" : "AH 5/12/2014 11:34",
 		"testLogout" : "AH 5/12/2014 11:35",
+		"testParesSearchProject" : "AS 6/12/2014 14:47",
+		"testParesSearchProjects" : "AS 6/12/2014 14:58",
 		"testParseProjects" : "AS 6/5/2014 16:13",
-		"testProjectNamesAsString" : "AS 6/5/2014 18:51" } }
+		"testProjectNamesAsString" : "AS 6/5/2014 18:51",
+		"testSearchProjects" : "AS 6/12/2014 14:49",
+		"testSearchUsers" : "AS 6/12/2014 14:36" } }
