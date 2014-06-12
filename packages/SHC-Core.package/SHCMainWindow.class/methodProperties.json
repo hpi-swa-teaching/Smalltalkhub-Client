@@ -9,6 +9,7 @@
 		"createProject" : "JP 5/22/2014 16:00",
 		"initialize" : "AS 6/5/2014 19:20",
 		"loginAndShowProjects" : "AS 6/5/2014 19:18",
+		"loginButton" : "AS 6/12/2014 11:53",
 		"logout" : "AS 6/5/2014 19:18",
 		"mainListClick" : "AS 6/5/2014 19:18",
 		"mainListMorph" : "AS 6/5/2014 14:47",
@@ -22,6 +23,7 @@
 		"openProjectWindow" : "AS 6/5/2014 19:19",
 		"password" : "AS 5/22/2014 16:52",
 		"password:" : "AS 5/22/2014 16:52",
+		"passwordField" : "AS 6/12/2014 11:51",
 		"projectDetails" : "AS 6/5/2014 16:00",
 		"projectDetails:" : "AS 6/5/2014 16:00",
 		"projectNames" : "AS 6/5/2014 15:50",
@@ -33,4 +35,5 @@
 		"showProjects" : "AH 5/8/2014 15:55",
 		"showProjects:" : "AS 6/12/2014 11:41",
 		"username" : "AS 5/6/2014 14:01",
-		"username:" : "AS 5/6/2014 14:02" } }
+		"username:" : "AS 5/6/2014 14:02",
+		"usernameField" : "AS 6/12/2014 11:51" } }
