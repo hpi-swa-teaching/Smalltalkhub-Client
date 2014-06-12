@@ -8,5 +8,5 @@ showProjects: username
 	
 	self projectNames: projectCollection.
 	self mainListMorphIndex: 0.
-	self changed: #projectListMorphIndex.
+	self changed: #mainListMorphIndex.
 	self changed: #projectNames.
