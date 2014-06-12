@@ -2,20 +2,27 @@ as yet unclassified
 update
 	|teamsJSON watchingJSON timelineJSON projectsJSON errorNotification userJSON|
 	
+	errorNotification := Dictionary new.
+	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
+	errorNotification at: 'missionInternetConnection' put: 'no internet connection'.
+	errorNotification at: 'noWebsite' put: 'no website'.
+	errorNotification at: 'noLocation' put: 'Anonymous Proxy Land'.
+	
 	self setLabel: 'Profile: ~', self user.
 	self usernameLabel contents: '~', self user.
 		
 	userJSON := self client listUser: self user.
 	self displayNameLabel contents: (userJSON at: 'fullName').
-	self locationLabel contents: (userJSON at: 'location').
-	self websiteLabel contents: (userJSON at: 'website').
-	"self memberSinceLabel contents: (userJSON  at: 'created')"
 	self emailLabel contents: (userJSON at: 'email').
-	
-	errorNotification := Dictionary new.
-	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
-	errorNotification at: 'missionInternetConnection' put: 'no internet connection'.
-	
+		
+	((userJSON at: 'location') isEmpty not)
+	ifTrue: [self locationLabel contents: (userJSON at: 'location')]
+	ifFalse: [self locationLabel contents: (errorNotification at: 'noLocation')].
+
+	((userJSON at: 'website') isEmpty not)
+	ifTrue: [self websiteLabel contents: (userJSON at: 'website')]
+	ifFalse: [self websiteLabel contents: (errorNotification at: 'noWebsite')].
+		
 	teamsJSON := self client listTeams: self user.
 	(teamsJSON isEmpty) 
 	ifFalse: [self teams: (teamsJSON collect: [:dict | dict at: 'name'])]
@@ -31,9 +38,11 @@ update
 	       changed: #watchingIndex.
 	
 	timelineJSON := self client listTimeline: self user.
-"self timeline: ((timelineJSON collect: [:dict | dict at: 'title'])+' '+(timelineJSON collect: [:dict | dict at: 'project']))."
 	(timelineJSON isEmpty)
-	ifFalse: [self timeline: (timelineJSON collect: [:dict | dict at: 'title'])]
+	"ifFalse: [self timeline: (timelineJSON collect: [:dict | dict at: 'title'])]"
+	ifFalse: [self timeline: 
+		(Array streamContents: [:stream|
+               (timelineJSON collect: [:dict | dict at: 'title']) with: (timelineJSON collect: [:dict | dict at: 'project']) do: [:x :y | stream nextPut: x; nextPut: y]] )]
 	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
 	self changed: #timeline;
 	       changed: #timelineIndex.
@@ -44,4 +53,3 @@ update
 	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
 	self changed: #projects;
              changed: #projectsIndex.
-	

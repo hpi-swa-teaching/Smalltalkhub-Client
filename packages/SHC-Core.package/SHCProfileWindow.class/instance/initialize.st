@@ -33,12 +33,6 @@ initialize
 		position: self position + (10@65).
 	self addMorph: locationLabel.
 	
-	"memberSinceLabel := TextMorph new.
-	memberSinceLabel
-		contents: 'Member Since';
-		position: self position + (170@65).
-	self addMorph: memberSinceLabel"
-	
 	websiteLabel := TextMorph new.
 	websiteLabel
 		contents: 'Website';
@@ -128,4 +122,3 @@ initialize
 	self addMorph: watchingList.
 	
 	self openInHand.
-	
