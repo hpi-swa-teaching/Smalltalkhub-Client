@@ -17,6 +17,8 @@
 		"projectDetails",
 		"mainListMorph",
 		"mainListMorphIndex",
+		"myProjectsListMorph",
+		"myProjectsListMorphIndex",
 		"registerProjectButton",
 		"showProfileButton",
 		"showProjectsButton",

@@ -73,5 +73,34 @@ initialize
 		target: self;
 		actionSelector: #editDescription.
 	self addMorph: editDescriptionButton.
+	
+	self contributor: #().
+	self watcher: #().
+	self contributorListMorphIndex: 0.
+	self watcherListMorphIndex: 0.
+	
+	self contributorListMorph: (PluggableListMorph 
+		on: self
+		list: #contributor
+		selected: #contributorListMorphIndex
+		changeSelected: #contributorListMorphIndex:).
+	self contributorListMorph 
+		position: self position + (20@210);
+		width: 200;
+		height: 200;
+		doubleClickSelector: #contributorListClick.
+	self addMorph: self contributorListMorph.
+	
+	self watcherListMorph: (PluggableListMorph 
+		on: self
+		list: #watcher
+		selected: #watcherListMorphIndex
+		changeSelected: #watcherListMorphIndex:).
+	self watcherListMorph 
+		position: self position + (20@420);
+		width: 200;
+		height: 200;
+		doubleClickSelector: #watcherListClick.
+	self addMorph: self watcherListMorph.
 
 	self openInHand 

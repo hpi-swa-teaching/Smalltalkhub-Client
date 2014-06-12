@@ -4,6 +4,12 @@ update
 	
 	projectdetails := self client listProject: (self activeProject name) from: (self activeProject owner).
 	
+	self contributor: (self client parseUsers: (self client listContributorsFromProject: (self activeProject name) from: (self activeProject owner))).
+	
+	self contributorListMorphIndex: 0.
+	self changed: #contributorListMorphIndex.
+	self changed: #contributor.
+	
 	self licenseLabel contents: ((self licenseLabel contents) , ((self client parseProject: projectdetails) license)).
 	
 	self websiteLabel contents: ((self websiteLabel contents) , ((self client parseProject: projectdetails) website)).

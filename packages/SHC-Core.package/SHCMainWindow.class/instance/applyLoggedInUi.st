@@ -7,4 +7,5 @@ applyLoggedInUi
 	showProfileButton show.
 	showTeamsButton show.
 	showProjectsButton show.
+	self myProjectsListMorph show.
 	

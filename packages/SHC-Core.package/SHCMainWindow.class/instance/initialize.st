@@ -74,10 +74,11 @@ initialize
 
 	self projectNames: #().
 	self mainListMorphIndex: 0.
+	self myProjectsListMorphIndex: 0.
 	
 	self mainListMorph: (PluggableListMorph
 		on: self
-		list: #projectNames
+		list: #searchResults
 		selected: #mainListMorphIndex
 		changeSelected: #mainListMorphIndex:).
 	self mainListMorph
@@ -86,6 +87,18 @@ initialize
 		height: 300;
 		doubleClickSelector: #mainListClick.
 	self addMorph: self mainListMorph.
+	
+	self myProjectsListMorph: (PluggableListMorph 
+		on: self
+		list: #projectNames
+		selected: #myProjectsListMorphIndex
+		changeSelected: #myProjectsListMorphIndex:).
+	self myProjectsListMorph 
+		position: self position + (263@170);
+		width: 200;
+		height: 200;
+		doubleClickSelector: #myProjectsListClick.
+	self addMorph: self myProjectsListMorph.
 	
 	"
 	createProjectField := TextFieldMorph new.

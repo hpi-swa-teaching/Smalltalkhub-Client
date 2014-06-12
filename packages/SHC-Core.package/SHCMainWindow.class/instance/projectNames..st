@@ -1,3 +1,3 @@
 accessing
 projectNames: anArray
-	projectNames := anArray.
+	projectNames := anArray
