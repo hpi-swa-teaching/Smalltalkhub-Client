@@ -2,11 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"ProjectName:username:" : "JP 5/22/2014 15:48",
 		"applyLoggedInUi" : "AS 6/12/2014 12:09",
 		"applyLoggedOutUi" : "AS 6/12/2014 12:09",
 		"clearProjectList" : "AS 6/5/2014 16:05",
-		"createProject" : "JP 5/22/2014 16:00",
 		"initialize" : "AS 6/12/2014 16:08",
 		"loginAndShowProjects" : "AS 6/5/2014 19:18",
 		"loginButton" : "AS 6/12/2014 11:53",
@@ -28,7 +26,7 @@
 		"projectDetails" : "AS 6/5/2014 16:00",
 		"projectDetails:" : "AS 6/5/2014 16:00",
 		"projectNames" : "AS 6/5/2014 15:50",
-		"projectNames:" : "AS 6/5/2014 15:52",
+		"projectNames:" : "MB 6/12/2014 14:10",
 		"searchButton" : "AS 6/12/2014 16:01",
 		"searchButton:" : "AS 6/12/2014 16:01",
 		"searchButtonClick" : "AS 6/12/2014 16:16",

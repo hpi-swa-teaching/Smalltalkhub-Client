@@ -29,7 +29,9 @@
 		"teams",
 		"timeline",
 		"projects",
-		"watching" ],
+		"watching",
+		"fullName",
+		"fullNameLabel" ],
 	"name" : "SHCProfileWindow",
 	"pools" : [
 		 ],
