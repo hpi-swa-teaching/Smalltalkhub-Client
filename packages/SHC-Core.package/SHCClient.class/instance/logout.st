@@ -5,5 +5,5 @@ logout
 	response := request execute.
 	
 	"clear credentials on successful logout"
-	response ifTrue: [ self username: ''; password: '' ].
+	response ifTrue: [ self username: nil; password: nil ].
 	^ response.
