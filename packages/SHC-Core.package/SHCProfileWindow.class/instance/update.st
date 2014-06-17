@@ -27,9 +27,8 @@ update
 	
 	timelineJSON := self client listTimeline: self user.
 	(timelineJSON isEmpty)
-	ifFalse: [ self timeline:
-		(timelineJSON collect: [:dict|
-			(dict at: 'username'), ' ', (dict at: 'title'), ' ', (dict at: 'project')])]
+	ifFalse: [ self timeline: (timelineJSON collect: [:dict|
+			 (dict at: 'username'), ' ', (dict at: 'title'), ' ', (dict at: 'project')])]
 	ifTrue: [self teams: (nil) ].
 	self changed: #timeline;
 	       changed: #timelineIndex.
