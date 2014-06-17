@@ -17,5 +17,6 @@ initialize
 	
 	self openInHand.
 	self applyLoggedOutUi.
+	self relogin.
 	
 	

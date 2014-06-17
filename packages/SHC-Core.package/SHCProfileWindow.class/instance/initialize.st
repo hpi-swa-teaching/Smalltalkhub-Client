@@ -8,8 +8,8 @@ initialize
 	watching := #().
 	
 	self
-		width: 570;
-		height: 600;
+		width: 540;
+		height: 620;
 		setLabel: 'Profile'.
 	
 	"Display name"
@@ -49,7 +49,7 @@ initialize
 	teamsLabel := TextMorph new.
 	teamsLabel
 		contents: 'Teams';
-		position: self position + (275@120).
+		position: self position + (275@140).
 	self addMorph: teamsLabel.
 	
 	self teamsIndex: 0.
@@ -59,7 +59,7 @@ initialize
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	teamsList
-		position: self position + (275@140);
+		position: self position + (275@160);
 		width: 250;
 		height: 200.
 	self addMorph: teamsList.
@@ -68,7 +68,7 @@ initialize
 	projectsLabel := TextMorph new.
 	projectsLabel
 		contents: 'Projects';
-		position: self position + (10@120).
+		position: self position + (10@140).
 	self addMorph: projectsLabel.
 	
 	self projectsIndex: 0.
@@ -78,7 +78,7 @@ initialize
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	projectsList
-		position: self position + (10@140);
+		position: self position + (10@160);
 		width: 250;
 		height: 200.
 	self addMorph: projectsList.
@@ -87,7 +87,7 @@ initialize
 	timelineLabel := TextMorph new.
 	timelineLabel
 		contents: 'Timeline';
-		position: self position + (10@370).
+		position: self position + (10@390).
 	self addMorph: timelineLabel.
 	
 	self timelineIndex: 0.
@@ -97,7 +97,7 @@ initialize
 		selected: #timelineIndex
 		changeSelected: #timelineIndex:.
 	timelineList
-		position: self position + (10@390);
+		position: self position + (10@410);
 		width: 250;
 		height: 200.
 	self addMorph: timelineList.
@@ -106,7 +106,7 @@ initialize
 	watchingLabel := TextMorph new.
 	watchingLabel
 		contents: 'Watching these projects';
-		position: self position + (275@370).
+		position: self position + (275@390).
 	self addMorph: watchingLabel.
 	
 	self watchingIndex: 0.
@@ -116,7 +116,7 @@ initialize
 		selected: #watchingIndex
 		changeSelected: #watchingIndex:.
 	watchingList
-		position: self position + (275@390);
+		position: self position + (275@410);
 		width: 250;
 		height: 200.
 	self addMorph: watchingList.

@@ -1,5 +1,9 @@
 api-calls
 logout
-	| request |
+	| request response |
 	request := SHCLogoutRequest withWebClient: self webclient.	
-	^ request execute.
+	response := request execute.
+	
+	"clear credentials on successful logout"
+	response ifTrue: [ self username: ''; password: '' ].
+	^ response.

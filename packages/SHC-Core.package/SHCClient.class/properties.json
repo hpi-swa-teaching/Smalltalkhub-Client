@@ -1,13 +1,13 @@
 {
 	"category" : "SHC-Core",
 	"classinstvars" : [
-		 ],
+		"username",
+		"password" ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"webclient",
-		"username" ],
+		"webclient" ],
 	"name" : "SHCClient",
 	"pools" : [
 		 ],
