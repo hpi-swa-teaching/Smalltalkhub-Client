@@ -1,9 +1,6 @@
 as yet unclassified
 update
-	|shcUser teamsJSON watchingJSON timelineJSON projectsJSON errorNotification|
-	
-	errorNotification := Dictionary new.
-	errorNotification at: 'emptyJSON' put: 'no record found.. :('.
+	|shcUser teamsJSON watchingJSON timelineJSON projectsJSON|
 	
 	shcUser := self client parseUser: (self client listUser: self user).
 	
@@ -17,14 +14,14 @@ update
 	teamsJSON := self client listTeams: self user.
 	(teamsJSON isEmpty) 
 	ifFalse: [self teams: (teamsJSON collect: [:dict | dict at: 'name'])]
-	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
+	ifTrue: [self teams: (nil) ].
 	self changed: #teams;
 		 changed: #teamsIndex.
 							
 	watchingJSON := self client listWatching: self user.
 	(watchingJSON isEmpty)
 	ifFalse: [self watching: (watchingJSON collect: [:dict | dict at: 'project'])]
-	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
+	ifTrue: [self teams: (nil) ].
 	self changed: #watching;
 	       changed: #watchingIndex.
 	
@@ -33,13 +30,13 @@ update
 	ifFalse: [ self timeline:
 		(timelineJSON collect: [:dict|
 			(dict at: 'username'), ' ', (dict at: 'title'), ' ', (dict at: 'project')])]
-	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
+	ifTrue: [self teams: (nil) ].
 	self changed: #timeline;
 	       changed: #timelineIndex.
 	
 	projectsJSON := self client listProjects: self user.
 	(projectsJSON isEmpty)
 	ifFalse: [self projects: (projectsJSON collect: [:dict | dict at: 'name'])]
-	ifTrue: [self teams: (errorNotification at: 'emptyJSON') ].
+	ifTrue: [self teams: (nil) ].
 	self changed: #projects;
              changed: #projectsIndex.
