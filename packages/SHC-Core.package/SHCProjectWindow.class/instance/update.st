@@ -20,10 +20,10 @@ update
 	self changed: #watcherListMorphIndex.
 	self changed: #watcher.
 	
-	self licenseLabel contents: ((self licenseLabel contents) , (parsedprojectdetails license)).
-	self websiteLabel contents: ((self websiteLabel contents) , (parsedprojectdetails website)).
-	self tagsLabel contents: ((self tagsLabel contents) , (parsedprojectdetails tags)).
-	self descriptionLabel contents: ((self descriptionLabel contents) , (parsedprojectdetails description)).
+	self licenseField contents: (parsedprojectdetails license).
+	self websiteField contents: (parsedprojectdetails website).
+	self tagsField contents: (parsedprojectdetails tags).
+	self descriptionField contents: (parsedprojectdetails description).
 	
 	self setLabel: self activeProject name.
 	self projectNameLabel
