@@ -24,7 +24,8 @@
 		"showProjectsButton",
 		"showTeamsButton",
 		"searchController",
-		"searchButton" ],
+		"searchButton",
+		"myProjectsTextMorph" ],
 	"name" : "SHCMainWindow",
 	"pools" : [
 		 ],

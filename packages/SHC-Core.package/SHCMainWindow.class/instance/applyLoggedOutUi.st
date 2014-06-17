@@ -5,6 +5,5 @@ applyLoggedOutUi
 	loginButton show.
 	logoutButton hide.
 	showProfileButton hide.
-	showTeamsButton hide.
-	showProjectsButton hide.
+	myProjectsTextMorph hide.
 	self myProjectsListMorph hide.
