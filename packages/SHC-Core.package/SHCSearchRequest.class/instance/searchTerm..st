@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 searchTerm: aSearchTerm
 	searchTerm := aSearchTerm

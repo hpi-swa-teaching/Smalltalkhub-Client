@@ -1,4 +1,4 @@
-as yet unclassified
+ui-events
 searchButtonClick
 	self searchController searchAll: (self searchField contents).
 	self mainListMorphIndex: 0.

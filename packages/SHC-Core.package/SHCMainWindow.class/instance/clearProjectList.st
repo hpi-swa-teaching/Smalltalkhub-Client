@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 clearProjectList
 	self projectNames: Array new.
 	self projectDetails: OrderedCollection new.

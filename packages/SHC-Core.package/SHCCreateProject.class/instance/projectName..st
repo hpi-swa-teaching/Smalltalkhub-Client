@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 projectName: aString
 	username := aString

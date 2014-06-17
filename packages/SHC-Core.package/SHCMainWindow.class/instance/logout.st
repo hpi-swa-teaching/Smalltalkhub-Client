@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 logout
 	self clearProjectList.
 	self applyLoggedOutUi.

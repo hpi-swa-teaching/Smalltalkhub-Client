@@ -1,4 +1,4 @@
-as yet unclassified
+search
 isUser: aSelectedIndex
 	| i listSize|
 	i := aSelectedIndex - 1.

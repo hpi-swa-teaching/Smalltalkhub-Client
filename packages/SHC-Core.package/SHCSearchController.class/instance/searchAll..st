@@ -1,4 +1,4 @@
-as yet unclassified
+search
 searchAll: aSearchTerm
 	(aSearchTerm size < self minimalSearchTermLength) 
 		ifTrue: [self projectSearchResults: #().

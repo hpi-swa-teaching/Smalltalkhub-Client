@@ -1,4 +1,4 @@
-as yet unclassified
+ui-events
 mainListClick
 	(self searchController isProject: self mainListMorphIndex) 
 		ifTrue: ["Open Project"].

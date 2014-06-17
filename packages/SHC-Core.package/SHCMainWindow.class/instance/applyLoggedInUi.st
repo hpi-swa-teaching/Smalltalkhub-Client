@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 applyLoggedInUi
 	"Changes the UI to the state where the user is already logged in"
 	passwordField hide.

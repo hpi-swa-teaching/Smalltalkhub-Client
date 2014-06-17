@@ -1,4 +1,4 @@
-as yet unclassified
+ui-events
 myProjectsListClick
 	| index project |
 	"opens the project window for the selected project"

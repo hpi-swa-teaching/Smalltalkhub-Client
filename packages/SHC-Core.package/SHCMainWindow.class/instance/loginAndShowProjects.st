@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 loginAndShowProjects
 	self username: (usernameField contents asString).
 	self password: (passwordField contents asString).

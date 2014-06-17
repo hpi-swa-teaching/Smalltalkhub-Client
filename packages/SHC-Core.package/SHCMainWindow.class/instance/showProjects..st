@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 showProjects: username
 	"saves the projects locally and displays them"
 	| projectCollection |

@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 applyLoggedOutUi
 	"Changes the UI to the state where the user is logged out"
 	passwordField show.

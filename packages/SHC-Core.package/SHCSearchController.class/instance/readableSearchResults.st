@@ -1,4 +1,4 @@
-as yet unclassified
+search
 readableSearchResults
 	| list indent |
 	indent := '   '.

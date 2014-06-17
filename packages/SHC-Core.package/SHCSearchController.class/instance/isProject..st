@@ -1,4 +1,4 @@
-as yet unclassified
+search
 isProject: aSelectedIndex
 	| i listSize |
 	i := aSelectedIndex - 1.
