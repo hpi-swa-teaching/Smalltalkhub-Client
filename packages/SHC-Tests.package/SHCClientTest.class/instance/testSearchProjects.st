@@ -1,6 +1,6 @@
 tests
 testSearchProjects
 	| result |
-	result := self clientInstance searchUsers: 'ShcTestUser'.
-	self assert: (result size = 1).
-	self assert: ((result at: 1) = 'ShcTestUser')
+	result := self clientInstance searchProjects: 'ShcTestProject'.
+	self assert: (result size = 2).
+	self assert: ((result at: 1) = 'ShcTestUser/ShcTestProject1')

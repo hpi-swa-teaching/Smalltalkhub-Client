@@ -1,8 +1,6 @@
 search
 isProject: aSelectedIndex
-	| i listSize |
-	i := aSelectedIndex - 1.
+	| i |
+	i := self projectListIndex: aSelectedIndex.
 	(i = 0) ifTrue: [^ false].
-	listSize := self projectSearchResults size.
-	(listSize >= i) ifTrue: [^ true].
-	^ false
+	^ true

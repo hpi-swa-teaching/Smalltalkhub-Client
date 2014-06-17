@@ -6,5 +6,5 @@ readableSearchResults
 	list add: 'Projects:'.
 	self projectSearchResults do: [:each | list add: (indent, each name)].
 	list add: 'Users:'.
-	self userSearchResults do: [:each | list add: (indent, each)].
+	self userSearchResults do: [:each | list add: (indent, each name)].
 	^ list.
