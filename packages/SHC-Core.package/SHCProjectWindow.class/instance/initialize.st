@@ -6,61 +6,61 @@ initialize
 	self height: 500.
 	
 	projectNameLabel := TextMorph new.
-	projectNameLabel 
+	self projectNameLabel
 		position: self position + (20@35).
-	self addMorph: projectNameLabel.
+	self addMorph: self projectNameLabel.
 	
 	registerProjectButton := SimpleButtonMorph new.
-	registerProjectButton
+	self registerProjectButton
 		position: self position + (20@60);
 		label: '-> Metacello';
 		target: self;
 		actionSelector: #addProjectToMonticello.
-	self addMorph: registerProjectButton.
+	self addMorph: self registerProjectButton.
 	
 	licenseLabel := TextMorph new.
-	licenseLabel 
+	self licenseLabel 
 		position: self position + (20@90);
 		contents: 'License: '.
-	self addMorph: licenseLabel.
+	self addMorph: self licenseLabel.
 	
 	tagsLabel := TextMorph new.
-	tagsLabel 
+	self tagsLabel 
 		position: self position + (20@120);
 		contents: 'Tags: '.
-	self addMorph: tagsLabel.
+	self addMorph: self tagsLabel.
 		
 	websiteLabel := TextMorph new.
-	websiteLabel 
+	self websiteLabel 
 		position: self position + (20@150);
 		contents: 'Website: '.
-	self addMorph: websiteLabel.
+	self addMorph: self websiteLabel.
 	
 	descriptionLabel := TextMorph new.
-	descriptionLabel 
+	self descriptionLabel 
 		position: self position + (20@180);
 		contents: 'Description: '.
 	self addMorph: descriptionLabel.
 	
 	contributorLabel := TextMorph new.
-	contributorLabel
+	self contributorLabel
 		position: self position + (20@210);
 		contents: 'Contributors: '.
-	self addMorph: contributorLabel.
+	self addMorph: self contributorLabel.
 	
 	watcherLabel := TextMorph new.
-	watcherLabel
+	self watcherLabel
 		position: self position + (20@350);
 		contents: 'Watchers: '.
-	self addMorph: watcherLabel.
+	self addMorph: self watcherLabel.
 	
 	saveButton := SimpleButtonMorph new.
-	saveButton
+	self saveButton
 		position: self position + (350@460);
 		label: 'save';
 		target: self;
 		actionSelector: #().
-	self addMorph: saveButton.
+	self addMorph: self saveButton.
 	
 	self contributor: #().
 	self watcher: #().

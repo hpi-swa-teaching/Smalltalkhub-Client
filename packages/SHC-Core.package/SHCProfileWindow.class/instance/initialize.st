@@ -14,43 +14,43 @@ initialize
 	
 	"Display name"
 	displayNameLabel := TextMorph new.
-	displayNameLabel
+	self displayNameLabel
 		contents: 'fullName';
 		fontName: #ComicBold size:24;
 		position: self position + (10@25).
-	self addMorph: displayNameLabel.
+	self addMorph: self displayNameLabel.
 	
 	"user details"
 	usernameLabel := TextMorph new.
-	usernameLabel
+	self usernameLabel
 		contents: '~username';
 		position: self position + (10@45).
-	self addMorph: usernameLabel.
+	self addMorph: self usernameLabel.
 	
 	locationLabel := TextMorph new.
-	locationLabel
+	self locationLabel
 		contents: 'Location';
 		position: self position + (10@65).
-	self addMorph: locationLabel.
+	self addMorph: self locationLabel.
 	
 	websiteLabel := TextMorph new.
-	websiteLabel
+	self websiteLabel
 		contents: 'Website';
 		position: self position + (10@85).
-	self addMorph: websiteLabel.
+	self addMorph: self websiteLabel.
 	
 	emailLabel := TextMorph new.
-	emailLabel
+	self emailLabel
 		contents: 'eMail';
 		position: self position + (10@105).
-	self addMorph: emailLabel.
+	self addMorph: self emailLabel.
 	
 	"Teams"
 	teamsLabel := TextMorph new.
-	teamsLabel
+	self teamsLabel
 		contents: 'Teams';
 		position: self position + (275@140).
-	self addMorph: teamsLabel.
+	self addMorph: self teamsLabel.
 	
 	self teamsIndex: 0.
 	teamsList := PluggableListMorph
@@ -58,18 +58,18 @@ initialize
 		list: #teams
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
-	teamsList
+	self teamsList
 		position: self position + (275@160);
 		width: 250;
 		height: 200.
-	self addMorph: teamsList.
+	self addMorph: self teamsList.
 	
 	"Projects"
 	projectsLabel := TextMorph new.
-	projectsLabel
+	self projectsLabel
 		contents: 'Projects';
 		position: self position + (10@140).
-	self addMorph: projectsLabel.
+	self addMorph: self projectsLabel.
 	
 	self projectsIndex: 0.
 	projectsList := PluggableListMorph
@@ -77,18 +77,18 @@ initialize
 		list: #projects
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
-	projectsList
+	self projectsList
 		position: self position + (10@160);
 		width: 250;
 		height: 200.
-	self addMorph: projectsList.
+	self addMorph: self projectsList.
 	
 	"Timeline"
 	timelineLabel := TextMorph new.
-	timelineLabel
+	self timelineLabel
 		contents: 'Timeline';
 		position: self position + (10@390).
-	self addMorph: timelineLabel.
+	self addMorph: self timelineLabel.
 	
 	self timelineIndex: 0.
 	timelineList := PluggableListMorph
@@ -96,18 +96,18 @@ initialize
 		list: #timeline
 		selected: #timelineIndex
 		changeSelected: #timelineIndex:.
-	timelineList
+	self timelineList
 		position: self position + (10@410);
 		width: 250;
 		height: 200.
-	self addMorph: timelineList.
+	self addMorph: self timelineList.
 	
 	"Watching"
 	watchingLabel := TextMorph new.
-	watchingLabel
+	self watchingLabel
 		contents: 'Watching these projects';
 		position: self position + (275@390).
-	self addMorph: watchingLabel.
+	self addMorph: self watchingLabel.
 	
 	self watchingIndex: 0.
 	watchingList := PluggableListMorph
@@ -115,10 +115,10 @@ initialize
 		list: #watching
 		selected: #watchingIndex
 		changeSelected: #watchingIndex:.
-	watchingList
+	self watchingList
 		position: self position + (275@410);
 		width: 250;
 		height: 200.
-	self addMorph: watchingList.
+	self addMorph: self watchingList.
 	
 	self openInHand.
