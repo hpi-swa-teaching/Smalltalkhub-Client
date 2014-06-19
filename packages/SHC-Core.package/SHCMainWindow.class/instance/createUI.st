@@ -11,7 +11,7 @@ createUI
 	searchField := TextFieldMorph new.
 	searchField 
 		position: self position + (20 @ 31);
-		width: 150;
+		width: 170;
 		height: 35;
 		contents: 'Search...'.
 	self addMorph: searchField.
@@ -65,7 +65,7 @@ createUI
 	
 	self searchButton: SimpleButtonMorph new.
 	self searchButton
-		position: self position + (180@40);
+		position: self position + (194@36);
 		label: 'Go!';
 		target: self;
 		actionSelector: #searchButtonClick;
