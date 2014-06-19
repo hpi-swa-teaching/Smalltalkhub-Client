@@ -7,7 +7,9 @@ initialize
 	
 	projectNameLabel := TextMorph new.
 	self projectNameLabel
-		position: self position + (10@35).
+		contents: 'ProjectNameDummyContent';
+		fontName: #ComicBold size: 24;
+		position: self position + (10@30).
 	self addMorph: self projectNameLabel.
 	
 	registerProjectButton := SimpleButtonMorph new.
