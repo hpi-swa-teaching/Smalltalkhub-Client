@@ -12,6 +12,7 @@
 		"testLoginWithPersistentCredentials" : "AH 6/17/2014 11:24",
 		"testLoginWithSavedCredentials" : "AH 6/17/2014 11:23",
 		"testLogout" : "AH 5/12/2014 11:35",
+		"testLogoutClearCredentials" : "AH 6/17/2014 12:01",
 		"testParesSearchProject" : "AS 6/12/2014 14:47",
 		"testParesSearchProjects" : "AS 6/12/2014 14:58",
 		"testParseProjects" : "AS 6/5/2014 16:13",
