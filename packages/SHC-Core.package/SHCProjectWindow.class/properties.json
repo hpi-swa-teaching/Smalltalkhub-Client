@@ -20,6 +20,7 @@
 		"activeProject",
 		"registerProjectButton",
 		"saveButton",
+		"cancelButton",
 		"contributorListMorph",
 		"watcherListMorph",
 		"contributor",

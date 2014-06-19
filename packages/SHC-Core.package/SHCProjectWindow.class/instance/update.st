@@ -1,9 +1,9 @@
 as yet unclassified
 update
-	| projectdetails parsedprojectdetails contributordetails watcherdetails |
+	| projectdetails contributordetails watcherdetails |
 	
 	projectdetails := self client listProject: (self activeProject name) from: (self activeProject owner).
-	parsedprojectdetails := self client parseProject: projectdetails.
+	self activeProject: (self client parseProject: projectdetails).
 	
 	contributordetails := self client parseUsers: (self client listContributorsFromProject: (self activeProject name) from: (self activeProject owner)).
 	watcherdetails := self client parseUsers: (self client listWatcherFromProject: (self activeProject name) from: (self activeProject owner)).
@@ -20,10 +20,10 @@ update
 	self changed: #watcherListMorphIndex.
 	self changed: #watcher.
 	
-	self licenseField contents: (parsedprojectdetails license).
-	self websiteField contents: (parsedprojectdetails website).
-	self tagsField contents: (parsedprojectdetails tags).
-	self descriptionField contents: (parsedprojectdetails description).
+	self licenseField contents: (self activeProject license).
+	self websiteField contents: (self activeProject website).
+	self tagsField contents: (self activeProject tags).
+	self descriptionField contents: (self activeProject description).
 	
 	self setLabel: self activeProject name.
 	self projectNameLabel

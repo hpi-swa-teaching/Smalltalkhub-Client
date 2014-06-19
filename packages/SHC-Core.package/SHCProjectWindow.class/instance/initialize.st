@@ -89,12 +89,21 @@ initialize
 		contents: 'Watchers: '.
 	self addMorph: self watcherLabel.
 	
-	saveButton := SimpleButtonMorph new.
+	self cancelButton: SimpleButtonMorph new.
+	self cancelButton
+		position: self position + (295@320);
+		label: 'cancel';
+		target: self;
+		actionSelector: #cancelProjectChanges;
+		color: Color veryVeryLightGray.
+	self addMorph: self cancelButton.
+	
+	self saveButton: SimpleButtonMorph new.
 	self saveButton
 		position: self position + (350@320);
 		label: 'save';
 		target: self;
-		actionSelector: #();
+		actionSelector: #saveProjectChanges;
 		color: Color veryVeryLightGray.
 	self addMorph: self saveButton.
 	
