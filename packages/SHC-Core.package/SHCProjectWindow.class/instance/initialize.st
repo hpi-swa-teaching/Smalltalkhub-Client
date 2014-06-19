@@ -17,7 +17,8 @@ initialize
 		position: self position + (10@60);
 		label: '-> Metacello';
 		target: self;
-		actionSelector: #addProjectToMonticello.
+		actionSelector: #addProjectToMonticello;
+		color: Color veryVeryLightGray.
 	self addMorph: self registerProjectButton.
 	
 	licenseLabel := TextMorph new.
@@ -93,7 +94,8 @@ initialize
 		position: self position + (350@320);
 		label: 'save';
 		target: self;
-		actionSelector: #().
+		actionSelector: #();
+		color: Color veryVeryLightGray.
 	self addMorph: self saveButton.
 	
 	self contributor: #().
