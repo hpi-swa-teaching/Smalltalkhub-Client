@@ -1,0 +1,15 @@
+{
+	"category" : "SHC-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"requestInstance",
+		"clientInstance" ],
+	"name" : "SHCProjectModificationRequestTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
