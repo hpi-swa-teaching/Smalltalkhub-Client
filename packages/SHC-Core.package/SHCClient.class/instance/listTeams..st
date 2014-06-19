@@ -1,6 +1,6 @@
 api-calls
 listTeams: aUserName
-	|teamsRequest result |
+	| teamsRequest result |
 	teamsRequest := SHCTeamsRequest withWebClient: self webclient.
 	teamsRequest username: aUserName.
 	result := teamsRequest execute.

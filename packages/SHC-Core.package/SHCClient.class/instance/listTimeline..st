@@ -1,6 +1,6 @@
 api-calls
 listTimeline: aUserName
-	|timelineRequest result |
+	| timelineRequest result |
 	timelineRequest := SHCTimelineRequest withWebClient: self webclient.
 	timelineRequest username: aUserName.
 	result := timelineRequest execute.

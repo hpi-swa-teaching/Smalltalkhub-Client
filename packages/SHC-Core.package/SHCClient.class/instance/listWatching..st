@@ -1,6 +1,6 @@
 api-calls
 listWatching: aUserName
-	|watchingResult result |
+	| watchingResult result |
 	watchingResult := SHCWatchingRequest withWebClient: self webclient.
 	watchingResult username: aUserName.
 	result := watchingResult execute.
