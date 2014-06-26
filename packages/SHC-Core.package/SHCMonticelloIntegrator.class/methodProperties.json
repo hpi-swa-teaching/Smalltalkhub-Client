@@ -1,0 +1,15 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"McBrowser" : "AS 5/22/2014 13:57",
+		"McBrowser:" : "AS 5/22/2014 13:57",
+		"addLocalPackage:" : "AS 5/22/2014 14:41",
+		"addProject:fromUser:withPassword:" : "AS 5/22/2014 15:23",
+		"addProject:owner:withUser:withPassword:" : "AS 6/5/2014 16:51",
+		"addRepository:toPackage:" : "AS 5/22/2014 15:07",
+		"buildHttpString:withUser:" : "AS 5/22/2014 15:04",
+		"createHttpRepository:withUser:andPassword:" : "AS 5/22/2014 15:02",
+		"getPackage:" : "AS 5/22/2014 14:51",
+		"initialize" : "AS 5/22/2014 13:57",
+		"localPackageExists:" : "AS 5/22/2014 14:51" } }

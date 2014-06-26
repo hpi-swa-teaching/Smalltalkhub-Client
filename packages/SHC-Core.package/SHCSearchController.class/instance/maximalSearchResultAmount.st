@@ -1,0 +1,3 @@
+accessing
+maximalSearchResultAmount
+	^ 10

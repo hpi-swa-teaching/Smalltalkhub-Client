@@ -1,0 +1,15 @@
+{
+	"category" : "SHC-Core",
+	"classinstvars" : [
+		"username",
+		"password" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"webclient" ],
+	"name" : "SHCClient",
+	"pools" : [
+		 ],
+	"super" : "SystemWindow",
+	"type" : "normal" }

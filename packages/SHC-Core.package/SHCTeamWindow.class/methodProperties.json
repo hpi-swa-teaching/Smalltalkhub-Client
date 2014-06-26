@@ -1,0 +1,23 @@
+{
+	"class" : {
+		"newWithClient:" : "JP 6/26/2014 13:32",
+		"newWithClient:team:" : "JP 6/26/2014 13:31" },
+	"instance" : {
+		"initialize" : "JP 6/26/2014 13:39",
+		"projects" : "JP 6/26/2014 13:21",
+		"projects:" : "JP 6/26/2014 13:21",
+		"projectsIndex" : "JP 6/26/2014 13:21",
+		"projectsIndex:" : "JP 6/26/2014 13:21",
+		"projectsLabel" : "JP 6/26/2014 13:21",
+		"projectsList" : "JP 6/26/2014 13:21",
+		"teamMember" : "JP 6/26/2014 13:35",
+		"teamMember:" : "JP 6/26/2014 13:35",
+		"teamMemberLabel" : "JP 6/26/2014 13:30",
+		"teamMemberList" : "JP 6/26/2014 13:36",
+		"teamNameLabel" : "JP 6/26/2014 13:22",
+		"teamNameLabel:" : "JP 6/26/2014 13:22",
+		"teamname" : "JP 6/26/2014 13:31",
+		"teamname:" : "JP 6/26/2014 13:31",
+		"teamsIndex" : "JP 6/26/2014 13:21",
+		"teamsIndex:" : "JP 6/26/2014 13:21",
+		"update" : "JP 6/26/2014 15:00" } }

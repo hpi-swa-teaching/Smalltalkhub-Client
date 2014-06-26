@@ -1,0 +1,21 @@
+{
+	"category" : "SHC-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"name",
+		"ownerUid",
+		"owner",
+		"path",
+		"license",
+		"website",
+		"description",
+		"tags" ],
+	"name" : "SHCProject",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

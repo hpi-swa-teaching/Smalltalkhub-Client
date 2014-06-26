@@ -1,0 +1,3 @@
+accessing
+minimalSearchTermLength
+	^ 2
