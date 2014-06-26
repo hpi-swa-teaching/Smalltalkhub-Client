@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"applyLoggedInUi" : "AS 6/17/2014 12:15",
-		"applyLoggedOutUi" : "AS 6/17/2014 12:15",
+		"applyLoggedInUi" : "AH 6/26/2014 12:42",
+		"applyLoggedOutUi" : "AH 6/26/2014 12:42",
 		"clearProjectList" : "AS 6/5/2014 16:05",
-		"createUI" : "AH 6/26/2014 12:21",
-		"initialize" : "AH 6/17/2014 11:49",
+		"createUI" : "AH 6/26/2014 13:01",
+		"initialize" : "AH 6/26/2014 12:58",
 		"loginAndShowProjects" : "AS 6/5/2014 19:18",
 		"loginButton" : "AS 6/12/2014 11:53",
 		"logout" : "AS 6/5/2014 19:18",

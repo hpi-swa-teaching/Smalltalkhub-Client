@@ -1,8 +1,8 @@
 initialization
 initialize
 	super initialize.
-	self width: 480.
-	self height: 400.
+	self width: 470.
+	self height: 380.
 	self setLabel: 'SmalltalkHub Client'.
 	self client: SHCClient new.
 		
