@@ -6,4 +6,4 @@ projectsListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	selectedproject := self projects at: (index).
-	SHCProjectWindow newWithClient: (self client) user: selectedproject.
+	SHCProjectWindow newWith: (self client) project: selectedproject user: ('') password: ('').
