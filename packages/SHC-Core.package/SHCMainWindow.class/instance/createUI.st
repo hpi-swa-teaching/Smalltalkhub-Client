@@ -22,6 +22,10 @@ createUI
 		width: 200;
 		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
 		contents: 'password'.
+		
+	"Badass bypass because TextFieldMorph>>fontName:size: is useless"
+	"This should be a password field"
+	(passwordField findA: TextMorph) font: (StrikeFont passwordFontSize: 12).
 	self addMorph: passwordField.		
 	
 	loginButton := SimpleButtonMorph new.
