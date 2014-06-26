@@ -3,6 +3,6 @@ newWithClient: aShcClient team: aTeamName
 	| w |
 	w := SHCTeamWindow new.
 	w client: aShcClient.
-	w user: aTeamName.
+	w teamname: aTeamName.
 	w update.
 	^ w

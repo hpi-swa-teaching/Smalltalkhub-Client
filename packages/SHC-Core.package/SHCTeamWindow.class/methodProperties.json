@@ -1,9 +1,9 @@
 {
 	"class" : {
 		"newWithClient:" : "JP 6/26/2014 13:32",
-		"newWithClient:team:" : "JP 6/26/2014 13:31" },
+		"newWithClient:team:" : "JP 6/26/2014 15:28" },
 	"instance" : {
-		"initialize" : "JP 6/26/2014 13:39",
+		"initialize" : "JP 6/26/2014 15:26",
 		"projects" : "JP 6/26/2014 13:21",
 		"projects:" : "JP 6/26/2014 13:21",
 		"projectsIndex" : "JP 6/26/2014 13:21",

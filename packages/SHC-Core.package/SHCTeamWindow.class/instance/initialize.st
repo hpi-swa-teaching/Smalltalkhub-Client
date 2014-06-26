@@ -6,8 +6,8 @@ initialize
 	projects := #().
 	
 	self
-		width: 530;
-		height: 290;
+		width: 370;
+		height: 280;
 		setLabel: 'Team'.
 	
 	"Display teamName"
@@ -22,7 +22,7 @@ initialize
 	teamMemberLabel := TextMorph new.
 	self teamMemberLabel
 		contents: 'TeamMember';
-		position: self position + (10@60).
+		position: self position + (10@50).
 	self addMorph: self teamMemberLabel.
 	
 	self teamsIndex: 0.
@@ -32,8 +32,8 @@ initialize
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	self teamMemberList
-		position: self position + (10@80);
-		width: 250;
+		position: self position + (10@70);
+		width: 170;
 		height: 200.
 	self addMorph: self teamMemberList.
 	
@@ -41,7 +41,7 @@ initialize
 	projectsLabel := TextMorph new.
 	self projectsLabel
 		contents: 'Projects';
-		position: self position + (275@60).
+		position: self position + (190@50).
 	self addMorph: self projectsLabel.
 	
 	self projectsIndex: 0.
@@ -51,8 +51,8 @@ initialize
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	self projectsList
-		position: self position + (275@80);
-		width: 250;
+		position: self position + (190@70);
+		width: 170;
 		height: 200.
 	self addMorph: self projectsList.
 	
