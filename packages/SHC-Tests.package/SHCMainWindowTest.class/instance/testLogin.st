@@ -13,3 +13,4 @@ testLogin
 	self assert: (self loginInstance password = 'HurfDurf').
 	self assert: (self loginInstance client username  = 'ShcTestUser').
 	self assert: (self loginInstance client password  = 'HurfDurf').
+	self assert: (self loginInstance label = 'SmalltalkHub Client - Logged in as ShcTestUser')

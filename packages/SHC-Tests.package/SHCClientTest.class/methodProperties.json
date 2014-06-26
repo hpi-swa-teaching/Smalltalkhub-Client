@@ -14,10 +14,10 @@
 		"testLogout" : "AH 5/12/2014 11:35",
 		"testLogoutClearCredentials" : "AH 6/17/2014 12:01",
 		"testParesSearchProject" : "AS 6/12/2014 14:47",
-		"testParesSearchProjects" : "AS 6/12/2014 14:58",
+		"testParesSearchProjects" : "AH 6/26/2014 12:26",
 		"testParseProjects" : "AS 6/5/2014 16:13",
 		"testParseSearchUsers" : "AS 6/17/2014 11:47",
 		"testProjectNamesAsString" : "AS 6/5/2014 18:51",
-		"testSearchProjects" : "AS 6/19/2014 14:55",
+		"testSearchProjects" : "AH 6/26/2014 12:26",
 		"testSearchUsers" : "AS 6/12/2014 14:36",
 		"testUpdateProject" : "AS 6/19/2014 15:31" } }

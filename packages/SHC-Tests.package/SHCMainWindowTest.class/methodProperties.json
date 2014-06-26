@@ -6,9 +6,9 @@
 		"loginInstance:" : "AS 5/6/2014 14:04",
 		"setUp" : "AS 6/3/2014 13:20",
 		"tearDown" : "AH 6/17/2014 13:18",
-		"testLogin" : "AH 6/17/2014 13:22",
-		"testLogout" : "AH 6/17/2014 13:22",
+		"testLogin" : "AH 6/26/2014 12:41",
+		"testLogout" : "AH 6/26/2014 12:41",
 		"testMyProjectsList" : "AS 6/12/2014 12:11",
 		"testProjectList" : "AS 6/5/2014 16:08",
-		"testSearch" : "AS 6/12/2014 16:47",
+		"testSearch" : "AH 6/26/2014 12:26",
 		"testWrongLogin" : "AS 6/17/2014 13:50" } }
