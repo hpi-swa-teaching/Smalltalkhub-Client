@@ -1,3 +1,0 @@
-accessing
-maximalSearchResultAmount
-	^ 10

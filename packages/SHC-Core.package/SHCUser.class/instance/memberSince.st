@@ -1,4 +1,0 @@
-accessing
-memberSince
-
-	^ memberSince

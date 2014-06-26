@@ -1,3 +1,0 @@
-accessing
-ownerUid 
-	^ ownerUid

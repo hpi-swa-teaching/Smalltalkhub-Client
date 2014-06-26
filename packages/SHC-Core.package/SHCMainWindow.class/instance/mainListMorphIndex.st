@@ -1,3 +1,0 @@
-accessing
-mainListMorphIndex
-	^ mainListMorphIndex
