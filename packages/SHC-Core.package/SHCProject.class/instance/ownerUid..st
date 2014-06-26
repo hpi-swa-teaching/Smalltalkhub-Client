@@ -1,3 +1,3 @@
 accessing
 ownerUid: aUid
-	ownerUid  := aUid
+	ownerUid := aUid

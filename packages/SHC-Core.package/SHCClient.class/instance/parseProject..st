@@ -9,4 +9,5 @@ parseProject: aDecodedJsonProject
 	p tags: (aDecodedJsonProject at: 'tagsString').
 	p description: (aDecodedJsonProject at: 'projectDescription').
 	p website: (aDecodedJsonProject at: 'website').
+	p ownerIsUser: (self testUser: p owner).
 	^ p
