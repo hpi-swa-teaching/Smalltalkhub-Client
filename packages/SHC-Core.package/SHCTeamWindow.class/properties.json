@@ -1,0 +1,25 @@
+{
+	"category" : "SHC-Core",
+	"classinstvars" : [
+		"timelineLabel" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"teamsList",
+		"projectsLabel",
+		"projectsList",
+		"teamsIndex",
+		"projectsIndex",
+		"projects",
+		"teamNameLabel",
+		"memberlist",
+		"teamMemberLabel",
+		"teamMemberList",
+		"teamname",
+		"teamMember" ],
+	"name" : "SHCTeamWindow",
+	"pools" : [
+		 ],
+	"super" : "SHCWindow",
+	"type" : "normal" }
