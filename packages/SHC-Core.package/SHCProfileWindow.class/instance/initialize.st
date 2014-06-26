@@ -61,7 +61,8 @@ initialize
 	self teamsList
 		position: self position + (275@160);
 		width: 250;
-		height: 200.
+		height: 200;
+		doubleClickSelector: #teamsListClick.
 	self addMorph: self teamsList.
 	
 	"Projects"
@@ -80,7 +81,8 @@ initialize
 	self projectsList
 		position: self position + (10@160);
 		width: 250;
-		height: 200.
+		height: 200;
+		doubleClickSelector: #projectsListClick.
 	self addMorph: self projectsList.
 	
 	"Timeline"

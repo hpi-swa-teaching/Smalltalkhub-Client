@@ -36,6 +36,6 @@ update
 	projectsJSON := self client listProjects: self user.
 	(projectsJSON isEmpty)
 	ifFalse: [self projects: (projectsJSON collect: [:dict | dict at: 'name'])]
-	ifTrue: [self teams: (nil) ].
+	ifTrue: [self projects: (nil) ].
 	self changed: #projects;
              changed: #projectsIndex.
