@@ -12,9 +12,13 @@ initialize
 		position: self position + (10@30).
 	self addMorph: self projectNameLabel.
 	
-	self ownerLabel: TextMorph new.
+	self ownerLabel: SimpleButtonMorph new.
 	self ownerLabel
-		contents: 'OwnerDummy';
+		label: 'OwnerDummy';
+		target: self;
+		color: Color transparent;
+		borderColor: Color transparent;
+		actionSelector: #ownerLabelClick;
 		position: self position + (10@50).
 	self addMorph: self ownerLabel.
 	

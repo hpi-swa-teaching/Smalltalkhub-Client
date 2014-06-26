@@ -20,7 +20,7 @@ update
 	self changed: #watcherListMorphIndex.
 	self changed: #watcher.
 	
-	self ownerLabel contents: (self activeProject owner).
+	self ownerLabel label: ('~', (self activeProject owner)).
 	self licenseField contents: (self activeProject license).
 	self websiteField contents: (self activeProject website).
 	self tagsField contents: (self activeProject tags).
