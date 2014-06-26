@@ -1,0 +1,3 @@
+accessing
+clientInstance
+	^ clientInstance
