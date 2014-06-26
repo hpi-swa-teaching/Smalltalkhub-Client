@@ -27,9 +27,7 @@
 		"contributor",
 		"watcher",
 		"contributorListMorphIndex",
-		"watcherListMorphIndex",
-		"username",
-		"password" ],
+		"watcherListMorphIndex" ],
 	"name" : "SHCProjectWindow",
 	"pools" : [
 		 ],
