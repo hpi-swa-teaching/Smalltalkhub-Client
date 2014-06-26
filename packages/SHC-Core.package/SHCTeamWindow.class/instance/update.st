@@ -14,7 +14,7 @@ update
 	self changed: #teamMember;
 		 changed: #teamsIndex.
 					
-	projectsJSON := self client listTeamProject: self user.
+	projectsJSON := self client listTeamProject: self teamname.
 	(projectsJSON isEmpty)
 	ifFalse: [self projects: (projectsJSON collect: [:dict | dict at: 'name'])]
 	ifTrue: [self teams: (nil) ].
