@@ -2,7 +2,7 @@ as yet unclassified
 saveProjectChanges	
 	| result |
 	
-	(self activeProject owner = self username) 
+	(self activeProject owner = self client username) 
 		ifFalse: [ self saveButton color: Color red. self cancelProjectChanges. ^nil ].
 		
 	self activeProject license: self licenseField contents.
