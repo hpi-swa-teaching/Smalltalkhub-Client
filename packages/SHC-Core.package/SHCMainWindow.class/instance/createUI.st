@@ -75,9 +75,10 @@ createUI
 		doubleClickSelector: #myProjectsListClick.
 	self window addMorph: self myProjectsListMorph frame: (0.5@0.1 corner: 1.0@1.0).
 	
-	self myProjectsTextMorph: PluggableTextMorphPlus new.
+	self myProjectsTextMorph: TextMorph new.
 	(self myProjectsTextMorph)
-		model: self;
-		setText: 'My Projects:'.
+"		model: self;
+		setText: 'My Projects:'."
+		contents: 'My Projects:'.
 	self window addMorph: self myProjectsTextMorph frame: (0.5@0.0 corner: 0.7@0.1).
 	
