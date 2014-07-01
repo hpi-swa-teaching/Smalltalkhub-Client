@@ -8,8 +8,8 @@ initialize
 	watching := #().
 	
 	self
-		width: 540;
-		height: 620;
+		width: 530;
+		height: 595;
 		setLabel: 'Profile'.
 	
 	"Display name"
@@ -49,7 +49,7 @@ initialize
 	teamsLabel := TextMorph new.
 	self teamsLabel
 		contents: 'Teams';
-		position: self position + (275@140).
+		position: self position + (270@140).
 	self addMorph: self teamsLabel.
 	
 	self teamsIndex: 0.
@@ -59,7 +59,7 @@ initialize
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	self teamsList
-		position: self position + (275@160);
+		position: self position + (270@160);
 		width: 250;
 		height: 200;
 		doubleClickSelector: #teamsListClick.
@@ -89,7 +89,7 @@ initialize
 	timelineLabel := TextMorph new.
 	self timelineLabel
 		contents: 'Timeline';
-		position: self position + (10@390).
+		position: self position + (10@365).
 	self addMorph: self timelineLabel.
 	
 	self timelineIndex: 0.
@@ -99,7 +99,7 @@ initialize
 		selected: #timelineIndex
 		changeSelected: #timelineIndex:.
 	self timelineList
-		position: self position + (10@410);
+		position: self position + (10@385);
 		width: 250;
 		height: 200.
 	self addMorph: self timelineList.
@@ -108,7 +108,7 @@ initialize
 	watchingLabel := TextMorph new.
 	self watchingLabel
 		contents: 'Watching these projects';
-		position: self position + (275@390).
+		position: self position + (270@365).
 	self addMorph: self watchingLabel.
 	
 	self watchingIndex: 0.
@@ -118,7 +118,7 @@ initialize
 		selected: #watchingIndex
 		changeSelected: #watchingIndex:.
 	self watchingList
-		position: self position + (275@410);
+		position: self position + (270@385);
 		width: 250;
 		height: 200.
 	self addMorph: self watchingList.
