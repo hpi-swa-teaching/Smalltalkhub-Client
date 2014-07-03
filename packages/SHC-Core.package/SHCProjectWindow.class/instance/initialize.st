@@ -39,6 +39,7 @@ initialize
 	
 	descriptionField := TextFieldMorph new.
 	self descriptionField
+		releaseActionMap;
 		position: self position + (10@90);
 		width: 380;
 		height: 68;
