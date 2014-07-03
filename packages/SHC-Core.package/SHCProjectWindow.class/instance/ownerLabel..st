@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 ownerLabel: aOwnerLabel
 	ownerLabel := aOwnerLabel

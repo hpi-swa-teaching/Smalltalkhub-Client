@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 isInMonticello
 	| mcintegrator |
 	mcintegrator := SHCMonticelloIntegrator new.

@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 cancelProjectChanges
 	self licenseField contents: (self activeProject license).
 	self websiteField contents: (self activeProject website).

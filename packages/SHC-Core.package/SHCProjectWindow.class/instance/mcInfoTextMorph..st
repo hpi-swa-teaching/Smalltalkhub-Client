@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 mcInfoTextMorph: aTextMorph
 	mcInfoTextMorph := aTextMorph

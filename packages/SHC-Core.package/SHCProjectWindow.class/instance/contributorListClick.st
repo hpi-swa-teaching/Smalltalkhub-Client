@@ -1,4 +1,4 @@
-as yet unclassified
+ui-events
 contributorListClick
 	| index selectedcontributor |
 

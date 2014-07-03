@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 addProjectToMonticello
 	| integrator |
 	integrator := SHCMonticelloIntegrator new.

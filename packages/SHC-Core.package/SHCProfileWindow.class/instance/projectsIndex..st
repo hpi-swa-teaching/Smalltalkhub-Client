@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 projectsIndex: anInteger
 	projectsIndex := anInteger.
 	self changed: #projectsIndex
