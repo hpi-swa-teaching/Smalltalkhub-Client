@@ -20,8 +20,8 @@ update
 							
 	watchingJSON := self client listWatching: self user.
 	(watchingJSON isEmpty)
-	ifFalse: [self watching: (watchingJSON collect: [:dict | dict at: 'project'])]
-	ifTrue: [self teams: (nil) ].
+	ifFalse: [self watching: watchingJSON ]
+	ifTrue: [self watching: nil ].
 	self changed: #watching;
 	       changed: #watchingIndex.
 	
