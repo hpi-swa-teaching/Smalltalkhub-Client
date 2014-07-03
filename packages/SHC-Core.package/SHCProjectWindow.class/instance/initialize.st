@@ -109,21 +109,17 @@ initialize
 	
 	self cancelButton: SimpleButtonMorph new.
 	self cancelButton
-		position: self position + (300@330);
 		label: 'cancel';
 		target: self;
 		actionSelector: #cancelProjectChanges;
 		color: Color veryVeryLightGray.
-	self addMorph: self cancelButton.
 	
 	self saveButton: SimpleButtonMorph new.
 	self saveButton
-		position: self position + (353@330);
 		label: 'save';
 		target: self;
 		actionSelector: #saveProjectChanges;
 		color: Color veryVeryLightGray.
-	self addMorph: self saveButton.
 	
 	self contributor: #().
 	self watcher: #().
