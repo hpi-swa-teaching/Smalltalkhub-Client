@@ -1,6 +1,5 @@
 {
 	"class" : {
-		"newWithClient:team:" : "JP 6/26/2014 15:28",
 		"showWithClient:team:" : "AS 7/3/2014 16:47:59.82" },
 	"instance" : {
 		"displayProjects" : "AS 7/3/2014 16:31",
@@ -12,7 +11,7 @@
 		"projectsIndex:" : "JP 6/26/2014 13:21",
 		"projectsLabel" : "JP 6/26/2014 13:21",
 		"projectsList" : "JP 6/26/2014 13:21",
-		"projectsListClick" : "AH 7/3/2014 15:16",
+		"projectsListClick" : "AS 7/3/2014 17:29",
 		"team" : "AS 7/3/2014 16:13",
 		"team:" : "AS 7/3/2014 16:13",
 		"teamMemberLabel" : "JP 6/26/2014 13:30",

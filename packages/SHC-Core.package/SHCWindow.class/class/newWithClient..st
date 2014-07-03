@@ -1,6 +1,0 @@
-initialization
-newWithClient: aSHCClient
-	| w |
-	w := self new.
-	w client: aSHCClient.
-	^ w
