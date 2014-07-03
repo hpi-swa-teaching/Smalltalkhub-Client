@@ -1,7 +1,11 @@
 running
-testAddProjectfromUser
-	| repo web |
-	repo := self mcinstance addProject: 'ShcTestProject0' fromUser: 'ShcTestUser' withPassword: 'HurfDurf'.
+testAddProject
+	| project repo web |
+	project := SHCProject new.
+	project name: 'ShcTestProject0'.
+	project owner: 'ShcTestUser'.
+	
+	repo := self mcinstance addProject: project withUser: 'ShcTestUser' withPassword: 'HurfDurf'.
 	self assert: (repo packageName = 'ShcTestProject0').
 	self assert: (repo repositoryGroup repositories size = 2).
 	web := repo repositoryGroup repositories  at: 2.

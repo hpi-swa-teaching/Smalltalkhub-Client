@@ -31,6 +31,12 @@ initialize
 		color: Color veryVeryLightGray.
 	self addMorph: self registerProjectButton.
 	
+	self mcInfoTextMorph: TextMorph new.
+	self mcInfoTextMorph 
+		position: self position + (270@33);
+		contents: 'Already in Monticello'.
+	self addMorph: self mcInfoTextMorph.
+	
 	descriptionLabel := TextMorph new.
 	self descriptionLabel 
 		position: self position + (10@70);
