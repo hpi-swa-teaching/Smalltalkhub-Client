@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 teamNameLabel: aMorph
 	teamNameLabel := aMorph

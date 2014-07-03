@@ -1,3 +1,3 @@
-as yet unclassified
-members: anObject
-	members := anObject
+accessing
+members: aCollection
+	members := aCollection
