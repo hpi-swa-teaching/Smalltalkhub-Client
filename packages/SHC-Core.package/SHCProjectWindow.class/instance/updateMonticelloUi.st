@@ -1,4 +1,4 @@
-as yet unclassified
+ui-actions
 updateMonticelloUi
 	(self isInMonticello) 
 		ifTrue: [ self registerProjectButton hide. self mcInfoTextMorph show]

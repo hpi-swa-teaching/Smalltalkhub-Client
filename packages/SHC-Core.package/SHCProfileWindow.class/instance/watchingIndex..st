@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 watchingIndex: anInteger
 	watchingIndex := anInteger.
 	self changed: #watchingIndex

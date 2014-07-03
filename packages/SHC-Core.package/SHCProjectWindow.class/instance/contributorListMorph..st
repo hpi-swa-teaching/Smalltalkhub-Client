@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 contributorListMorph: aMorph
 	contributorListMorph := aMorph
