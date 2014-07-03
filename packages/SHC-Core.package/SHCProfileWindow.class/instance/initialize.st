@@ -75,7 +75,7 @@ initialize
 	self projectsIndex: 0.
 	projectsList := PluggableListMorph
 		on: self
-		list: #projects
+		list: #projectNames
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	self projectsList

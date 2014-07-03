@@ -29,13 +29,13 @@ update
 	(timelineJSON isEmpty)
 	ifFalse: [self timeline: (timelineJSON collect: [:dict|
 			 (dict at: 'username'), ' ', (dict at: 'title'), ' ', (dict at: 'project')])]
-	ifTrue: [self teams: (nil) ].
+	ifTrue: [self timeline: (nil) ].
 	self changed: #timeline;
 	       changed: #timelineIndex.
 	
 	projectsJSON := self client listProjects: self user.
 	(projectsJSON isEmpty)
-	ifFalse: [self projects: (projectsJSON collect: [:dict | dict at: 'name'])]
+	ifFalse: [self projects: (self client parseProjects: projectsJSON)]
 	ifTrue: [self projects: (nil) ].
-	self changed: #projects;
+	self changed: #projectNames;
              changed: #projectsIndex.
