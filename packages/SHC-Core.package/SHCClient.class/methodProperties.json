@@ -5,9 +5,6 @@
 		"username" : "AH 6/17/2014 11:09",
 		"username:" : "AH 6/17/2014 11:09" },
 	"instance" : {
-		"ProjectName:username:" : "JP 7/1/2014 12:10",
-		"createProjects" : "JP 5/20/2014 14:46",
-		"createProjects:" : "JP 5/20/2014 14:46",
 		"initialize" : "AS 5/12/2014 11:54",
 		"listContributorsFromProject:from:" : "MB 6/12/2014 14:48",
 		"listProject:from:" : "MB 6/5/2014 17:28",
@@ -29,7 +26,7 @@
 		"parseSearchProjects:" : "AS 6/12/2014 14:57",
 		"parseSearchUser:" : "AS 6/17/2014 11:24",
 		"parseSearchUsers:" : "AS 6/17/2014 11:23",
-		"parseTeamMember:" : "JP 6/26/2014 14:29",
+		"parseTeam:withMembers:andProjects:" : "AS 7/3/2014 16:14",
 		"parseUser:" : "MB 6/12/2014 15:14",
 		"parseUsers:" : "MB 6/12/2014 14:54",
 		"password" : "AH 6/17/2014 11:13",

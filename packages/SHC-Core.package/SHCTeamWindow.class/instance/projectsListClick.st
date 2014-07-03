@@ -1,12 +1,8 @@
-as yet unclassified
+ui-events
 projectsListClick
-	| index selectedproject json shcProject|
+	| selectedproject |
 
-	index := self projectsIndex.
-	(index = 0) ifTrue: [^ nil].
-	selectedproject := self projects at: (index).
-	
-	json := self client listProject: selectedproject from: self teamname.
-	shcProject := self client parseProject: json.
-	SHCProjectWindow newWith: (self client) and: shcProject.
+	(self projectsIndex = 0) ifTrue: [^ nil].
+	selectedproject := self team projects at: (self projectsIndex).	
+	SHCProjectWindow newWith: (self client) and: selectedproject.
 	

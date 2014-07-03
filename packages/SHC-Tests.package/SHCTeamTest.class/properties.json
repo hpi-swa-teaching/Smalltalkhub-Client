@@ -1,16 +1,14 @@
 {
-	"category" : "SHC-Core",
+	"category" : "SHC-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"members",
-		"projects",
-		"name" ],
-	"name" : "SHCTeam",
+		 ],
+	"name" : "SHCTeamTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }
