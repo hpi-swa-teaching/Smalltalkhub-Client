@@ -1,14 +1,13 @@
-as yet unclassified
+initialization
 initialize 
 	super initialize.
-	
-	memberlist := #().
-	projects := #().
 	
 	self
 		width: 370;
 		height: 280;
 		setLabel: 'Team'.
+		
+	self team: SHCTeam new.
 	
 	"Display teamName"
 	teamNameLabel := TextMorph new.
@@ -28,7 +27,7 @@ initialize
 	self teamsIndex: 0.
 	teamMemberList := PluggableListMorph
 		on: self
-		list: #teamMember
+		list: #teamMemberNames
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	self teamMemberList
@@ -48,7 +47,7 @@ initialize
 	self projectsIndex: 0.
 	projectsList := PluggableListMorph
 		on: self
-		list: #projects
+		list: #projectNames
 		selected: #projectsIndex
 		changeSelected: #projectsIndex:.
 	self projectsList

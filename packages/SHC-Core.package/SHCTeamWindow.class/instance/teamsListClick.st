@@ -1,9 +1,7 @@
-as yet unclassified
+ui-events
 teamsListClick
-	| index selecteduser |
-
-	index := self teamsIndex.
-	(index = 0) ifTrue: [^ nil].
+	| selecteduser |
+	(self teamsIndex <= 0) ifTrue: [^ nil].
 	
-	selecteduser := self teamMember at: (index).
-	SHCProfileWindow showWithClient: (self client) user: selecteduser.
+	selecteduser := self team members at: (self teamsIndex).
+	SHCProfileWindow showWithClient: (self client) user: (selecteduser name).

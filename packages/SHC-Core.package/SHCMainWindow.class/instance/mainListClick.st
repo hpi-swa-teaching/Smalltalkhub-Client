@@ -1,5 +1,6 @@
 ui-events
 mainListClick
+	(self mainListMorphIndex <= 0) ifTrue: [^nil].
 	(self searchController isProject: self mainListMorphIndex) 
 		ifTrue: [ | p | p :=self searchController projectFromResult: (self mainListMorphIndex).
 				SHCProjectWindow showWithClient: 

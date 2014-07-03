@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"members" ],
+		"members",
+		"projects",
+		"name" ],
 	"name" : "SHCTeam",
 	"pools" : [
 		 ],

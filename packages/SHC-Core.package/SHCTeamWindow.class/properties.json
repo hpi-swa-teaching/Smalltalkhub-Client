@@ -17,7 +17,7 @@
 		"teamMemberLabel",
 		"teamMemberList",
 		"teamname",
-		"teamMember" ],
+		"team" ],
 	"name" : "SHCTeamWindow",
 	"pools" : [
 		 ],
