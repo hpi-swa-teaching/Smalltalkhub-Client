@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"newWithClient:" : "JP 6/26/2014 13:32",
-		"newWithClient:team:" : "JP 6/26/2014 15:28" },
+		"newWithClient:team:" : "AH 7/3/2014 14:26",
+		"showWithClient:team:" : "AH 7/3/2014 14:27" },
 	"instance" : {
-		"initialize" : "JP 6/26/2014 16:26",
+		"initialize" : "AH 7/3/2014 14:35",
 		"projects" : "JP 6/26/2014 13:21",
 		"projects:" : "JP 6/26/2014 13:21",
 		"projectsIndex" : "JP 6/26/2014 13:21",
 		"projectsIndex:" : "JP 6/26/2014 13:21",
 		"projectsLabel" : "JP 6/26/2014 13:21",
 		"projectsList" : "JP 6/26/2014 13:21",
-		"projectsListClick" : "JP 7/1/2014 12:14",
+		"projectsListClick" : "AH 7/3/2014 14:30",
 		"teamMember" : "JP 6/26/2014 13:35",
 		"teamMember:" : "JP 6/26/2014 13:35",
 		"teamMemberLabel" : "JP 6/26/2014 13:30",
@@ -21,5 +21,5 @@
 		"teamname:" : "JP 6/26/2014 13:31",
 		"teamsIndex" : "JP 6/26/2014 13:21",
 		"teamsIndex:" : "JP 6/26/2014 13:21",
-		"teamsListClick" : "JP 6/26/2014 16:27",
+		"teamsListClick" : "AH 7/3/2014 14:28",
 		"update" : "JP 6/26/2014 16:32" } }

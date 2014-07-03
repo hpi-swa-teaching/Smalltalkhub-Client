@@ -1,7 +1,7 @@
 accessing
 projectsListClick
-	| selectedproject json|
+	| selectedproject|
 	
 	(self projectsIndex = 0) ifTrue: [^ nil].
 	selectedproject := self projects at: (self projectsIndex).	
-	SHCProjectWindow newWith: (self client) and: selectedproject
+	SHCProjectWindow showWithClient: (self client) and: selectedproject

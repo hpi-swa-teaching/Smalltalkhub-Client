@@ -6,4 +6,4 @@ teamsListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	selectedteam := self teams at: (index).
-	SHCTeamWindow newWithClient: (self client) team: selectedteam.
+	SHCTeamWindow showWithClient: (self client) team: selectedteam.

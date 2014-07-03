@@ -122,5 +122,3 @@ initialize
 		width: 250;
 		height: 200.
 	self addMorph: self watchingList.
-	
-	self openInHand.

@@ -1,8 +1,7 @@
 initialization
-newWithClient: aShcClient user: aUserName
+newWithClient: aSHCClient user: aUserName
 	| w |
-	w := SHCProfileWindow new.
-	w client: aShcClient.
+	w := self newWithClient: aSHCClient.
 	w user: aUserName.
 	w update.
 	^ w

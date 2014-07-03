@@ -158,5 +158,3 @@ initialize
 		borderWidth: 0;
 		doubleClickSelector: #watcherListClick.
 	self addMorph: self watcherListMorph.
-
-	self openInHand 

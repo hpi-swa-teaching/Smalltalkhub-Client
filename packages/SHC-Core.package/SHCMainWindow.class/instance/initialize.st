@@ -15,7 +15,6 @@ initialize
 	
 	self createUI.
 	
-	self openInHand.
 	self applyLoggedOutUi.
 	self relogin.
 	

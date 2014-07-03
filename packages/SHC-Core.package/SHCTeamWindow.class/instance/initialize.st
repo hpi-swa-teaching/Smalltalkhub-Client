@@ -57,5 +57,3 @@ initialize
 		height: 200;
 		doubleClickSelector: #projectsListClick.
 	self addMorph: self projectsList.
-	
-	self openInHand.

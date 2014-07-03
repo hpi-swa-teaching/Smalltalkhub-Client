@@ -6,4 +6,4 @@ teamsListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	selecteduser := self teamMember at: (index).
-	SHCProfileWindow newWithClient: (self client) user: selecteduser.
+	SHCProfileWindow showWithClient: (self client) user: selecteduser.

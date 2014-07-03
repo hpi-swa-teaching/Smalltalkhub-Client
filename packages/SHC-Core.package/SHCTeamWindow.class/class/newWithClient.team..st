@@ -1,8 +1,7 @@
 initialization
-newWithClient: aShcClient team: aTeamName
+newWithClient: aSHCClient team: aTeamName
 	| w |
-	w := SHCTeamWindow new.
-	w client: aShcClient.
+	w := self newWithClient: aSHCClient.
 	w teamname: aTeamName.
 	w update.
 	^ w

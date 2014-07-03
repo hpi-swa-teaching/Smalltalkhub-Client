@@ -8,5 +8,5 @@ projectsListClick
 	
 	json := self client listProject: selectedproject from: self teamname.
 	shcProject := self client parseProject: json.
-	SHCProjectWindow newWith: (self client) and: shcProject.
+	SHCProjectWindow showWithClient: (self client) and: shcProject.
 	
