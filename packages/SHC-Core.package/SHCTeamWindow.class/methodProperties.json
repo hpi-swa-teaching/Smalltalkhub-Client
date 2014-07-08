@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"newWithClient:" : "JP 6/26/2014 13:32",
+		"newWithClient:team:" : "JP 6/26/2014 15:28",
 		"showWithClient:team:" : "AS 7/3/2014 16:47:59.82" },
 	"instance" : {
 		"displayProjects" : "AS 7/3/2014 16:31",
@@ -7,6 +9,8 @@
 		"fetchTeamDetails" : "AS 7/3/2014 16:16",
 		"initialize" : "AS 7/3/2014 16:30",
 		"projectNames" : "AS 7/3/2014 16:31",
+		"projects" : "JP 6/26/2014 13:21",
+		"projects:" : "JP 6/26/2014 13:21",
 		"projectsIndex" : "JP 6/26/2014 13:21",
 		"projectsIndex:" : "JP 6/26/2014 13:21",
 		"projectsLabel" : "JP 6/26/2014 13:21",
@@ -14,6 +18,8 @@
 		"projectsListClick" : "AS 7/3/2014 17:29",
 		"team" : "AS 7/3/2014 16:13",
 		"team:" : "AS 7/3/2014 16:13",
+		"teamMember" : "JP 6/26/2014 13:35",
+		"teamMember:" : "JP 6/26/2014 13:35",
 		"teamMemberLabel" : "JP 6/26/2014 13:30",
 		"teamMemberList" : "JP 6/26/2014 13:36",
 		"teamMemberNames" : "AS 7/3/2014 16:30",

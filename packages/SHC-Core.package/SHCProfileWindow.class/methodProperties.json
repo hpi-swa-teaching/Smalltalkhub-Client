@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"newWithClient:" : "AS 6/5/2014 19:20",
+		"newWithClient:user:" : "AS 6/5/2014 19:20",
 		"showWithClient:user:" : "AH 7/3/2014 14:27" },
 	"instance" : {
 		"displayNameLabel" : "JP 6/10/2014 14:33",
