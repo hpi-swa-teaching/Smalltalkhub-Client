@@ -1,3 +1,3 @@
 accessing
 projectDetails
-	^ projectDetails.
+	^ projectDetails

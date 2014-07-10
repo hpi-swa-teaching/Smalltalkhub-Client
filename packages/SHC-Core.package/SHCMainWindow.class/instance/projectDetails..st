@@ -1,3 +1,3 @@
 accessing
 projectDetails: aProjectList 
-	projectDetails := aProjectList.
+	projectDetails := aProjectList

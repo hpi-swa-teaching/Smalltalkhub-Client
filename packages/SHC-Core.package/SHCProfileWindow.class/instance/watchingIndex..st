@@ -1,4 +1,4 @@
 accessing
 watchingIndex: anInteger
 	watchingIndex := anInteger.
-	self changed: #watchingIndex
+	self changed: #watchingIndex.

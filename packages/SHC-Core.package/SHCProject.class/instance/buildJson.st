@@ -9,4 +9,4 @@ buildJson
 		'"name":"', (self name), '",',
 		'"license":"', (self license), '"',
 			'}'.
-	^ jsonString.
+	^ jsonString

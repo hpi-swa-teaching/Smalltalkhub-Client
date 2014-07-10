@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"client" : "AS 6/12/2014 15:03",
+		"client" : "JP 7/10/2014 15:49",
 		"client:" : "AS 6/12/2014 15:03",
 		"initialize" : "AS 6/12/2014 16:03",
 		"isProject:" : "AS 6/17/2014 11:31",
@@ -10,12 +10,12 @@
 		"maximalSearchResultAmount" : "AS 6/12/2014 15:27",
 		"minimalSearchTermLength" : "AS 6/12/2014 15:17",
 		"projectFromResult:" : "AS 6/17/2014 11:37",
-		"projectListIndex:" : "AS 6/17/2014 11:30",
+		"projectListIndex:" : "JP 7/10/2014 15:50",
 		"projectSearchResults" : "AS 6/12/2014 15:10",
 		"projectSearchResults:" : "AS 6/12/2014 15:29",
-		"readableSearchResults" : "AS 6/17/2014 11:21",
+		"readableSearchResults" : "JP 7/10/2014 15:50",
 		"searchAll:" : "AS 6/17/2014 11:26",
 		"userFromResult:" : "AS 6/17/2014 11:39",
-		"userListIndex:" : "AS 6/17/2014 11:35",
+		"userListIndex:" : "JP 7/10/2014 15:50",
 		"userSearchResults" : "AS 6/12/2014 15:09",
-		"userSearchResults:" : "AS 6/12/2014 15:31" } }
+		"userSearchResults:" : "JP 7/10/2014 15:50" } }

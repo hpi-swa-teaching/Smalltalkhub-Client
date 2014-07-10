@@ -1,3 +1,3 @@
 accessing
 teamMemberNames
-	^ team members collect: [:each | each name]
+	^ team members collect: [:each | each name].

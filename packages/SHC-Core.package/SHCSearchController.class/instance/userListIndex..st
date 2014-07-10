@@ -6,4 +6,4 @@ userListIndex: anInteger
 	i := i - 1.
 	(i > self userSearchResults size) ifTrue: [i := 0].
 	(i < 0) ifTrue: [i := 0].
-	^ i.
+	^ i

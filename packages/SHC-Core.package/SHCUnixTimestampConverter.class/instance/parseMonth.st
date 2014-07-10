@@ -5,4 +5,4 @@ parseMonth
 	(self timestamp > monthSecond)
 		ifTrue: [self timestamp: self timestamp - monthSecond.
 				self increaseMonth.
-				self parseMonth]
+				self parseMonth].

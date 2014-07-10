@@ -1,3 +1,3 @@
 accessing
 responseContent
-	^ responseContent.
+	^ responseContent

@@ -1,3 +1,3 @@
 accessing
 searchButton: aButton
-	searchButton := aButton.
+	searchButton := aButton

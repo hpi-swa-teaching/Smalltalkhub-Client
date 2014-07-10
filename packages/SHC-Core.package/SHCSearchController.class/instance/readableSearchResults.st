@@ -7,4 +7,4 @@ readableSearchResults
 	self projectSearchResults do: [:each | list add: (indent, each name)].
 	list add: 'Users:'.
 	self userSearchResults do: [:each | list add: (indent, each name)].
-	^ list.
+	^ list
