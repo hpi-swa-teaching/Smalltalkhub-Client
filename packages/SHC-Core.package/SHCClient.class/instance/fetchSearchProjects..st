@@ -1,4 +1,4 @@
-api-calls
+api-calls internal
 fetchSearchProjects: aSearchTerm
 	| result array request |
 	request := SHCSearchProjectsRequest withWebClient: self webclient.

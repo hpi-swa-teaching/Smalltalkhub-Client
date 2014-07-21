@@ -1,4 +1,4 @@
-api-calls
+api-calls internal
 fetchUsers: aSearchTerm
 	| result array request |
 	request := SHCSearchUsersRequest withWebClient: self webclient.
