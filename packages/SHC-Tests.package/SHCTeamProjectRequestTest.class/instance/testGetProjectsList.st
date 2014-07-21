@@ -1,11 +1,11 @@
 as yet unclassified
-testGetTeamsList
+testGetProjectsList
 	| response parsedResponse |
-	self requestInstance username: 'ShcTestUser'.
+	self requestInstance teamname: 'SWT'.
 	self requestInstance execute.
 	response := self requestInstance responseContent.
 	parsedResponse := WebUtils jsonDecode: (ReadStream on: response).
-	
+
 	self assert: (parsedResponse size = 2).
-	self assert: ((parsedResponse at:1) at: 'name') = 'ShcTestTeam0'.
-	self assert: ((parsedResponse at:2) at: 'name') = 'ShcTestTeam1'.	
+	self assert: ((parsedResponse at: 1) at: 'name') = 'L33TPr0j3ct'.
+	self assert: ((parsedResponse at: 2) at: 'name') = 'SmalltalkHubClient'.

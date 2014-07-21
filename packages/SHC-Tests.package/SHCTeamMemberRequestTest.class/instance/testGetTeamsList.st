@@ -1,7 +1,14 @@
 as yet unclassified
 testGetTeamsList
-	| response |
+	| response parsedList |
 	self requestInstance teamname: 'SWT'.
 	self requestInstance execute.
 	response := self requestInstance responseContent.
-	self assert: (response = '[{"location":"","website":"","admin":false,"watching":[],"fullName":"adi64","path":"~adi64","email":"aholfter+smalltalkhub@googlemail.com","name":"adi64","created":3575017355,"mcUsername":"","username":"adi64","sid":"1f7ba046-826a-4b10-894e-4a27c44c2e82"},{"location":"Potsdam, Germany","website":"www.arthursilber.de","admin":false,"watching":["4466c584-0c24-4ae1-b768-8fdb3865917e"],"fullName":"AtiX","path":"~AtiX","email":"arthur@arthursilber.de","name":"AtiX","created":3575031516,"mcUsername":"","username":"AtiX","sid":"6323dc39-eb29-4193-944e-edaf7b31562c"},{"location":"","website":"","admin":false,"watching":[],"fullName":"1337haxx0r","path":"~1337haxx0r","email":"13@37.com","name":"1337haxx0r","created":3575813609,"mcUsername":"","username":"1337haxx0r","sid":"4b57b6fc-9d90-463f-8b7d-60cd4b9ca887"},{"location":"tonga","website":"","admin":false,"watching":["e5a11500-847c-4a53-817d-929485321d32","01d8cad6-e20f-4fe0-beea-ee36675285d6"],"fullName":"roebrt Meier","path":"~roebrt","email":"roberasd@masil.com","name":"roebrt","created":3575841579,"mcUsername":"","username":"roebrt","sid":"7557d3f3-786d-47be-a377-a35e2f8af381"}]')
+	parsedList := WebUtils jsonDecode: (ReadStream on: response).
+
+	self assert: (parsedList size = 4).
+	self assert: ((parsedList at:1) at: 'name') = 'adi64'.
+	self assert: ((parsedList at:2) at: 'name') = 'AtiX'.
+	self assert: ((parsedList at:3) at: 'name') = '1337haxx0r'.
+	self assert: ((parsedList at:4) at: 'name') = 'roebrt'.
+
