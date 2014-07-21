@@ -1,3 +1,3 @@
 running
 tearDown
-	instance delete.
+	instance window delete.

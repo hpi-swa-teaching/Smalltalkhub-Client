@@ -8,6 +8,6 @@ applyLoggedInUi
 	self showProfileButton show.
 	self myProjectsTextMorph show.
 	self myProjectsListMorph show.
-	self setLabel: 'SmalltalkHub Client - Logged in as ', self username.
+	self window setLabel: 'SmalltalkHub Client - Logged in as ', self username.
 
 	

@@ -4,10 +4,11 @@
 		"newWithClient:team:" : "JP 6/26/2014 15:28",
 		"showWithClient:team:" : "AS 7/3/2014 16:47:59.82" },
 	"instance" : {
+		"createUI" : "AH 7/21/2014 09:36",
 		"displayProjects" : "AS 7/3/2014 16:31",
 		"displayTeamMembers" : "AS 7/3/2014 16:31",
 		"fetchTeamDetails" : "AS 7/3/2014 16:16",
-		"initialize" : "AS 7/3/2014 16:30",
+		"initialize" : "AH 7/21/2014 09:37",
 		"projectNames" : "AS 7/3/2014 16:31",
 		"projects" : "JP 6/26/2014 13:21",
 		"projects:" : "JP 6/26/2014 13:21",
@@ -30,4 +31,4 @@
 		"teamsIndex" : "JP 6/26/2014 13:21",
 		"teamsIndex:" : "JP 7/10/2014 16:03",
 		"teamsListClick" : "AH 7/3/2014 15:18",
-		"update" : "AS 7/3/2014 16:16" } }
+		"update" : "AH 7/21/2014 09:37" } }
