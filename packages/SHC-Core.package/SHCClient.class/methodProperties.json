@@ -7,6 +7,7 @@
 	"instance" : {
 		"addContributor:toProject:fromUser:" : "MB 7/21/2014 14:50",
 		"addCurrentUserAsWatcherToProject:fromUser:" : "MB 7/21/2014 14:55",
+		"addMember:toTeam:" : "MB 7/21/2014 15:39",
 		"createProject:asUser:" : "MB 7/21/2014 14:32",
 		"createTeam:" : "MB 7/21/2014 15:19",
 		"createUser:withEmail:andPassword:" : "MB 7/21/2014 14:32",
