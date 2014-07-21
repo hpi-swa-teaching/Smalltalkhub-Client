@@ -1,0 +1,1 @@
+I query the teams of a given user

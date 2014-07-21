@@ -1,0 +1,1 @@
+I query the projects that belong to the given team

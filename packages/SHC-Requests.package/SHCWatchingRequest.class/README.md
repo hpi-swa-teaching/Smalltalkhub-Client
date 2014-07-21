@@ -1,0 +1,1 @@
+I query the projects a given user is watching

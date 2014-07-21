@@ -1,0 +1,1 @@
+I execute the Logout on Smalltalkhub

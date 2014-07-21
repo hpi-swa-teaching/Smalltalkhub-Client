@@ -1,0 +1,1 @@
+I offer methods to integrate SmalltalkHub-Projects with your local monticello

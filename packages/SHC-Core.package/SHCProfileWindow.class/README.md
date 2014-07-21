@@ -1,0 +1,1 @@
+I show a detailed profile of a user on SmalltalkHub

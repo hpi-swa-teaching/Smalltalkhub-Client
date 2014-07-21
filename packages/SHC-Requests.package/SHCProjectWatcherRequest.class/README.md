@@ -1,0 +1,1 @@
+I query the watchers for the given project

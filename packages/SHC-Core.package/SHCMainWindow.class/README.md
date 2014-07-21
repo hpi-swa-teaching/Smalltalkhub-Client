@@ -1,0 +1,1 @@
+I am the MainWindow that offers login/logout and searching for SmalltalkHub

@@ -1,0 +1,1 @@
+I query the team details for the given teamName

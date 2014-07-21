@@ -1,0 +1,1 @@
+I query the user search results for a given search term

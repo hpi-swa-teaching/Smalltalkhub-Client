@@ -1,0 +1,1 @@
+I represent a HTTP-Request sent to SmalltalkHub

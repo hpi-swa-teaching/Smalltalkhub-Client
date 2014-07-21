@@ -1,0 +1,1 @@
+I add a contributor to a given project

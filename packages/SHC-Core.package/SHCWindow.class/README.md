@@ -1,0 +1,1 @@
+I represent a window with a reference to a SHCClient

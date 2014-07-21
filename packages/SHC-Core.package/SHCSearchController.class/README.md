@@ -1,0 +1,1 @@
+I help searching SmalltalkHub for users and projects

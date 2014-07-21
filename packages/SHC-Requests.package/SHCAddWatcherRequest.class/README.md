@@ -1,0 +1,1 @@
+I add the currently logged in user as a watcher to the given project

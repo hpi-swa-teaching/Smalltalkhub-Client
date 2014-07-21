@@ -1,0 +1,1 @@
+I show a detailed view of a team on SmalltalkHub

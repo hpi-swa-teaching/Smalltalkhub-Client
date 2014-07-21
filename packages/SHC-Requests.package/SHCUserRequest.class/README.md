@@ -1,0 +1,1 @@
+I query the details for a given username
