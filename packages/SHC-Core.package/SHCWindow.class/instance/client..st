@@ -1,3 +1,3 @@
 accessing
 client: aShcClient
-	client := aShcClient.
+	client := aShcClient

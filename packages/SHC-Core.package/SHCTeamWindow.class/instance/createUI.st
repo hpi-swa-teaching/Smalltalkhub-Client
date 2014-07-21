@@ -1,6 +1,5 @@
 initialization
-createUI 
-	
+createUI 	
 	(self window)
 		width: 370;
 		height: 280;
