@@ -3,7 +3,7 @@ createUI
 	self window width: 400.
 	self window height: 480.
 	
-	projectNameLabel := TextMorph new.
+	self projectNameLabel: TextMorph new.
 	self projectNameLabel
 		contents: 'ProjectNameDummyContent';
 		fontName: #ComicBold size: 24;
@@ -20,7 +20,7 @@ createUI
 		position: self window position + (10@50).
 	self window addMorph: self ownerLabel.
 	
-	registerProjectButton := SimpleButtonMorph new.
+	self registerProjectButton: SimpleButtonMorph new.
 	self registerProjectButton
 		position: self window position + (278@33);
 		label: 'add to Monticello';
@@ -35,13 +35,13 @@ createUI
 		contents: 'Already in Monticello'.
 	self window addMorph: self mcInfoTextMorph.
 	
-	descriptionLabel := TextMorph new.
+	self descriptionLabel: TextMorph new.
 	self descriptionLabel 
 		position: self window position + (10@70);
 		contents: 'Description: '.
 	self window addMorph: descriptionLabel.
 	
-	descriptionField := TextFieldMorph new.
+	self descriptionField: TextFieldMorph new.
 	self descriptionField
 		releaseActionMap;
 		position: self window position + (10@90);
@@ -52,13 +52,13 @@ createUI
  		contents: 'enter description'.
 	self window addMorph: self descriptionField.
 		
-	tagsLabel := TextMorph new.
+	self tagsLabel: TextMorph new.
 	self tagsLabel 
 		position: self window position + (10@160);
 		contents: 'Tags: '.
 	self window addMorph: self tagsLabel.
 	
-	tagsField := TextFieldMorph new.
+	self tagsField: TextFieldMorph new.
 	self tagsField
 		position: self window position + (10@180);
 		width: 380;
@@ -68,13 +68,13 @@ createUI
  		contents: 'enter tags'.
 	self window addMorph: self tagsField.
 	
-	websiteLabel := TextMorph new.
+	self websiteLabel: TextMorph new.
 	self websiteLabel 
 		position: self window position + (10@215);
 		contents: 'Website: '.
 	self window addMorph: self websiteLabel.
 	
-	websiteField := TextFieldMorph new.
+	self websiteField: TextFieldMorph new.
 	self websiteField
 		position: self window position + (10@235);
 		width: 380;
@@ -84,13 +84,13 @@ createUI
  		contents: 'enter website'.
 	self window addMorph: self websiteField.
 	
-	licenseLabel := TextMorph new.
+	self licenseLabel: TextMorph new.
 	self licenseLabel 
 		position: self window position + (10@270);
 		contents: 'License: '.
 	self window addMorph: self licenseLabel.
 	
-	licenseField := TextFieldMorph new.
+	self licenseField: TextFieldMorph new.
 	self licenseField
 		position: self window position + (10@290);
 		width: 380;
@@ -100,13 +100,13 @@ createUI
  		contents: 'enter license'.
 	self window addMorph: self licenseField.
 	
-	contributorLabel := TextMorph new.
+	self contributorLabel: TextMorph new.
 	self contributorLabel
 		position: self window position + (10@350);
 		contents: 'Contributors: '.
 	self window addMorph: self contributorLabel.
 	
-	watcherLabel := TextMorph new.
+	self watcherLabel: TextMorph new.
 	self watcherLabel
 		position: self window position + (205@350);
 		contents: 'Watchers: '.
