@@ -1,8 +1,10 @@
 {
 	"class" : {
-		"parseFromJson:" : "AS 7/21/2014 11:43" },
+		"parseFromJson:" : "MB 7/21/2014 17:16" },
 	"instance" : {
 		"buildJson" : "JP 7/10/2014 15:46",
+		"created" : "MB 7/21/2014 17:16",
+		"created:" : "MB 7/21/2014 17:17",
 		"description" : "MB 6/5/2014 17:51",
 		"description:" : "MB 6/5/2014 17:51",
 		"license" : "MB 6/5/2014 17:49",

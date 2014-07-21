@@ -9,5 +9,6 @@ displayProjectDetails
 	self websiteField contents: (self activeProject website).
 	self tagsField contents: (self activeProject tags).
 	self descriptionField contents: (self activeProject description).
+	self createdLabel contents: ('Created: ' , ((SHCUnixTimestampConverter new) parse: (self activeProject created))).
 	
 	self projectNameLabel	contents: self activeProject name.	

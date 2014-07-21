@@ -1,1 +1,0 @@
-I show a detailed view of a project on SmalltalkHub

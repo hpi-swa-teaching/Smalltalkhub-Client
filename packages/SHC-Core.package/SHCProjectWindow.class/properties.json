@@ -4,7 +4,7 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "AS 7/21/2014 17:11",
+	"commentStamp" : "",
 	"instvars" : [
 		"projectNameLabel",
 		"ownerLabel",
@@ -28,7 +28,8 @@
 		"contributor",
 		"watcher",
 		"contributorListMorphIndex",
-		"watcherListMorphIndex" ],
+		"watcherListMorphIndex",
+		"createdLabel" ],
 	"name" : "SHCProjectWindow",
 	"pools" : [
 		 ],

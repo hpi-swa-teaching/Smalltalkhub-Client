@@ -1,7 +1,7 @@
 initialization
 createUI	
 	self window width: 400.
-	self window height: 480.
+	self window height: 500.
 	
 	self projectNameLabel: TextMorph new.
 	self projectNameLabel
@@ -35,16 +35,22 @@ createUI
 		contents: 'Already in Monticello'.
 	self window addMorph: self mcInfoTextMorph.
 	
+	self createdLabel: TextMorph new.
+	self createdLabel
+		position: self window position + (10@70);
+		contents: 'Created: '.
+	self window addMorph: self createdLabel.
+	
 	self descriptionLabel: TextMorph new.
 	self descriptionLabel 
-		position: self window position + (10@70);
+		position: self window position + (10@90);
 		contents: 'Description: '.
-	self window addMorph: descriptionLabel.
+	self window addMorph: self descriptionLabel.
 	
 	self descriptionField: TextFieldMorph new.
 	self descriptionField
 		releaseActionMap;
-		position: self window position + (10@90);
+		position: self window position + (10@110);
 		width: 380;
 		height: 68;
 		color: Color white;
@@ -54,13 +60,13 @@ createUI
 		
 	self tagsLabel: TextMorph new.
 	self tagsLabel 
-		position: self window position + (10@160);
+		position: self window position + (10@180);
 		contents: 'Tags: '.
 	self window addMorph: self tagsLabel.
 	
 	self tagsField: TextFieldMorph new.
 	self tagsField
-		position: self window position + (10@180);
+		position: self window position + (10@200);
 		width: 380;
 		height: 33;
 		color: Color white;
@@ -70,13 +76,13 @@ createUI
 	
 	self websiteLabel: TextMorph new.
 	self websiteLabel 
-		position: self window position + (10@215);
+		position: self window position + (10@235);
 		contents: 'Website: '.
 	self window addMorph: self websiteLabel.
 	
 	self websiteField: TextFieldMorph new.
 	self websiteField
-		position: self window position + (10@235);
+		position: self window position + (10@255);
 		width: 380;
 		height: 33;
 		color: Color white;
@@ -86,13 +92,13 @@ createUI
 	
 	self licenseLabel: TextMorph new.
 	self licenseLabel 
-		position: self window position + (10@270);
+		position: self window position + (10@290);
 		contents: 'License: '.
 	self window addMorph: self licenseLabel.
 	
 	self licenseField: TextFieldMorph new.
 	self licenseField
-		position: self window position + (10@290);
+		position: self window position + (10@310);
 		width: 380;
 		height: 33;
 		color: Color white;
@@ -102,13 +108,13 @@ createUI
 	
 	self contributorLabel: TextMorph new.
 	self contributorLabel
-		position: self window position + (10@350);
+		position: self window position + (10@370);
 		contents: 'Contributors: '.
 	self window addMorph: self contributorLabel.
 	
 	self watcherLabel: TextMorph new.
 	self watcherLabel
-		position: self window position + (205@350);
+		position: self window position + (205@370);
 		contents: 'Watchers: '.
 	self window addMorph: self watcherLabel.
 	
@@ -137,7 +143,7 @@ createUI
 		selected: #contributorListMorphIndex
 		changeSelected: #contributorListMorphIndex:).
 	self contributorListMorph 
-		position: self window position + (10@370);
+		position: self window position + (10@390);
 		width: 185;
 		height: 100;
 		borderWidth: 0;
@@ -150,7 +156,7 @@ createUI
 		selected: #watcherListMorphIndex
 		changeSelected: #watcherListMorphIndex:).
 	self watcherListMorph 
-		position: self window position + (205@370);
+		position: self window position + (205@390);
 		width: 185;
 		height: 100;
 		borderWidth: 0;

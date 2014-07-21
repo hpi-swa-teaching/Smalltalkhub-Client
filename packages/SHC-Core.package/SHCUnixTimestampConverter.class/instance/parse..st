@@ -13,4 +13,4 @@ parse: aTimestamp
 	(self hour < 10) ifTrue: [self hour: '0' , self hour asString] ifFalse: [self hour: self hour asString].
 	(self minute < 10) ifTrue: [self minute: '0' , self minute asString] ifFalse: [self minute: self minute asString].
 	(self second < 10) ifTrue: [self second: '0' , self second asString] ifFalse: [self second: self second asString]. 
-	^ self day , '.' , self month , '.' , self year , ', ' , self hour , ':' , self minute , ':' , self second , ' Uhr UTC'
+	^ self day , '.' , self month , '.' , self year , ', ' , self hour , ':' , self minute , ':' , self second , ' UTC'

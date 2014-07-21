@@ -9,4 +9,5 @@ parseFromJson: aDictionary
 	p tags: (aDictionary at: 'tagsString').
 	p description: (aDictionary at: 'projectDescription').
 	p website: (aDictionary at: 'website').
+	p created: (aDictionary at: 'created').
 	^ p
