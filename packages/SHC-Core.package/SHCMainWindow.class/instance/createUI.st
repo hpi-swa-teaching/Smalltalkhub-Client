@@ -4,7 +4,8 @@ createUI
 	(self usernameField)
 		position: self window position + (240@31);
 		width: 220;
-		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		height: 25; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		borderWidth: 1;
  		contents: 'username'.
 	self window addMorph: self usernameField.
 	
@@ -12,15 +13,17 @@ createUI
 	(self searchField)
 		position: self window position + (10 @ 31);
 		width: 190;
-		height: 35;
+		height: 25;
+		borderWidth: 1;
 		contents: 'Search...'.
 	self window addMorph: self searchField.
 		
 	self passwordField: TextFieldMorph new.
 	(self passwordField)
-		position: self window position + (240@71);
+		position: self window position + (240@61);
 		width: 220;
-		height: 35; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		height: 25; "+10px, http://bugs.squeak.org/view.php?id=5711"
+		borderWidth: 1;
 		contents: 'password'.
 		
 	"Badass bypass because TextFieldMorph>>fontName:size: is useless"
@@ -30,7 +33,7 @@ createUI
 	
 	self loginButton: SimpleButtonMorph new.
 	(self loginButton)
-		position: self window position + (419@112);
+		position: self window position + (419@92);
 		label: 'Login';
 		target: self;
 		actionSelector: (#loginAndShowProjects);
@@ -39,7 +42,7 @@ createUI
 	
 	self logoutButton: SimpleButtonMorph new.
 	(self logoutButton)
-		position: self window position + (410@36);
+		position: self window position + (410@33);
 		label: 'Logout';
 		target: self;
 		actionSelector: #logout;
@@ -48,7 +51,7 @@ createUI
 	
 	self showProfileButton: SimpleButtonMorph new.
 	(self showProfileButton)
-		position: self window position + (340@36);
+		position: self window position + (340@33);
 		label: 'My Profile';
 		target: self;
 		actionSelector: #showOwnProfile;
@@ -61,15 +64,15 @@ createUI
 		selected: #mainListMorphIndex
 		changeSelected: #mainListMorphIndex:).
 	self mainListMorph
-		position: self window position + (10@71);
+		position: self window position + (10@61);
 		width: 220;
-		height: 300;
+		height: 310;
 		doubleClickSelector: #mainListClick.
 	self window addMorph: self mainListMorph.
 	
 	self searchButton: SimpleButtonMorph new.
 	self searchButton
-		position: self window position + (202@36);
+		position: self window position + (202@33);
 		label: 'Go!';
 		target: self;
 		actionSelector: #searchButtonClick;
@@ -82,15 +85,15 @@ createUI
 		selected: #myProjectsListMorphIndex
 		changeSelected: #myProjectsListMorphIndex:).
 	self myProjectsListMorph 
-		position: self window position + (240@71);
+		position: self window position + (240@61);
 		width: 220;
-		height: 300;
+		height: 310;
 		doubleClickSelector: #myProjectsListClick.
 	self window addMorph: self myProjectsListMorph.
 	
 	self myProjectsTextMorph: TextMorph new.
 	(self myProjectsTextMorph)
 		contents: 'My Projects:';
-		position: self window position + (240@36).
+		position: self window position + (240@33).
 	self window addMorph: self myProjectsTextMorph.
 	
