@@ -2,7 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"requestInstance" : "AH 6/5/2014 16:15",
-		"requestInstance:" : "AH 6/5/2014 16:15",
 		"setUp" : "AH 6/5/2014 16:15",
 		"testGetTimeline" : "AH 6/5/2014 16:26" } }

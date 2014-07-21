@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "AH 7/21/2014 15:52",
+		"initializeProjectsList" : "AH 7/21/2014 15:43",
+		"initializeTeamsList" : "AH 7/21/2014 15:38",
+		"initializeUsersList" : "AH 7/21/2014 15:39",
+		"initializeWatchingList" : "AH 7/21/2014 15:50",
+		"projectsList" : "AH 7/21/2014 15:31",
+		"projectsList:" : "AH 7/21/2014 15:31",
+		"teamsList" : "AH 7/21/2014 15:31",
+		"teamsList:" : "AH 7/21/2014 15:31",
+		"usersList" : "AH 7/21/2014 15:31",
+		"usersList:" : "AH 7/21/2014 15:31",
+		"watchingList" : "AH 7/21/2014 15:31",
+		"watchingList:" : "AH 7/21/2014 15:31" } }
