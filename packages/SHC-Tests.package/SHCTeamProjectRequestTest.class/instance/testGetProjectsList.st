@@ -1,6 +1,9 @@
 as yet unclassified
 testGetProjectsList
-	| response parsedResponse |
+	| response parsedResponse expectedTeam|
+	
+	expectedTeam := self expectedConfiguration teamsList at: 1.
+	
 	self requestInstance teamname: 'SWT'.
 	self requestInstance execute.
 	response := self requestInstance responseContent.
