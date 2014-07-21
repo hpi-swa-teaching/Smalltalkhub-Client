@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"username" ],
+		 ],
 	"name" : "SHCTeamsRequest",
 	"pools" : [
 		 ],
-	"super" : "SHCRequest",
+	"super" : "SHCUserRequest",
 	"type" : "normal" }

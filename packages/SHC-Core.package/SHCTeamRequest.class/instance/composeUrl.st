@@ -1,6 +1,6 @@
-configuration
+as yet unclassified
 composeUrl 
 	| url |
 	url := super composeUrl.
-	url := url,'/teams'.
+	url := url,'/',(self teamname).
 	^ url
