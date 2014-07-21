@@ -1,3 +1,3 @@
-as yet unclassified
+constants
 leapSecond
 	^ 31622400

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 updatedProject: aProject	
 	updatedProject := aProject buildJson.
 	self username: aProject owner.

@@ -1,3 +1,3 @@
-as yet unclassified
+constants
 notLeapSecond
 	^ 31536000

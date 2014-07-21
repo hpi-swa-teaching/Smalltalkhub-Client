@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 parseLeapMonth
 	| monthSecond |
 	monthSecond := (SHCUnixTimestampConverter daySecond * (SHCUnixTimestampConverter leapMonth at: self month)).

@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 parse: aTimestamp
 	self timestamp: aTimestamp - 2177460000.
 	self parseYear.
