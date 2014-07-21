@@ -1,7 +1,7 @@
 tests
 testParseProjects
 	| json list |
-	json := self clientInstance listProjects: 'ShcTestUser'.
+	json := self clientInstance fetchProjects: 'ShcTestUser'.
 	list := self clientInstance parseProjects: json.
 	self assert: (list size = 2).
 	self assert: ((list at: 1) name = 'ShcTestProject0').

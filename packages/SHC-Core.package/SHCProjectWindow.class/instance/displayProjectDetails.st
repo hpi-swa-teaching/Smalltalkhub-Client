@@ -1,8 +1,7 @@
 ui-actions
 displayProjectDetails
-	| projectdetails |
-	projectdetails := self client listProject: (self activeProject name) from: (self activeProject owner).
-	self activeProject: (self client parseProject: projectdetails).
+ 	self activeProject: (self client listProject: 
+		(self activeProject name) from: (self activeProject owner)).
 	
 	self setLabel: self activeProject name.
 	self ownerLabel label: ('~', (self activeProject owner)).

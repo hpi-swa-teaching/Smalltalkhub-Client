@@ -1,4 +1,4 @@
 accessing
 path: aPath
  	path := aPath.
-	self owner: (self parseNameFromPath: aPath).
+	self parsePath: aPath

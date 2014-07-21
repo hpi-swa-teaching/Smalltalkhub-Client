@@ -55,7 +55,7 @@ initialize
 	self teamsIndex: 0.
 	teamsList := PluggableListMorph
 		on: self
-		list: #teams
+		list: #teamNames
 		selected: #teamsIndex
 		changeSelected: #teamsIndex:.
 	self teamsList

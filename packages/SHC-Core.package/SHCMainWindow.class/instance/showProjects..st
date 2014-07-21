@@ -3,7 +3,7 @@ showProjects: username
 	"saves the projects locally and displays them"
 	| projectCollection |
 
-	self projectDetails: (self client parseProjects: (self client listProjects: username)).
+	self projectDetails: (self client listProjects: username).
 	projectCollection := self client projectNamesAsString: self projectDetails.
 	
 	self projectNames: projectCollection.

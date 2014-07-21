@@ -1,6 +1,6 @@
 as yet unclassified
 testModifyProject
-	| project result updatedJson updatedProject|
+	| project result updatedProject|
 
 	project := SHCProject new.
 	project 
@@ -17,8 +17,7 @@ testModifyProject
 	
 	self assert: result.
 	
-	updatedJson := self clientInstance listProject: 'ShcTestProject1' from: 'ShcTestUser'.
-      updatedProject := self clientInstance parseProject: updatedJson.
+	updatedProject:= self clientInstance listProject: 'ShcTestProject1' from: 'ShcTestUser'.
 
 	self assert: (project name = updatedProject name);
 		assert: (project description = updatedProject description);

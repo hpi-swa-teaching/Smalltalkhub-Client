@@ -1,5 +1,5 @@
-api-calls
-listTeamProject: aTeamName
+api-calls internal
+fetchTeamProjects: aTeamName
 	| teamProjectRequest result |
 	teamProjectRequest := SHCTeamProjectRequest withWebClient: self webclient.
 	teamProjectRequest teamname: aTeamName.

@@ -1,6 +1,7 @@
 ui-actions
 fetchTeamDetails
-	self team: 
-		(self client parseTeam: (self teamname) 
-				     withMembers: (self client listTeamMember: self teamname) 
-				     andProjects: (self client listTeamProject: self teamname))
+	self team: SHCTeam new.
+	self team 
+		 name: (self teamname);
+		 members: (self client listTeamMembers: self teamname); 
+		 projects: (self client listTeamProjects: self teamname).

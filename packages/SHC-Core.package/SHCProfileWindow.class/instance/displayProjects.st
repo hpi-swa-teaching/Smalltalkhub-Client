@@ -1,9 +1,5 @@
 ui-actions
 displayProjects
-	| projects |
-	projects := self client listProjects: self user.
-	(projects isEmpty)
-	ifFalse: [self projects: (self client parseProjects: projects)]
-	ifTrue: [self projects: #() ].
+	self projects: (self client listProjects: self user).
 	self changed: #projectNames;
              changed: #projectsIndex.

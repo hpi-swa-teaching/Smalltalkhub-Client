@@ -1,7 +1,7 @@
 tests
-testListProjects02
+testFetchProjects02
 	| jsondecoded namesList |
-	jsondecoded := self clientInstance listProjects: 'ShcTestUser'.
+	jsondecoded := self clientInstance fetchProjects: 'ShcTestUser'.
 	
 	namesList := OrderedCollection new.
 	jsondecoded do: [:element | namesList add: (element at: 'name') ].

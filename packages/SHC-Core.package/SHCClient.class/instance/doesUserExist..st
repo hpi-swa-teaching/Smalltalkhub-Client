@@ -1,5 +1,5 @@
 api-calls
-testUser: aName
+doesUserExist: aName
 	| userRequest |
 	userRequest := SHCUserRequest withWebClient: self webclient.
 	userRequest username: aName.
