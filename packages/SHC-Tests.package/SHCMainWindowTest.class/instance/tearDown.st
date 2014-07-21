@@ -1,3 +1,3 @@
 running
 tearDown
-	loginInstance delete.
+	loginInstance window delete.
