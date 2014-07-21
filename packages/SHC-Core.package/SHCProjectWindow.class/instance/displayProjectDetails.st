@@ -3,7 +3,7 @@ displayProjectDetails
  	self activeProject: (self client listProject: 
 		(self activeProject name) from: (self activeProject owner)).
 	
-	self setLabel: self activeProject name.
+	self window setLabel: self activeProject name.
 	self ownerLabel label: ('~', (self activeProject owner)).
 	self licenseField contents: (self activeProject license).
 	self websiteField contents: (self activeProject website).
