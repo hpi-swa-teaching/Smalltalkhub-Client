@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"requestInstance" ],
+		 ],
 	"name" : "SHCUserRequestTest",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "SHCDependentRequestTest",
 	"type" : "normal" }

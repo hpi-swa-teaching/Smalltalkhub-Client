@@ -2,7 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"requestInstance" : "AS 6/12/2014 14:28",
-		"requestInstance:" : "AS 6/12/2014 14:28",
 		"setUp" : "AS 6/12/2014 14:27",
 		"testComposeUrl" : "AS 6/12/2014 14:28" } }

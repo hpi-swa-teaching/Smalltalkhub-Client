@@ -6,9 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SHCSearchProjectsRequestTest",
+		"projectsList",
+		"teamsList",
+		"usersList",
+		"watchingList" ],
+	"name" : "SHCExpectedTestConfiguration",
 	"pools" : [
 		 ],
-	"super" : "SHCDependentRequestTest",
+	"super" : "Object",
 	"type" : "normal" }
