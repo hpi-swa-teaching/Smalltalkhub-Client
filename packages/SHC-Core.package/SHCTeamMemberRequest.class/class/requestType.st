@@ -1,3 +1,3 @@
-as yet unclassified
+configuration
 requestType
 	^ 'GET'

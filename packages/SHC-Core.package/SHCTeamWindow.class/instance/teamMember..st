@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 teamMember: aCollection
 	teamMember := aCollection

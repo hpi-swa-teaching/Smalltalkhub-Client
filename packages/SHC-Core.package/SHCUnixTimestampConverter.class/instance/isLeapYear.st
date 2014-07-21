@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 isLeapYear
 	^ ((self year \\ 4) = 0)

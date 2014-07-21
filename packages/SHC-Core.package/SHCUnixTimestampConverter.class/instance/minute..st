@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 minute: aMinute
 	minute := aMinute

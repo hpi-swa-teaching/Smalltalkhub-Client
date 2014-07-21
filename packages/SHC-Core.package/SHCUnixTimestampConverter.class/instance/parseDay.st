@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 parseDay
 	(self timestamp > (SHCUnixTimestampConverter daySecond))
 		ifTrue: [self timestamp: self timestamp - (SHCUnixTimestampConverter daySecond).

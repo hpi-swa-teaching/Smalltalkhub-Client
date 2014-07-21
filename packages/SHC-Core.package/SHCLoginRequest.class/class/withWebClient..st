@@ -1,4 +1,4 @@
-configuration
+initialization
 withWebClient: aWebClient
 	| request |
 	request := SHCLoginRequest new.

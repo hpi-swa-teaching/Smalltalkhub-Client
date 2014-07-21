@@ -1,3 +1,3 @@
-as yet unclassified
+constants
 daySecond
 	^ 86400

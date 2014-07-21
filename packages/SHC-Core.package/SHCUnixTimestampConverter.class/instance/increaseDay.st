@@ -1,3 +1,3 @@
-as yet unclassified
+modification
 increaseDay
 	self day: self day + 1

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 withWebClient: aWebClient
 	| request |
 	request := SHCProjectContributorRequest new.

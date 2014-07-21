@@ -1,4 +1,4 @@
-as yet unclassified
+parsing
 parseYear
 	(self isLeapYear) 
 		ifTrue: [(self timestamp > (SHCUnixTimestampConverter leapSecond))
