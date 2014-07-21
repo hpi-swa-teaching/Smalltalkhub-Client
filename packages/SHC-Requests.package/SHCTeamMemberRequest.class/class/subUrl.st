@@ -1,0 +1,3 @@
+configuration
+subUrl
+	^ '/hub/teams'

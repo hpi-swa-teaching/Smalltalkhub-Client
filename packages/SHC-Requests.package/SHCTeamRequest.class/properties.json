@@ -1,0 +1,14 @@
+{
+	"category" : "SHC-Requests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"teamname" ],
+	"name" : "SHCTeamRequest",
+	"pools" : [
+		 ],
+	"super" : "SHCRequest",
+	"type" : "normal" }

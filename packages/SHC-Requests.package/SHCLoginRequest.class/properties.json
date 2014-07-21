@@ -1,0 +1,15 @@
+{
+	"category" : "SHC-Requests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"username",
+		"password" ],
+	"name" : "SHCLoginRequest",
+	"pools" : [
+		 ],
+	"super" : "SHCRequest",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "SHC-Requests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SHCAddWatcherRequest",
+	"pools" : [
+		 ],
+	"super" : "SHCProjectRequest",
+	"type" : "normal" }

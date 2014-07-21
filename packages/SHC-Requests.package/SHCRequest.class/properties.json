@@ -1,0 +1,16 @@
+{
+	"category" : "SHC-Requests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"webclient",
+		"responseContent",
+		"responseSuccess" ],
+	"name" : "SHCRequest",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
