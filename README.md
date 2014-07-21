@@ -5,6 +5,7 @@ SWTI2014-Project-04
 
 ### Dependencies  
 [WebClient](https://github.com/SWTI2014/SWTI2014-Project-04/wiki/Dependencies)
+Squeak > 4.5 (works with earlier versions, but text input boxes will behave strangely)
 
 
 ### Supported Features
