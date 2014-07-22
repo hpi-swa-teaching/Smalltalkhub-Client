@@ -1,6 +1,6 @@
 tests
 testSearchProjects
 	| result |
-	result := self clientInstance fetchSearchProjects: 'ShcTestProject'.
-	self assert: (result size >= 2).
-	self assert: ((result at: 2) = 'ShcTestUser/ShcTestProject1')
+	result := self clientInstance fetchSearchProjects: 'ShcTestProject1'.
+	self assert: (result size = 1).
+	self assert: ((result at: 2) = 'ShcTestUser1/ShcTestProject1')

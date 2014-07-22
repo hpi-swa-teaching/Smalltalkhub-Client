@@ -4,19 +4,19 @@ testModifyProject
 
 	project := SHCProject new.
 	project 
-		owner: 'ShcTestUser';
+		owner: 'ShcTestUser1';
 		name: 'ShcTestProject1';
-		description: 'TestChangedDescription';
-		website: 'TestWebSite';
+		description: 'shctestproject9 description';
+		website: 'shctestproject9.website';
 		license: 'BSD';
-		tags: 'testtags,tag'.
+		tags: 'shctesttag8,shctesttag9'.
 
 	self requestInstance updatedProject: project.
 	result := self requestInstance execute.
 	
 	self assert: result.
 	
-	updatedProject:= self clientInstance listProject: 'ShcTestProject1' from: 'ShcTestUser'.
+	updatedProject:= self clientInstance listProject: 'ShcTestProject1' from: 'ShcTestUser1'.
 
 	self assert: (project name = updatedProject name);
 		assert: (project description = updatedProject description);

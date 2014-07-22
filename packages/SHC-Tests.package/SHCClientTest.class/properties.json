@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"clientInstance" ],
+		"clientInstance",
+		"expectedConfiguration" ],
 	"name" : "SHCClientTest",
 	"pools" : [
 		 ],

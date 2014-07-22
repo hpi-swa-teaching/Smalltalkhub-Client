@@ -3,8 +3,8 @@ testMonticelloButton
 	| project mci |
 
 	project := SHCProject new.
-	project name:'ShcTestProject0'.
-	project owner: 'ShcTestUser'.	
+	project name:'ShcTestProject1'.
+	project owner: 'ShcTestUser1'.	
 	mci := SHCMonticelloIntegrator new.
 	(mci isProjectInMonticello: project) ifTrue: [mci removeProject: project].
 	

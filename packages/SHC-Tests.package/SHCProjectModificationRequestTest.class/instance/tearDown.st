@@ -3,12 +3,12 @@ tearDown
 	| project |
 	project := SHCProject new.
 	project 
-		owner: 'ShcTestUser';
+		owner: 'ShcTestUser1';
 		name: 'ShcTestProject1';
-		description: '';
-		website: '';
+		description: 'shctestproject1 description';
+		website: 'shctestproject1.website';
 		license: 'MIT';
-		tags: ''.
+		tags: 'shctesttag0,shctesttag1'.
 		
 	self requestInstance updatedProject: project.
 	self requestInstance execute
