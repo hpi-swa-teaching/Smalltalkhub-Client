@@ -1,7 +1,7 @@
 as yet unclassified
 initializeUsersList
 	| tmpUser |
-	self usersList: OrderedCollection new.
+	self usersList: Dictionary new.
 
 	tmpUser := SHCUser new.
 	tmpUser
@@ -11,7 +11,7 @@ initializeUsersList
 		location: '';
 		website: ''.
 		
-	self usersList add: tmpUser.
+	self usersList at: tmpUser name put: tmpUser.
 	
 	tmpUser := SHCUser new.
 	tmpUser
@@ -21,4 +21,4 @@ initializeUsersList
 		location: '';
 		website: ''.
 		
-	self usersList add: tmpUser.
+	self usersList at: tmpUser name put: tmpUser.
