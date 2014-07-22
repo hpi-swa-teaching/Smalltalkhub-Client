@@ -1,14 +1,19 @@
 as yet unclassified
 testGetProjectsList
-	| response parsedResponse expectedTeam|
+	| response parsedResponse expectedProjects returnedProjectNames|
 	
-	expectedTeam := self expectedConfiguration teamsList at: 1.
+	self expectedConfiguration teamsList do:
+	[:expectedTeam | 
+		expectedProjects := self expectedConfiguration projectsList select: [:project| project owner = expectedTeam name].
 	
-	self requestInstance teamname: 'SWT'.
-	self requestInstance execute.
-	response := self requestInstance responseContent.
-	parsedResponse := WebUtils jsonDecode: (ReadStream on: response).
-
-	self assert: (parsedResponse size = 2).
-	self assert: ((parsedResponse at: 1) at: 'name') = 'L33TPr0j3ct'.
-	self assert: ((parsedResponse at: 2) at: 'name') = 'SmalltalkHubClient'.
+		self requestInstance teamname: expectedTeam name.
+		self requestInstance execute.
+		response := self requestInstance responseContent.
+		parsedResponse := WebUtils jsonDecode: (ReadStream on: response).
+		returnedProjectNames := parsedResponse collect: [:dict| dict at: 'name'].
+		
+		self assert: (parsedResponse size = expectedProjects size).
+		expectedProjects do: [:project| self assert: (returnedProjectNames includes: project name)].
+	].
+	
+	
