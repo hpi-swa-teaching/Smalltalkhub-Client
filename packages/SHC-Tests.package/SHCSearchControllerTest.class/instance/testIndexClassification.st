@@ -1,5 +1,6 @@
 as yet unclassified
 testIndexClassification
+	self sthSanity ifFalse: [ ^ nil ].
 	self searchinstance searchAll: 'ShcTest'.
 	
 	self assert: (self searchinstance isProject: 1) not.

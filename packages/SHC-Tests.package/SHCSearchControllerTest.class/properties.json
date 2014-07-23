@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"searchinstance" ],
+		"searchinstance",
+		"sthsanity" ],
 	"name" : "SHCSearchControllerTest",
 	"pools" : [
 		 ],

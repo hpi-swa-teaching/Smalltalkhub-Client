@@ -1,6 +1,7 @@
 as yet unclassified
 testProjectFromResult
 	| project string |
+	self sthSanity ifFalse: [ ^ nil ].
 	self searchinstance searchAll: 'ShcTestProject'.
 	string := self searchinstance readableSearchResults at: 2.
 	self assert: (string = '   ShcTestProject0').

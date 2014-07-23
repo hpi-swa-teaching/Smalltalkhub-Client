@@ -2,12 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
+		"checkSmalltalkHubSanity" : "AS 7/23/2014 21:39",
 		"searchinstance" : "AS 6/12/2014 15:34",
 		"searchinstance:" : "AS 6/12/2014 15:34",
-		"setUp" : "AS 6/12/2014 15:35",
-		"testEmptySearch" : "AS 6/12/2014 15:36",
-		"testIndexClassification" : "AH 6/26/2014 12:27",
-		"testProjectFromResult" : "AS 6/17/2014 11:38",
-		"testSearch1" : "AS 6/12/2014 15:38",
-		"testSearch2" : "AH 6/26/2014 12:27",
-		"testUserFromResult" : "AS 6/17/2014 11:52" } }
+		"setUp" : "AS 7/23/2014 21:33",
+		"sthSanity" : "AS 7/23/2014 21:32",
+		"sthSanity:" : "AS 7/23/2014 21:33",
+		"testEmptySearch" : "AS 7/23/2014 21:34",
+		"testIndexClassification" : "AS 7/23/2014 21:34",
+		"testProjectFromResult" : "AS 7/23/2014 21:34",
+		"testSearch1" : "AS 7/23/2014 21:34",
+		"testSearch2" : "AS 7/23/2014 21:34",
+		"testUserFromResult" : "AS 7/23/2014 21:35" } }
