@@ -1,3 +1,3 @@
 initialization
 initialize 
-	self McBrowser: MCWorkingCopyBrowser new.
+	self McBrowser: MCWorkingCopyBrowser new

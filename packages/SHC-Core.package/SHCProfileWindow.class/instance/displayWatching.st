@@ -6,4 +6,4 @@ displayWatching
 	ifFalse: [self watching: watching]
 	ifTrue: [self watching: nil ].
 	self changed: #watching;
-	       changed: #watchingIndex.
+	       changed: #watchingIndex

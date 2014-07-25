@@ -3,16 +3,16 @@
 		 },
 	"instance" : {
 		"McBrowser" : "AS 5/22/2014 13:57",
-		"McBrowser:" : "AS 5/22/2014 13:57",
+		"McBrowser:" : "AS 7/25/2014 14:17",
 		"addLocalPackage:" : "JP 7/10/2014 15:46",
-		"addProject:fromUser:withPassword:" : "AS 5/22/2014 15:23",
-		"addProject:owner:withUser:withPassword:" : "AS 7/3/2014 14:40",
-		"addProject:withUser:withPassword:" : "AS 7/3/2014 14:40",
+		"addProject:fromUser:withPassword:" : "AS 7/25/2014 14:17",
+		"addProject:owner:withUser:withPassword:" : "AS 7/25/2014 14:17",
+		"addProject:withUser:withPassword:" : "AS 7/25/2014 14:17",
 		"addRepository:toPackage:" : "AS 5/22/2014 15:07",
 		"buildHttpString:withUser:" : "AS 5/22/2014 15:04",
 		"createHttpRepository:withUser:andPassword:" : "AS 5/22/2014 15:02",
 		"getPackage:" : "AS 5/22/2014 14:51",
-		"initialize" : "AS 5/22/2014 13:57",
+		"initialize" : "AS 7/25/2014 14:17",
 		"isProjectInMonticello:" : "AS 7/3/2014 14:25",
 		"localPackageExists:" : "AS 5/22/2014 14:51",
-		"removeProject:" : "AS 7/3/2014 14:43" } }
+		"removeProject:" : "AS 7/25/2014 14:17" } }

@@ -1,3 +1,3 @@
 accessing
 username: aUserName
-	self class username: aUserName.
+	self class username: aUserName

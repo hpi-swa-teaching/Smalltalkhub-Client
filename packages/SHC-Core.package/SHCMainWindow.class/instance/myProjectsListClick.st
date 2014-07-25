@@ -7,4 +7,4 @@ myProjectsListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	project := self projectDetails at: (index).
-	SHCProjectWindow showWithClient: (self client) and: project.
+	SHCProjectWindow showWithClient: (self client) and: project

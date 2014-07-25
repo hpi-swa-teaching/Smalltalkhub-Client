@@ -161,4 +161,4 @@ createUI
 		height: 100;
 		borderWidth: 0;
 		doubleClickSelector: #watcherListClick.
-	self window addMorph: self watcherListMorph.
+	self window addMorph: self watcherListMorph

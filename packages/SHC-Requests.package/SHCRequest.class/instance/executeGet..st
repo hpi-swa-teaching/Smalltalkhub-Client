@@ -1,5 +1,5 @@
 executing
 executeGet: aUrl	
-	^ self webclient httpGet: aUrl.
+	^ self webclient httpGet: aUrl
 
 	

@@ -1,3 +1,3 @@
 accessing
 responseSuccess: aBoolean
-	responseSuccess := aBoolean.
+	responseSuccess := aBoolean

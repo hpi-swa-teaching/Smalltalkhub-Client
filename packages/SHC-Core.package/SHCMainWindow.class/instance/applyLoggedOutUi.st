@@ -8,4 +8,4 @@ applyLoggedOutUi
 	self showProfileButton hide.
 	self myProjectsTextMorph hide.
 	self myProjectsListMorph hide.
-	self window setLabel: 'SmalltalkHub Client'.
+	self window setLabel: 'SmalltalkHub Client'

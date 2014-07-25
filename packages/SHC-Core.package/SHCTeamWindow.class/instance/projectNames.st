@@ -1,3 +1,3 @@
 accessing
 projectNames
-	^ team projects collect: [:each | each name].
+	^ team projects collect: [:each | each name]

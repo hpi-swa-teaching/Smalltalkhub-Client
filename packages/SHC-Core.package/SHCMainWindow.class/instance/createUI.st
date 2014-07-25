@@ -95,5 +95,5 @@ createUI
 	(self myProjectsTextMorph)
 		contents: 'My Projects:';
 		position: self window position + (240@33).
-	self window addMorph: self myProjectsTextMorph.
+	self window addMorph: self myProjectsTextMorph
 	

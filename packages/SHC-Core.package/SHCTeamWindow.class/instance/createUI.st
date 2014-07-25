@@ -53,4 +53,4 @@ createUI
 		width: 170;
 		height: 200;
 		doubleClickSelector: #projectsListClick.
-	self window addMorph: self projectsList.
+	self window addMorph: self projectsList

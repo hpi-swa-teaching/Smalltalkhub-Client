@@ -9,4 +9,4 @@ disableEditing
 		(self descriptionField findA: TextMorph) lock.
 		(self tagsField findA: TextMorph) lock.
 		(self websiteField findA: TextMorph) lock.
-		(self licenseField findA: TextMorph) lock.
+		(self licenseField findA: TextMorph) lock

@@ -16,6 +16,6 @@ initialize
 	self createUI.
 	
 	self applyLoggedOutUi.
-	self relogin.
+	self relogin
 	
 	

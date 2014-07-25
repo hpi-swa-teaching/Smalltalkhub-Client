@@ -1,4 +1,4 @@
 accessing
 teamsIndex: anInteger
 	teamsIndex := anInteger.
-	self changed: #teamsIndex.
+	self changed: #teamsIndex

@@ -4,5 +4,5 @@ userFromResult: anInteger
 	| index |
 	index := self userListIndex: anInteger.
 	(index = 0) ifTrue: [^ nil].
-	^ self userSearchResults at: index.
+	^ self userSearchResults at: index
 	

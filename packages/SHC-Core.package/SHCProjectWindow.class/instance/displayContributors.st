@@ -6,5 +6,5 @@ displayContributors
 	self contributor: (self client usernamesAsString: contributordetails).	
 	self contributorListMorphIndex: 0.
 	self changed: #contributorListMorphIndex.
-	self changed: #contributor.
+	self changed: #contributor
 	

@@ -8,4 +8,4 @@ displayUserDetails
 	self displayNameLabel contents: user fullName.
 	self emailLabel contents: 'E-Mail: ', user email.
 	self locationLabel contents: 'Location: ', user location.
-	self websiteLabel contents: 'Website: ', user website.
+	self websiteLabel contents: 'Website: ', user website

@@ -1,3 +1,3 @@
 configuration
 composeContent
-	^ self updatedProject.
+	^ self updatedProject

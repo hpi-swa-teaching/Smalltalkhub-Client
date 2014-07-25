@@ -5,5 +5,5 @@ displayWatchers
 	self watcher: (self client usernamesAsString: watcherdetails).	
 	self watcherListMorphIndex: 0.
 	self changed: #watcherListMorphIndex.
-	self changed: #watcher.
+	self changed: #watcher
 	

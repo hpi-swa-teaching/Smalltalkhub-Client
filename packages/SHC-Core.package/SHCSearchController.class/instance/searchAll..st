@@ -6,4 +6,4 @@ searchAll: aSearchTerm
 				^ self].
 			
 	self projectSearchResults: (self client searchProjects: aSearchTerm).
-	self userSearchResults: (self client searchUsers: aSearchTerm).
+	self userSearchResults: (self client searchUsers: aSearchTerm)

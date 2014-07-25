@@ -1,3 +1,3 @@
 accessing
 McBrowser: aMcWorkingCopyBrowser
-	mcbrowser := aMcWorkingCopyBrowser.
+	mcbrowser := aMcWorkingCopyBrowser

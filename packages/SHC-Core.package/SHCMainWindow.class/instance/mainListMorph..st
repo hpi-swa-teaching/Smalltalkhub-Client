@@ -1,3 +1,3 @@
 accessing
 mainListMorph: aMorph
-	mainListMorph := aMorph.
+	mainListMorph := aMorph

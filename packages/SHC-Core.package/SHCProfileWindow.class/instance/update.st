@@ -4,4 +4,4 @@ update
 	self displayTeams.
 	self displayWatching.
 	self displayTimeline.
-	self displayProjects.
+	self displayProjects

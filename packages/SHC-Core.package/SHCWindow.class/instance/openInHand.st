@@ -1,3 +1,3 @@
-accessing
+initialization
 openInHand
 	^ self window openInHand

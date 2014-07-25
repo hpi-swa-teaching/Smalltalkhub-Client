@@ -1,3 +1,3 @@
 accessing
 responseContent: aString
-	responseContent := aString.
+	responseContent := aString

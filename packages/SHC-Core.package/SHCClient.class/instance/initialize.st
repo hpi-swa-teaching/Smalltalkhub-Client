@@ -1,3 +1,3 @@
 initialization
 initialize
-	self webclient: WebClient new.
+	self webclient: WebClient new

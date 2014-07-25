@@ -4,6 +4,6 @@ login
 	request := SHCLoginRequest withWebClient: self webclient.
 	request username: self username.
 	request password: self password.
-	^ request execute.
+	^ request execute
 	
  

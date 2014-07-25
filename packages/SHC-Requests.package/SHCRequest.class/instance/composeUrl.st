@@ -1,3 +1,3 @@
 configuration
 composeUrl
-	^ self class baseUrl, (self class subUrl).
+	^ self class baseUrl, (self class subUrl)

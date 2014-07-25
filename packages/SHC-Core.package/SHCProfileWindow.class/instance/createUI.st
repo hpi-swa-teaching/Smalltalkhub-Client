@@ -119,4 +119,4 @@ createUI
 		position: self window position + (270@385);
 		width: 250;
 		height: 200.
-	self window addMorph: self watchingList.
+	self window addMorph: self watchingList

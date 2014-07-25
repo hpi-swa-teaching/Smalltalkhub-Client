@@ -3,4 +3,4 @@ updateProject: aProject
 	| request | 
 	request := SHCProjectModificationRequest withWebClient: self webclient.
 	request updatedProject: aProject.
-	^ request execute.
+	^ request execute

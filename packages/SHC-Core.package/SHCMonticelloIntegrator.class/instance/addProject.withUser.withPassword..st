@@ -5,4 +5,4 @@ addProject: aShcProject withUser: aUserName withPassword: aPassword
 	repository := self createHttpRepository: urlstring withUser: aUserName andPassword: aPassword.
 	
 	self addLocalPackage:  (aShcProject name).
-	^ self addRepository: repository toPackage:  (aShcProject name).
+	^ self addRepository: repository toPackage:  (aShcProject name)

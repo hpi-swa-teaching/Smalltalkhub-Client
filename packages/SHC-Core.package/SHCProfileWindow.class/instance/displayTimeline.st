@@ -7,4 +7,4 @@ displayTimeline
 			 (dict at: 'username'), ' ', (dict at: 'title'), ' ', (dict at: 'project')])]
 	ifTrue: [self timeline: (nil) ].
 	self changed: #timeline;
-	       changed: #timelineIndex.
+	       changed: #timelineIndex

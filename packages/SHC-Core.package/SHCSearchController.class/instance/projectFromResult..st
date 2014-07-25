@@ -4,5 +4,5 @@ projectFromResult: anInteger
 	| index |
 	index := self projectListIndex: anInteger.
 	(index = 0) ifTrue: [^ nil].
-	^ self projectSearchResults at: index.
+	^ self projectSearchResults at: index
 	

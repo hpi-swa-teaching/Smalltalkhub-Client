@@ -6,4 +6,4 @@ logout
 	
 	"clear credentials on successful logout"
 	response ifTrue: [ self username: nil; password: nil ].
-	^ response.
+	^ response

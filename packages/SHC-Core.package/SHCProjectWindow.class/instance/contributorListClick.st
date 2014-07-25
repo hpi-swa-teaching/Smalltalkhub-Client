@@ -6,4 +6,4 @@ contributorListClick
 	(index = 0) ifTrue: [^ nil].
 	
 	selectedcontributor := self contributor at: (index).
-	SHCProfileWindow showWithClient: (self client) user: selectedcontributor.
+	SHCProfileWindow showWithClient: (self client) user: selectedcontributor

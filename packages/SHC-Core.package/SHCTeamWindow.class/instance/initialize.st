@@ -2,4 +2,4 @@ initialization
 initialize 
 	super initialize.
 	self createUI.
-	self team: SHCTeam new.
+	self team: SHCTeam new

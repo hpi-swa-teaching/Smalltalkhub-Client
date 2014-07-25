@@ -1,3 +1,3 @@
 accessing
 webclient: aWebClient
-	webclient := aWebClient.
+	webclient := aWebClient

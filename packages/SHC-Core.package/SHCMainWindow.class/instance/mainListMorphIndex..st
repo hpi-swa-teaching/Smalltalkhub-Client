@@ -1,4 +1,4 @@
 accessing
 mainListMorphIndex: anInteger
 	mainListMorphIndex := anInteger.
-	self changed: #mainListMorphIndex.
+	self changed: #mainListMorphIndex

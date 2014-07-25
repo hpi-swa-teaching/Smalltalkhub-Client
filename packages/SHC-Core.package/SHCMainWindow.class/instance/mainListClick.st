@@ -8,4 +8,4 @@ mainListClick
 	(self searchController isUser: self mainListMorphIndex)
 		ifTrue: [| u | u := self searchController userFromResult: (self mainListMorphIndex).
 			      SHCProfileWindow 
-					showWithClient: (self client) user: (u name)].
+					showWithClient: (self client) user: (u name)]
