@@ -8,13 +8,16 @@ SWTI2014-Project-04
 
 
 ### Supported Features
-* login / logout for Smalltalkhub users
-* list of own projects
-* search for any project or user
-* display SmalltalkHub profile
-* display project details
-* edit your own project details
-* add a project to your local Monticello
+* Login / Logout for Smalltalkhub users
+* List own projects
+* Search for any project 
+* Search for any user
+* Search for teams
+* Display someones SmalltalkHub profile
+* Display project details
+* Display team details
+* Edit your own project details
+* Add a project to your local Monticello
 
 
 ### SmalltalkHub API
