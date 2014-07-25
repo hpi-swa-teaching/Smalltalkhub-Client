@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 parseFromJson: aDictionary
 	| team | 
 	team := SHCTeam new.

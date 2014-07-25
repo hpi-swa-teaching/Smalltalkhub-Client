@@ -1,3 +1,3 @@
-as yet unclassified
+configuration
 composeContent
 	^ '{"name":"' , self teamname , '"}'

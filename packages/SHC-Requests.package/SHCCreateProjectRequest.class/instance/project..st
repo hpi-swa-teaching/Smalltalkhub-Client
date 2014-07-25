@@ -1,3 +1,3 @@
-as yet unclassified
+accessing
 project: aProject
 	project := aProject

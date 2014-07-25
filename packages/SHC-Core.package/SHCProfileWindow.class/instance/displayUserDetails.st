@@ -1,8 +1,7 @@
 ui-actions
 displayUserDetails
 	| user |
-	user := self client listUser: self user.
-	
+	user := self client listUser: self user.	
 	self window setLabel: 'Profile: ~', self user.
 	self usernameLabel contents: '~', self user.
 	self displayNameLabel contents: user fullName.

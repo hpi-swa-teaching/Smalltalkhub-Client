@@ -1,4 +1,4 @@
-as yet unclassified
+utilities
 parseFromJson: aDictionary	
 	| u |
 	u := SHCUser new.
