@@ -9,6 +9,6 @@ baseline: spec
 		    package: 'SHC-Requests';
                 package: 'SHC-Tests' with: [ spec requires: #('default') ].
             spec
-                group: 'default' with: #('SHC-Core', 'SHC-Requests');
+                group: 'default' with: #('SHC-Core' 'SHC-Requests');
                 group: 'Tests' with: #('SHC-Tests');
                 group: 'TravisCI' with: #('Tests') ]
