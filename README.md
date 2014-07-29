@@ -1,10 +1,10 @@
-SWTI2014-Project-04
+Smalltalkhub-Client
 ===================
-[![Build Status](https://travis-ci.org/SWTI2014/SWTI2014-Project-04.svg)](https://travis-ci.org/SWTI2014/SWTI2014-Project-04)
+[![Build Status](https://travis-ci.org/SWTI2014/Smalltalkhub-Client.svg)](https://travis-ci.org/SWTI2014/Smalltalkhub-Client)
 
 
 ### Dependencies  
-[WebClient](https://github.com/SWTI2014/SWTI2014-Project-04/wiki/Dependencies)
+[WebClient](https://github.com/SWTI2014/Smalltalkhub-Client/wiki/Dependencies)
 
 Squeak > 4.5 (works with earlier versions, but text input boxes will behave strangely)
 
@@ -23,4 +23,4 @@ Squeak > 4.5 (works with earlier versions, but text input boxes will behave stra
 
 
 ### SmalltalkHub API
-[API Docu](https://github.com/SWTI2014/SWTI2014-Project-04/wiki/2.-SmalltalkHub-Server-API)
+[API Docu](https://github.com/SWTI2014/Smalltalkhub-Client/wiki/2.-SmalltalkHub-Server-API)
