@@ -8,12 +8,12 @@ gitPath := (Smalltalk at: #'FileDirectory' ifAbsent: [  ])
 
 Metacello new
   baseline: 'Project04';
-  repository: 'filetree://', gitPath, '/SWTI2014-Project-04/packages';
+  repository: 'filetree://', gitPath, '/Smalltalkhub-Client/packages';
   get.
 
 Metacello new
   baseline: 'Project04';
-  repository: 'filetree://', gitPath, '/SWTI2014-Project-04/packages';
+  repository: 'filetree://', gitPath, '/Smalltalkhub-Client/packages';
   load: 'TravisCI'.
 
 "Install WebClient"
