@@ -1,10 +1,10 @@
 Smalltalkhub-Client
 ===================
-[![Build Status](https://travis-ci.org/HPI-SWA-Teaching/Smalltalkhub-Client.svg)](https://travis-ci.org/HPI-SWA-Teaching/Smalltalkhub-Client)
+[![Build Status](https://travis-ci.org/hpi-swa-teaching/Smalltalkhub-Client.svg)](https://travis-ci.org/hpi-swa-teaching/Smalltalkhub-Client)
 
 
 ### Dependencies  
-[WebClient](https://github.com/HPI-SWA-Teaching/Smalltalkhub-Client/wiki/Dependencies)
+[WebClient](https://github.com/hpi-swa-teaching/Smalltalkhub-Client/wiki/Dependencies)
 
 Squeak > 4.5 (works with earlier versions, but text input boxes will behave strangely)
 
@@ -23,4 +23,4 @@ Squeak > 4.5 (works with earlier versions, but text input boxes will behave stra
 
 
 ### SmalltalkHub API
-[API Docu](https://github.com/HPI-SWA-Teaching/Smalltalkhub-Client/wiki/2.-SmalltalkHub-Server-API)
+[API Docu](https://github.com/hpi-swa-teaching/Smalltalkhub-Client/wiki/2.-SmalltalkHub-Server-API)
